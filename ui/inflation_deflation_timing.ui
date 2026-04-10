@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Inflation_Deflation_Timing</class>
+ <widget class="QWidget" name="Inflation_Deflation_Timing">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1208</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1208</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1208</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Inflation_Deflation_Timing</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1208</width>
+     <height>380</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1208</width>
+     <height>380</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1208</width>
+     <height>380</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="InflationReduce_Button">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>204</y>
+     <width>127</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="InflationAdd_Button">
+   <property name="geometry">
+    <rect>
+     <x>321</x>
+     <y>204</y>
+     <width>127</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DeflateReduce_Button">
+   <property name="geometry">
+    <rect>
+     <x>502</x>
+     <y>204</y>
+     <width>127</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DeflateAdd_Button">
+   <property name="geometry">
+    <rect>
+     <x>782</x>
+     <y>204</y>
+     <width>127</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Finish_Button">
+   <property name="geometry">
+    <rect>
+     <x>969</x>
+     <y>189</y>
+     <width>136</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="InflationNum_label">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>224</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>100</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DeflateNum_label">
+   <property name="geometry">
+    <rect>
+     <x>647</x>
+     <y>223</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>100</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ratio1_1Num_label">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>90</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;1:1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ratio1_2Num_label">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>90</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;1:2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Help_Button">
+   <property name="geometry">
+    <rect>
+     <x>1141</x>
+     <y>19</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ratio1_1backdrop">
+   <property name="geometry">
+    <rect>
+     <x>913</x>
+     <y>69</y>
+     <width>126</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>126</width>
+     <height>86</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>126</width>
+     <height>86</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ratio1_2backdrop">
+   <property name="geometry">
+    <rect>
+     <x>1033</x>
+     <y>69</y>
+     <width>126</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>126</width>
+     <height>86</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>126</width>
+     <height>86</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ratio1_1Button">
+   <property name="geometry">
+    <rect>
+     <x>916</x>
+     <y>72</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ratio1_2Button">
+   <property name="geometry">
+    <rect>
+     <x>1036</x>
+     <y>72</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>InflationReduce_Button</zorder>
+  <zorder>InflationAdd_Button</zorder>
+  <zorder>DeflateReduce_Button</zorder>
+  <zorder>DeflateAdd_Button</zorder>
+  <zorder>Finish_Button</zorder>
+  <zorder>InflationNum_label</zorder>
+  <zorder>DeflateNum_label</zorder>
+  <zorder>Help_Button</zorder>
+  <zorder>ratio1_1backdrop</zorder>
+  <zorder>ratio1_2backdrop</zorder>
+  <zorder>ratio1_1Num_label</zorder>
+  <zorder>ratio1_2Num_label</zorder>
+  <zorder>ratio1_1Button</zorder>
+  <zorder>ratio1_2Button</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

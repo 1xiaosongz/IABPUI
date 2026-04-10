@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/MessageManagement">
+        <file>Group 10568.png</file>
+        <file>Group 10568X.png</file>
+        <file>Group 10569.png</file>
+        <file>Group 10570.png</file>
+        <file>darker-huge.png</file>
+    </qresource>
+</RCC>

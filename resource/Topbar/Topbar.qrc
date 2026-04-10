@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/Topbar">
+        <file>Frame 10039.png</file>
+        <file>Group 10289.png</file>
+        <file>Group 10290.png</file>
+        <file>Group 10291.png</file>
+        <file>Group 10292.png</file>
+        <file>Group 10295.png</file>
+        <file>Group 10296.png</file>
+        <file>Group 10305.png</file>
+        <file>Group 10309.png</file>
+        <file>Group 9904.png</file>
+        <file>Group 9906.png</file>
+        <file>Rectangle 2846.png</file>
+    </qresource>
+</RCC>

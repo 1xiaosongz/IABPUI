@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModeSelection</class>
+ <widget class="QWidget" name="ModeSelection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>764</width>
+    <height>270</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>764</width>
+    <height>270</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ModeSelection</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>764</width>
+     <height>270</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>764</width>
+     <height>270</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>764</width>
+     <height>270</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/ModeSelection/Group 10507.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Help_Button">
+   <property name="geometry">
+    <rect>
+     <x>697</x>
+     <y>18</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Finish_Button">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>67</y>
+     <width>136</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Automatic_backdrop">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>69</y>
+     <width>266</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Manual_backdrop">
+   <property name="geometry">
+    <rect>
+     <x>299</x>
+     <y>69</y>
+     <width>266</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Automatic_Button">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>69</y>
+     <width>260</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Manual_Button">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>69</y>
+     <width>260</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Automatic_Label">
+   <property name="geometry">
+    <rect>
+     <x>82</x>
+     <y>104</y>
+     <width>175</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Manual_Label">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>104</y>
+     <width>175</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>Help_Button</zorder>
+  <zorder>Finish_Button</zorder>
+  <zorder>Automatic_backdrop</zorder>
+  <zorder>Manual_backdrop</zorder>
+  <zorder>Automatic_Label</zorder>
+  <zorder>Manual_Label</zorder>
+  <zorder>Automatic_Button</zorder>
+  <zorder>Manual_Button</zorder>
+ </widget>
+ <resources>
+  <include location="../resource/ModeSelection/ModeSelection.qrc"/>
+ </resources>
+ <connections/>
+</ui>

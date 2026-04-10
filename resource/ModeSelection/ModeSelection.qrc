@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/ModeSelection">
+        <file>Group 10257.png</file>
+        <file>Group 10286.png</file>
+        <file>Group 10507.png</file>
+        <file>Group 4638.png</file>
+        <file>Rectangle 4580.png</file>
+    </qresource>
+</RCC>

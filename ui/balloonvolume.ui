@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BalloonVolume</class>
+ <widget class="QWidget" name="BalloonVolume">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>686</width>
+    <height>315</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>686</width>
+    <height>315</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>BalloonVolume</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>686</width>
+     <height>315</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>686</width>
+     <height>315</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>686</width>
+     <height>315</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Help_Button">
+   <property name="geometry">
+    <rect>
+     <x>619</x>
+     <y>18</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Finish_Button">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>123</y>
+     <width>136</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Reduce_Button">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>138</y>
+     <width>127</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Add_Button">
+   <property name="geometry">
+    <rect>
+     <x>361</x>
+     <y>138</y>
+     <width>127</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>127</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Capacity_Label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>168</y>
+     <width>84</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>84</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>84</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;50.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
