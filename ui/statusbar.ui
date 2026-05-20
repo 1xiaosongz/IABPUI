@@ -54,7 +54,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="HeartRate_label">
+  <widget class="QLabel" name="Heart_Rate_Background">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -79,11 +79,11 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="HighBloodPressure_label">
+  <widget class="QLabel" name="HighBloodPressure_Background">
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>310</y>
+     <y>315</y>
      <width>200</width>
      <height>90</height>
     </rect>
@@ -104,19 +104,19 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="LowBloodPressure_label">
+  <widget class="QLabel" name="LowBloodPressure_Background">
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>424</y>
+     <y>429</y>
      <width>200</width>
-     <height>80</height>
+     <height>70</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
      <width>200</width>
-     <height>80</height>
+     <height>70</height>
     </size>
    </property>
    <property name="maximumSize">
@@ -129,7 +129,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="CounterpulsationPressure_label">
+  <widget class="QLabel" name="CounterpulsationPressure_Background">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -151,7 +151,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     </size>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="Anti_embolismPressureAlarm_label">
@@ -354,25 +354,150 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string>触发源:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="MeanBloodPressure_label">
+  <widget class="QLabel" name="MeanBloodPressure_Background">
    <property name="geometry">
     <rect>
      <x>144</x>
-     <y>504</y>
+     <y>509</y>
      <width>112</width>
-     <height>76</height>
+     <height>66</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
      <width>112</width>
-     <height>76</height>
+     <height>66</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
      <width>112</width>
-     <height>76</height>
+     <height>66</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HeartRate_label">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>5</y>
+     <width>283</width>
+     <height>240</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>283</width>
+     <height>240</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>283</width>
+     <height>240</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HighBloodPressure_label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>280</y>
+     <width>200</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LowBloodPressure_label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>404</y>
+     <width>200</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>120</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>120</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MeanBloodPressure_label">
+   <property name="geometry">
+    <rect>
+     <x>144</x>
+     <y>497</y>
+     <width>112</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>112</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>112</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CounterpulsationPressure_label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>625</y>
+     <width>200</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>150</height>
     </size>
    </property>
    <property name="text">

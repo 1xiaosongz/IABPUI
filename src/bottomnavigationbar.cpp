@@ -14,7 +14,7 @@ BottomNavigationBar::BottomNavigationBar(QWidget *parent) : QWidget(parent), ui(
     ui->setupUi(this);
 
     move(0, 960);
-    ui->CounterpulsationPump_Button->setStyleSheet("QPushButton {background-image: url(:/BottomNavigationBar/Group 10174.png);border: none;background-repeat: no-repeat;"
+    ui->CounterpulsationPump_Button->setStyleSheet("QPushButton {background-image: url(:/BottomNavigationBar/Group 10254.png);border: none;background-repeat: no-repeat;"
                                      " background-position: center;background-color: transparent;}");
     ui->Mode_Button->setStyleSheet("QPushButton {background-image: url(:/BottomNavigationBar/Group 10399.png);border: none;background-repeat: no-repeat;"
                                      " background-position: center;background-color: transparent;}");
@@ -60,24 +60,26 @@ BottomNavigationBar::BottomNavigationBar(QWidget *parent) : QWidget(parent), ui(
     ui->Deflating_Number_label->setText("100");
     ui->Deflating_Number_label->setStyleSheet("QLabel {border: none; background-color: transparent;qproperty-alignment: 'AlignRight | AlignVCenter';"
                                             "font-family:SourceHanSansCN ;color: rgb(04, 255, 255); font-size: 38px;font-weight: bold;}");
-    ui->BalloonVolume_Number_label->setText("10.0");
-    ui->BalloonVolume_Number_label->setStyleSheet("QLabel {border: none; background-color: transparent;qproperty-alignment: 'AlignHCenter | AlignVCenter';"
-                                            "font-family:SourceHanSansCN ;color: rgb(04, 255, 255); font-size: 40px;font-weight: bold;}");
-    ui->label->setStyleSheet("QLabel { background-image:url(:/BottomNavigationBar/Mask group.png); border: none;background-repeat: no-repeat;"
+    ui->BalloonVolume_Number_label->setText("50.0");
+    ui->BalloonVolume_Number_label->setStyleSheet("QLabel {border: none; background-color: transparent;qproperty-alignment: 'AlignRight | AlignVCenter';"
+                                            "font-family:SourceHanSansCN ;color: rgb(4, 255, 255); font-size: 40px;font-weight: bold;}");
+    ui->label->setStyleSheet("QLabel { background-image:url(:/BottomNavigationBar/Group 10611.png); border: none;background-repeat: no-repeat;"
                                      " background-position: center;background-color: transparent;}");
 }
 
 BottomNavigationBar::~BottomNavigationBar() {
     delete ui;
 }
-void BottomNavigationBar::on_Set_Button_clicked() {
-    if(set1){
-        ui->Set_Button_Label->setStyleSheet("QLabel { background-image:url(:/BottomNavigationBar/Frame 10104.png); border: none;background-repeat: no-repeat;"
-                                     " background-position: center;background-color: transparent;}" );
-        set1 = false;
-    }else{
-        ui->Set_Button_Label->setStyleSheet("QLabel { background-image:url(:/BottomNavigationBar/Group 9809.png); border: none;background-repeat: no-repeat;"
-                                     " background-position: center;background-color: transparent;}");
-        set1 = true;
-    }
-}
+// void BottomNavigationBar::on_Set_Button_clicked() {
+//     if(set1){
+//
+//         ui->Set_Button_Label->setStyleSheet("QLabel { background-image:url(:/BottomNavigationBar/Frame 10104.png); border: none;background-repeat: no-repeat;"
+//                                      " background-position: center;background-color: transparent;}" );
+//         set1 = false;
+//     }else{
+//
+//         ui->Set_Button_Label->setStyleSheet("QLabel { background-image:url(:/BottomNavigationBar/Group 9809.png); border: none;background-repeat: no-repeat;"
+//                                      " background-position: center;background-color: transparent;}");
+//         set1 = true;
+//     }
+// }

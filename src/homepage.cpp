@@ -6,14 +6,21 @@
 
 #include "../include/homepage.h"
 #include "ui_Homepage.h"
-#include <QFontDatabase>
 
+#include <QFontDatabase>
+#include <QThread>
 Homepage::Homepage(QWidget *parent) : QWidget(parent), ui(new Ui::Homepage) {
     ui->setupUi(this);
     topbar = new Topbar(this);
     waveformseparation = new WaveformSeparation(this);
     bottomnavigationbar = new BottomNavigationBar(this);
     statusbar = new Statusbar(this);
+    sendingthread = new SendingThread();
+    sendingthread->moveToThread(&m_sendingthread);
+    connect(this,&Homepage::startWork,sendingthread,&SendingThread::doWork);
+    connect(sendingthread, &SendingThread::workFinished, this, &Homepage::onWorkFinished);
+    connect(&m_sendingthread, &QThread::finished, sendingthread, &QObject::deleteLater);
+    m_sendingthread.start();
     modeselection = new ModeSelection(this);
     triggermode = new TriggerMode(this);
     inflation_Deflation_Timing = new Inflation_Deflation_Timing(this);
@@ -26,20 +33,20 @@ Homepage::Homepage(QWidget *parent) : QWidget(parent), ui(new Ui::Homepage) {
     messageManagement = new MessageManagement(this);
     level1alarm = new Level1Alarm(this);
 }
-QString Homepage::Font1() {
-    int fontId =QFontDatabase::addApplicationFont(QStringLiteral("D:/IABP/IABPUI/SourceHanSansCN-Bold.otf"));
-    QString fontName =QFontDatabase::applicationFontFamilies(fontId).at(0);
-    QString style = QString("QLabel{font-family:'%1';}").arg(fontName);
-    QString style2 = QString("QLabel{font-family:'%1';font-size:40px;"
-                       "color:rgb(255, 255, 255);qproperty-alignment: 'AlignCenter';}").arg(fontName);
-    QString style1 = QString(
-                "QLabel{background-image:url(:/ModeSelection/Rectangle 4580.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    QString style3 = QString(
-                "QLabel{border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    return style ,style1,style2,style3;
-}
+
 Homepage::~Homepage() {
+    m_sendingthread.quit();
+    m_sendingthread.wait();
     delete ui;
+}
+void Homepage::onWorkFinished(int result)
+{
+    qDebug() << "计算完成，结果:" << result;
+    // 在这里可以更新 UI，例如 label->setText(QString::number(result));
+}
+
+void Homepage::onProgressUpdated(int value)
+{
+    qDebug() << "进度:" << value;
+    // 在这里可以更新进度条
 }

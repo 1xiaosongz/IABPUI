@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/AlarmSystem">
-        <file>Group 10566.png</file>
+        <file>Frame 10089.png</file>
+        <file>Frame 10090.png</file>
+        <file>Frame 10091.png</file>
+        <file>Frame 10092.png</file>
+        <file>Group 10022.png</file>
+        <file>Group 10026.png</file>
+        <file>Group 10028.png</file>
     </qresource>
 </RCC>

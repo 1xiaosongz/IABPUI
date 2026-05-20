@@ -12,7 +12,7 @@
  */
 
 Inflation_Deflation_Timing::Inflation_Deflation_Timing(QWidget *parent) : QWidget(parent),
-                                                                          ui(new Ui::Inflation_Deflation_Timing) {
+ui(new Ui::Inflation_Deflation_Timing) {
     ui->setupUi(this);
     move(201, 594);
     setVisible(false);

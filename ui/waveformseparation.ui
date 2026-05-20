@@ -50,7 +50,7 @@
     <string notr="true"/>
    </property>
    <widget class="QWidget" name="page">
-    <widget class="QWidget" name="widget" native="true">
+    <widget class="QCustomPlot" name="widget" native="true">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -128,7 +128,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QWidget" name="widget_2" native="true">
+    <widget class="QCustomPlot" name="widget_2" native="true">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -178,7 +178,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="widget_3" native="true">
+    <widget class="QCustomPlot" name="widget_3" native="true">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -250,12 +250,11 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLabel {  font-family:  SourceHanSansCN ;color: rgb(172, 181, 197); font-size: 20px;  border: none;
- background-color: transparent;
-}</string>
+      <string notr="true">
+</string>
      </property>
      <property name="text">
-      <string>120</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="ECGLow_label">
@@ -280,12 +279,10 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLabel {  font-family:  SourceHanSansCN ;color: rgb(172, 181, 197); font-size: 20px;  border: none;
- background-color: transparent;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
-      <string>120</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="ArteryHigh_label">
@@ -310,12 +307,10 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLabel {  font-family:  SourceHanSansCN ;color: rgb(172, 181, 197); font-size: 20px;  border: none;
- background-color: transparent;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
-      <string>120</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="BalloonPressureLow_label">
@@ -340,12 +335,10 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLabel {  font-family:  SourceHanSansCN ;color: rgb(172, 181, 197); font-size: 20px;  border: none;
- background-color: transparent;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
-      <string>120</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="ArteryLow_label">
@@ -370,12 +363,10 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLabel {  font-family:  SourceHanSansCN ;color: rgb(172, 181, 197); font-size: 20px;  border: none;
- background-color: transparent;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
-      <string>120</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="BalloonPressureHigh_label">
@@ -400,12 +391,10 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLabel {  font-family:  SourceHanSansCN ;color: rgb(172, 181, 197); font-size: 20px;  border: none;
- background-color: transparent;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
-      <string>120</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="ECGLeadNumber_label">
@@ -453,6 +442,14 @@
    <widget class="QWidget" name="page_2"/>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resource/WaveformSeparation/WaveformSeparation.qrc"/>
  </resources>

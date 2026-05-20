@@ -1,9 +1,12 @@
 <RCC>
     <qresource prefix="/BalloonVolume">
         <file>Group 10217.png</file>
+        <file>Group 10286.png</file>
         <file>Group 10554.png</file>
         <file>Group 10555.png</file>
         <file>Group 10558.png</file>
         <file>Group 4638.png</file>
+        <file>Reduction_tap.png</file>
+        <file>add_tap.png</file>
     </qresource>
 </RCC>

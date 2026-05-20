@@ -47,7 +47,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/MessageManagement/Group 10570.png);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>

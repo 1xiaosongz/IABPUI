@@ -16,6 +16,7 @@ find_package(Qt6 COMPONENTS
         Core
         Gui
         Widgets
+        PrintSupport
         REQUIRED)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 set(RESOURCE_PARENT_FOLDER "${CMAKE_SOURCE_DIR}/resource")
@@ -51,7 +52,6 @@ add_executable(IABPUI main.cpp
         src/modeselection.cpp
         include/modeselection.h
         ui/modeselection.ui
-
         src/inflation_deflation_timing.cpp
         include/inflation_deflation_timing.h
         ui/inflation_deflation_timing.ui
@@ -82,16 +82,22 @@ add_executable(IABPUI main.cpp
         src/level1alarm.cpp
         include/level1alarm.h
         ui/level1alarm.ui
-        src/pneumatictesting.cpp
-        include/pneumatictesting.h
-        ui/pneumatictesting.ui
+        src/readfile.cpp
+        include/readfile.h
+        sendingthread.cpp
+        sendingthread.h
+
+
 )
 target_link_libraries(IABPUI
 
         Qt::Core
         Qt::Gui
         Qt::Widgets
+        Qt6::PrintSupport
 )
+
+
 
 #if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
 #    set(DEBUG_SUFFIX)

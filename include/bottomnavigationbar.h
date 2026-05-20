@@ -24,8 +24,10 @@ public:
 
     ~BottomNavigationBar() override;
     bool set1 = true;
+    bool ba = true;
 private slots:
-    void on_Set_Button_clicked();
+    // void on_Set_Button_clicked();
+
 private:
     Ui::BottomNavigationBar *ui;
 };

@@ -175,6 +175,31 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="AlarmLevelIcon_Label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>65</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>68</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>65</width>
+     <height>68</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

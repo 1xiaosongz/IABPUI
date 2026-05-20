@@ -35,7 +35,7 @@ ModeSelection::ModeSelection(QWidget *parent) : QWidget(parent), ui(new Ui::Mode
                 "QLabel{border: none;background-repeat: no-repeat;"
                 "background-position: center;background-color: transparent;}");
     ui->Automatic_backdrop->setStyleSheet(style1);
-    ui->Manual_backdrop->setStyleSheet(style1);
+    ui->Manual_backdrop->setStyleSheet(style3);
     ui->Automatic_Button->setStyleSheet("QPushButton {border: none;background-repeat: no-repeat;"
                                      " background-position: center;background-color: transparent;}");
     ui->Manual_Button->setStyleSheet("QPushButton {border: none;background-repeat: no-repeat;"

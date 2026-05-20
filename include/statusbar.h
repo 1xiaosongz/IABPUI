@@ -23,6 +23,8 @@ public:
     explicit Statusbar(QWidget *parent = nullptr);
     ~Statusbar() override;
     Homepage *homepage;
+public slots:
+
 private:
     Ui::Statusbar *ui;
 };

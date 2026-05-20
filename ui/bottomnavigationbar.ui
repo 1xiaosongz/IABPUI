@@ -133,19 +133,19 @@
     <rect>
      <x>989</x>
      <y>10</y>
-     <width>109</width>
+     <width>110</width>
      <height>86</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>109</width>
+     <width>110</width>
      <height>86</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>109</width>
+     <width>110</width>
      <height>86</height>
     </size>
    </property>
@@ -307,7 +307,7 @@
    <property name="geometry">
     <rect>
      <x>1395</x>
-     <y>30</y>
+     <y>20</y>
      <width>60</width>
      <height>60</height>
     </rect>
@@ -332,7 +332,7 @@
    <property name="geometry">
     <rect>
      <x>1485</x>
-     <y>30</y>
+     <y>20</y>
      <width>60</width>
      <height>60</height>
     </rect>
@@ -357,7 +357,7 @@
    <property name="geometry">
     <rect>
      <x>1575</x>
-     <y>30</y>
+     <y>20</y>
      <width>60</width>
      <height>60</height>
     </rect>
@@ -382,7 +382,7 @@
    <property name="geometry">
     <rect>
      <x>1665</x>
-     <y>30</y>
+     <y>20</y>
      <width>60</width>
      <height>60</height>
     </rect>
@@ -407,7 +407,7 @@
    <property name="geometry">
     <rect>
      <x>1755</x>
-     <y>30</y>
+     <y>20</y>
      <width>60</width>
      <height>60</height>
     </rect>
@@ -432,7 +432,7 @@
    <property name="geometry">
     <rect>
      <x>1845</x>
-     <y>30</y>
+     <y>20</y>
      <width>60</width>
      <height>60</height>
     </rect>
@@ -610,21 +610,21 @@ QLabel {
   <widget class="QLabel" name="BalloonVolume_Number_label">
    <property name="geometry">
     <rect>
-     <x>1164</x>
-     <y>20</y>
-     <width>84</width>
+     <x>1160</x>
+     <y>22</y>
+     <width>88</width>
      <height>60</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>84</width>
+     <width>88</width>
      <height>60</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>84</width>
+     <width>88</width>
      <height>60</height>
     </size>
    </property>

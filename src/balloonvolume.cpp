@@ -19,7 +19,7 @@ BalloonVolume::BalloonVolume(QWidget *parent) : QWidget(parent), ui(new Ui::Ball
     QString fontName =QFontDatabase::applicationFontFamilies(fontId).at(0);
     QString style = QString("QLabel{font-family:'%1';font-size:40px;"
                    "color:rgb(4, 255, 255);qproperty-alignment: 'AlignRight|AlignVCenter';font-weight: Bold;}").arg(fontName);
-
+    ui->Capacity_Label->setText("40.0");
     ui->label->setStyleSheet("QLabel{background-image:url(:/BalloonVolume/Group 10558.png);border: none;background-repeat: no-repeat;"
                "background-position: center;background-color: transparent;}");
 
@@ -32,6 +32,7 @@ BalloonVolume::BalloonVolume(QWidget *parent) : QWidget(parent), ui(new Ui::Ball
     ui->Reduce_Button->setStyleSheet("QPushButton{background-image:url(:/BalloonVolume/Group 10555.png);border: none;background-repeat: no-repeat;"
                 "background-position: center;background-color: transparent;}");
     ui->Capacity_Label->setStyleSheet(style);
+    ui->Capacity_Label->setText("60.0");
 }
 
 BalloonVolume::~BalloonVolume() {

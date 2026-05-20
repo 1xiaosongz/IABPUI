@@ -23,6 +23,8 @@ public:
     explicit WaveformSeparation(QWidget *parent = nullptr);
 
     ~WaveformSeparation() override;
+public slots:
+
 
 private:
     Ui::WaveformSeparation *ui;
