@@ -16,52 +16,31 @@ ui(new Ui::Inflation_Deflation_Timing) {
     ui->setupUi(this);
     move(201, 594);
     setVisible(false);
-    ui->label->setStyleSheet("QLabel{background-image:url(:/Inflation_Deflation_Timing/Group 10532.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    int fontId =QFontDatabase::addApplicationFont(QStringLiteral("D:/IABP/IABPUI/SourceHanSansCN-Bold.otf"));
-    QString fontName =QFontDatabase::applicationFontFamilies(fontId).at(0);
-    QFont font;
-    font.setLetterSpacing(QFont::AbsoluteSpacing, 5);  // 间距固定为5像素
+    ui->label->setProperty("class","label_Inflation_Deflation_Timing");
+    ui->Finish_Button->setProperty("mode","Finish_Button_false");
+    ui->InflationReduce_Button->setProperty("mode","InflationReduce_Button_false");
+    ui->InflationAdd_Button->setProperty("mode","InflationAdd_Button_false");
+    ui->DeflateReduce_Button->setProperty("mode","DeflateReduce_Button_false");
+    ui->DeflateAdd_Button->setProperty("mode","DeflateAdd_Button_false");
+    ui->InflationNum_label->setText("50");
+    ui->InflationNum_label->setProperty("class","40px,colour255,255,255");
+    ui->DeflateNum_label->setText("100");
+    ui->DeflateNum_label->setProperty("class","40px,colour255,255,255");
+    ui->ratio1_1Num_label->setProperty("class","40px,colour4,255,255,AlignCenter");
+    ui->ratio1_1backdrop->setProperty("class","ratio1_1backdrop_true");
+    setLetterSpacing(ui->ratio1_1Num_label,5);
+    ui->ratio1_2Num_label->setProperty("class","40px,colour255,255,255,AlignCenter");
+    ui->Help_Button->setProperty("class","Help_Button");
+    setLetterSpacing(ui->ratio1_2Num_label,5);
+    ui->ratio1_2backdrop->setProperty("class","ratio1_2backdrop_false");
 
-    QString style = QString("QLabel{font-family:'%1';font-size:40px;"
-                   "color:rgb(4, 255, 255);qproperty-alignment: 'AlignCenter';}").arg(fontName);
-    QString style2 = QString("QLabel{font-family:'%1';font-size:40px;"
-                       "color:rgb(255, 255, 255);qproperty-alignment: 'AlignCenter';}").arg(fontName);
-    QString style1 = QString(
-                "QLabel{background-image:url(:/Inflation_Deflation_Timing/Group 10535.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    QString style3 = QString(
-                "QLabel{border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    QString style4 = QString("QPushButton {border: none;background-repeat: no-repeat;"
-                                     " background-position: center;background-color: transparent;}");
-    QString style5 = QString("QLabel{font-family:'%1';font-size:40px;"
-                      "color:rgb(255, 255, 255);qproperty-alignment: 'AlignRight | AlignVCenter';}").arg(fontName);
-    ui->Help_Button->setStyleSheet("QPushButton{background-image:url(:/Inflation_Deflation_Timing/Group 10259.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->Finish_Button->setStyleSheet("QPushButton{background-image:url(:/Inflation_Deflation_Timing/Group 10257.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->InflationReduce_Button->setStyleSheet("QPushButton{background-image:url(:/Inflation_Deflation_Timing/Group 10533.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->InflationAdd_Button->setStyleSheet("QPushButton{background-image:url(:/Inflation_Deflation_Timing/Group 10534.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->DeflateReduce_Button->setStyleSheet("QPushButton{background-image:url(:/Inflation_Deflation_Timing/Group 10533.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->DeflateAdd_Button->setStyleSheet("QPushButton{background-image:url(:/Inflation_Deflation_Timing/Group 10534.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->InflationNum_label->setStyleSheet(style5);
-    ui->DeflateNum_label->setStyleSheet(style5);
-    ui->ratio1_1backdrop->setStyleSheet(style1) ;
-    ui->ratio1_1Num_label->setStyleSheet(style);
-    ui->ratio1_1Num_label->setFont(font);
-    ui->ratio1_1Button->setStyleSheet(style4);
-    ui->ratio1_2backdrop->setStyleSheet(style1) ;
-    ui->ratio1_2Num_label->setStyleSheet(style2);
-    ui->ratio1_2Num_label->setFont(font);
-    ui->ratio1_2Button->setStyleSheet(style4);
 
 }
-
+void Inflation_Deflation_Timing::setLetterSpacing(QLabel* label,int spacing) {
+    QFont font = label->font();
+    font.setLetterSpacing(QFont::AbsoluteSpacing,spacing);
+    label->setFont(font);
+}
 Inflation_Deflation_Timing::~Inflation_Deflation_Timing() {
     delete ui;
 }

@@ -6,35 +6,43 @@
 
 #include "../include/waveformseparation.h"
 #include "ui_WaveformSeparation.h"
-#include <QPainter>
-#include <QPainterPath>
+
 
 WaveformSeparation::WaveformSeparation(QWidget *parent) : QWidget(parent), ui(new Ui::WaveformSeparation) {
     ui->setupUi(this);
     move(0, 80);
-    //D:/IABP/IABPUI/SourceHanSansCN-Bold.otf
-    int fontId =QFontDatabase::addApplicationFont(QStringLiteral("D:/IABP/IABPUI/SourceHanSansCN-Bold.otf"));
-    QString fontName =QFontDatabase::applicationFontFamilies(fontId).at(0);
-    QString style = QString("QLabel{font-family:'%1';font-size:20px;"
-                   "color:rgba(255, 255, 255,114);qproperty-alignment: 'AlignRight|AlignVCenter';font-weight: bold;}").arg(fontName);
-    ui->ECGHigh_label->setStyleSheet(style);
+
     ui->ECGHigh_label->setText("120");
-    ui->ECGLow_label->setStyleSheet(style);
+    ui->ECGHigh_label->setProperty("class","20px,colour255,255,255,114");
+    refreshStyle(ui->ECGHigh_label);
+    ui->ECGLow_label->setProperty("class","20px,colour255,255,255,114");
+    refreshStyle(ui->ECGLow_label);
     ui->ECGLow_label->setText("120");
-    ui->ArteryHigh_label->setStyleSheet(style);
+    ui->ArteryHigh_label->setProperty("class","20px,colour255,255,255,114");
+    refreshStyle(ui->ArteryHigh_label);
     ui->ArteryHigh_label->setText("120");
-    ui->ArteryLow_label->setStyleSheet(style);
+    ui->ArteryLow_label->setProperty("class","20px,colour255,255,255,114");
+    refreshStyle(ui->ArteryLow_label);
     ui->ArteryLow_label->setText("120");
-    ui->BalloonPressureHigh_label->setStyleSheet(style);
+    ui->BalloonPressureHigh_label->setProperty("class","20px,colour255,255,255,114");
+    refreshStyle(ui->BalloonPressureHigh_label);
     ui->BalloonPressureHigh_label->setText("120");
-    ui->ECGLeadNumber_label->setStyleSheet(style);
+    ui->ECGLeadNumber_label->setProperty("class","20px,colour255,255,255,114");
+    refreshStyle(ui->ECGLeadNumber_label);
     ui->ECGLeadNumber_label->setText("I");
     ui->BalloonPressureLow_label->setText("120");
-    ui->BalloonPressureLow_label->setStyleSheet(style);
+    ui->BalloonPressureLow_label->setProperty("class","20px,colour255,255,255,114");
+    refreshStyle(ui->BalloonPressureLow_label);
 
 
 }
 
 WaveformSeparation::~WaveformSeparation() {
     delete ui;
+}
+void WaveformSeparation::refreshStyle(QWidget* w)
+{
+    w->style()->unpolish(w);
+    w->style()->polish(w);
+    w->update();
 }

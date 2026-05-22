@@ -6,7 +6,7 @@
 #define IABPUI_INFLATION_DEFLATION_TIMING_H
 
 #include <QWidget>
-
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 
@@ -23,6 +23,7 @@ public:
     explicit Inflation_Deflation_Timing(QWidget *parent = nullptr);
 
     ~Inflation_Deflation_Timing() override;
+    void setLetterSpacing(QLabel* label,int spacing);
 
 private:
     Ui::Inflation_Deflation_Timing *ui;

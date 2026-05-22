@@ -47,7 +47,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/MessageManagement/Group 10568.png);</string>
+    <string notr="true">/*background-image: url(:/MessageManagement/Group 10568.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -75,7 +75,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/MessageManagement/darker-huge.png);</string>
+    <string notr="true"/>
    </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">

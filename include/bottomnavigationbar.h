@@ -23,8 +23,9 @@ public:
     explicit BottomNavigationBar(QWidget *parent = nullptr);
 
     ~BottomNavigationBar() override;
-    bool set1 = true;
-    bool ba = true;
+    void refreshStyle(QWidget* w);
+
+
 private slots:
     // void on_Set_Button_clicked();
 

@@ -247,8 +247,8 @@
   <widget class="QLabel" name="ratio1_1Num_label">
    <property name="geometry">
     <rect>
-     <x>940</x>
-     <y>90</y>
+     <x>938</x>
+     <y>88</y>
      <width>71</width>
      <height>60</height>
     </rect>
@@ -279,7 +279,7 @@
    <property name="geometry">
     <rect>
      <x>1060</x>
-     <y>90</y>
+     <y>88</y>
      <width>71</width>
      <height>60</height>
     </rect>

@@ -6,7 +6,7 @@
 #define IABPUI_INFLATIONRATIO_H
 
 #include <QWidget>
-
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 
@@ -23,6 +23,7 @@ public:
     explicit InflationRatio(QWidget *parent = nullptr);
 
     ~InflationRatio() override;
+    void setLetterSpacing(QLabel* label,int spacing);
 
 private:
     Ui::InflationRatio *ui;

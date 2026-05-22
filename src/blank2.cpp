@@ -12,8 +12,7 @@ Blank2::Blank2(QWidget *parent) : QWidget(parent), ui(new Ui::Blank2) {
     ui->setupUi(this);
     move(611, 118);
     setVisible(false);
-    ui->label->setStyleSheet("QLabel{background-image:url(:/Blank1/Group 10402.png);border: none;background-repeat: no-repeat;"
-               "background-position: center;background-color: transparent;}");
+    ui->label->setProperty("class","label_Blank2");
 }
 
 Blank2::~Blank2() {

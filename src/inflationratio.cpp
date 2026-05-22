@@ -15,47 +15,25 @@ InflationRatio::InflationRatio(QWidget *parent) : QWidget(parent), ui(new Ui::In
     ui->setupUi(this);
     move(488, 704);
     setVisible(false);
-    ui->label->setStyleSheet("QLabel{background-image:url(:/InflationRatio/Group 10551.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    int fontId =QFontDatabase::addApplicationFont(QStringLiteral("D:/IABP/IABPUI/SourceHanSansCN-Bold.otf"));
-    QString fontName =QFontDatabase::applicationFontFamilies(fontId).at(0);
-    QFont font;
-    font.setLetterSpacing(QFont::AbsoluteSpacing, 5);  // 间距固定为5像素
+    ui->label->setProperty("class","InflationRatio_label");
+    ui->ratio1_1backdrop->setProperty("class","ratio1_1_true");
+    ui->ratio1_2backdrop->setProperty("class","ratio1_2_false");
+    ui->ratio1_3backdrop->setProperty("class","ratio1_3_false");
+    ui->ratio1_1Num_label->setProperty("class","40px,colour4,255,255,AlignCenter");
+    ui->ratio1_2Num_label->setProperty("class","40px,colour255,255,255,AlignCenter");
+    ui->ratio1_3Num_label->setProperty("class","40px,colour255,255,255,AlignCenter");
+    setLetterSpacing(ui->ratio1_1Num_label,5);
+    setLetterSpacing(ui->ratio1_2Num_label,5);
+    setLetterSpacing(ui->ratio1_3Num_label,5);
+    ui->Help_Button->setProperty("class","Help_Button");
 
-    QString style = QString("QLabel{font-family:'%1';font-size:40px;"
-                   "color:rgb(4, 255, 255);qproperty-alignment: 'AlignCenter';font-weight: bold;}").arg(fontName);
-    QString style2 = QString("QLabel{font-family:'%1';font-size:40px;"
-                       "color:rgb(255, 255, 255);qproperty-alignment: 'AlignCenter';font-weight: bold;}").arg(fontName);
-    QString style1 = QString(
-                "QLabel{background-image:url(:/InflationRatio/Rectangle 4585.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    QString style3 = QString(
-                "QLabel{border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    QString style4 = QString("QPushButton {border: none;background-repeat: no-repeat;"
-                                     " background-position: center;background-color: transparent;}");
-    QString style5 = QString("QLabel{font-family:'%1';font-size:40px;"
-                      "color:rgb(255, 255, 255);qproperty-alignment: 'AlignRight | AlignVCenter';}").arg(fontName);
-
-    ui->ratio1_1Button->setStyleSheet(style4);
-    ui->ratio1_2Button->setStyleSheet(style4);
-    ui->ratio1_3Button->setStyleSheet(style4);
-    // ui->ratio1_1Num_label->setText("1:1");
-    // ui->ratio1_2Num_label->setText("1:2");
-    // ui->ratio1_3Num_label->setText("1:3");
-    ui->ratio1_1Num_label->setStyleSheet(style);
-    ui->ratio1_2Num_label->setStyleSheet(style2);
-    ui->ratio1_3Num_label->setStyleSheet(style2);
-    ui->ratio1_1Num_label->setFont(font);
-    ui->ratio1_2Num_label->setFont(font);
-    ui->ratio1_3Num_label->setFont(font);
-    ui->Help_Button->setStyleSheet("QPushButton{background-image:url(:/InflationRatio/Group 4638.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->Finish_Button->setStyleSheet("QPushButton{background-image:url(:/InflationRatio/Group 10546.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    ui->ratio1_1backdrop->setStyleSheet(style1);
 }
 
 InflationRatio::~InflationRatio() {
     delete ui;
+}
+void InflationRatio::setLetterSpacing(QLabel* label,int spacing) {
+    QFont font = label->font();
+    font.setLetterSpacing(QFont::AbsoluteSpacing,spacing);
+    label->setFont(font);
 }

@@ -6,7 +6,7 @@
 #define IABPUI_TRIGGERMODE_H
 
 #include <QWidget>
-
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 
@@ -23,6 +23,11 @@ public:
     explicit TriggerMode(QWidget *parent = nullptr);
 
     ~TriggerMode() override;
+    void setLetterSpacing(QLabel* label,int spacing);
+    // void test();
+public slots:
+    // void on_ECG_Button_clicked();
+    // void on_Pressure_Button_clicked();
 
 private:
     Ui::TriggerMode *ui;

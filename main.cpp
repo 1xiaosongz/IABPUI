@@ -2,15 +2,31 @@
 #include <QDebug>
 #include "include/homepage.h"
 #include <QApplication>
-#include "readfile.h"
+#include <QFile>
+#include <QFontDatabase>
+QString loadQss(const QString& path)
+{
+    QFile file(path);
+
+    if(file.open(QFile::ReadOnly))
+    {
+        return QLatin1String(file.readAll());
+    }
+
+    return "";
+}
+
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
-    const char* datFilePath = "D:/IABP/IABPUI/5124.dat";   // 请修改为实际路径
-    // ReadFile readFile;
-    // read_dat(datFilePath);
-    // readAndPrintSignalData(datFilePath);
+    int fontId = QFontDatabase::addApplicationFont(
+        ":/Typeface/SourceHanSansCN-Bold.otf");
+    QString style;
 
+    style += loadQss(":/qss/CSS.qss");
+
+
+    a.setStyleSheet(style);
 
     Homepage w;
 

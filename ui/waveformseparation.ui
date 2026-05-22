@@ -250,8 +250,7 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">
-</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string/>
@@ -431,13 +430,13 @@
     <zorder>widget</zorder>
     <zorder>widget_2</zorder>
     <zorder>widget_3</zorder>
+    <zorder>ECGLeadNumber_label</zorder>
     <zorder>ECGHigh_label</zorder>
+    <zorder>ECGLow_label</zorder>
     <zorder>ArteryHigh_label</zorder>
     <zorder>ArteryLow_label</zorder>
-    <zorder>ECGLow_label</zorder>
     <zorder>BalloonPressureHigh_label</zorder>
     <zorder>BalloonPressureLow_label</zorder>
-    <zorder>ECGLeadNumber_label</zorder>
    </widget>
    <widget class="QWidget" name="page_2"/>
   </widget>

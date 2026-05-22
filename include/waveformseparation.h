@@ -23,6 +23,7 @@ public:
     explicit WaveformSeparation(QWidget *parent = nullptr);
 
     ~WaveformSeparation() override;
+    void refreshStyle(QWidget* w);
 public slots:
 
 

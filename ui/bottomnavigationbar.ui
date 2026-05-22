@@ -131,22 +131,22 @@
   <widget class="QPushButton" name="InflationRatio_Button">
    <property name="geometry">
     <rect>
-     <x>989</x>
-     <y>10</y>
-     <width>110</width>
-     <height>86</height>
+     <x>984</x>
+     <y>3</y>
+     <width>120</width>
+     <height>100</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>110</width>
-     <height>86</height>
+     <width>120</width>
+     <height>100</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>110</width>
-     <height>86</height>
+     <width>120</width>
+     <height>100</height>
     </size>
    </property>
    <property name="text">
@@ -157,7 +157,7 @@
    <property name="geometry">
     <rect>
      <x>1380</x>
-     <y>15</y>
+     <y>5</y>
      <width>90</width>
      <height>90</height>
     </rect>
@@ -182,7 +182,7 @@
    <property name="geometry">
     <rect>
      <x>1470</x>
-     <y>15</y>
+     <y>5</y>
      <width>90</width>
      <height>90</height>
     </rect>
@@ -207,7 +207,7 @@
    <property name="geometry">
     <rect>
      <x>1560</x>
-     <y>15</y>
+     <y>5</y>
      <width>90</width>
      <height>90</height>
     </rect>
@@ -232,7 +232,7 @@
    <property name="geometry">
     <rect>
      <x>1650</x>
-     <y>15</y>
+     <y>5</y>
      <width>90</width>
      <height>90</height>
     </rect>
@@ -257,7 +257,7 @@
    <property name="geometry">
     <rect>
      <x>1830</x>
-     <y>15</y>
+     <y>5</y>
      <width>90</width>
      <height>90</height>
     </rect>
@@ -282,7 +282,7 @@
    <property name="geometry">
     <rect>
      <x>1740</x>
-     <y>15</y>
+     <y>5</y>
      <width>90</width>
      <height>90</height>
     </rect>
@@ -531,15 +531,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-QLabel {  
-    border: none; /* 移除边框 */  
-    background-color: transparent; /* 设置背景透明 */  
-     /* 设置背景图片 */  
-	background-image:  url(:/BottomNavigationBar/Group 10400.png);
-    background-repeat: no-repeat; /* 不重复图片 */  
-    background-position: left, top; /* 图片居中显示 */  
-}  </string>
+    <string notr="true">background-image: url(:/BottomNavigationBar/Group 10600.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -592,16 +584,7 @@ QLabel {
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-QLabel {  
-    border: none; /* 移除边框 */  
-    background-color: transparent; /* 设置背景透明 */  
-     /* 设置背景图片 */  
-	background-image: url(:/BottomNavigationBar/Group 10341.png);
-    background-repeat: no-repeat; /* 不重复图片 */  
-    background-position:left, top; /* 图片居中显示 */  
-
-}  </string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>

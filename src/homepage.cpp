@@ -14,13 +14,8 @@ Homepage::Homepage(QWidget *parent) : QWidget(parent), ui(new Ui::Homepage) {
     topbar = new Topbar(this);
     waveformseparation = new WaveformSeparation(this);
     bottomnavigationbar = new BottomNavigationBar(this);
+    bottomnavigationbar->move(0,960);
     statusbar = new Statusbar(this);
-    sendingthread = new SendingThread();
-    sendingthread->moveToThread(&m_sendingthread);
-    connect(this,&Homepage::startWork,sendingthread,&SendingThread::doWork);
-    connect(sendingthread, &SendingThread::workFinished, this, &Homepage::onWorkFinished);
-    connect(&m_sendingthread, &QThread::finished, sendingthread, &QObject::deleteLater);
-    m_sendingthread.start();
     modeselection = new ModeSelection(this);
     triggermode = new TriggerMode(this);
     inflation_Deflation_Timing = new Inflation_Deflation_Timing(this);
@@ -35,18 +30,6 @@ Homepage::Homepage(QWidget *parent) : QWidget(parent), ui(new Ui::Homepage) {
 }
 
 Homepage::~Homepage() {
-    m_sendingthread.quit();
-    m_sendingthread.wait();
-    delete ui;
-}
-void Homepage::onWorkFinished(int result)
-{
-    qDebug() << "计算完成，结果:" << result;
-    // 在这里可以更新 UI，例如 label->setText(QString::number(result));
-}
 
-void Homepage::onProgressUpdated(int value)
-{
-    qDebug() << "进度:" << value;
-    // 在这里可以更新进度条
+    delete ui;
 }

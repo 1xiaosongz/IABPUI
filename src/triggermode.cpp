@@ -13,57 +13,32 @@ TriggerMode::TriggerMode(QWidget *parent) : QWidget(parent), ui(new Ui::TriggerM
     ui->setupUi(this);
     move(282, 704);
     setVisible(false);
-    ui->label->setStyleSheet("QLabel{background-image:url(:/TriggerMode/Group 10516.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    int fontId =QFontDatabase::addApplicationFont(QStringLiteral("D:/IABP/IABPUI/SourceHanSansCN-Bold.otf"));
-    QString fontName =QFontDatabase::applicationFontFamilies(fontId).at(0);
-    QFont font;
-    font.setLetterSpacing(QFont::AbsoluteSpacing, 5);  // 间距固定为5像素
-
-    QString style = QString("QLabel{font-family:'%1';font-size:40px;"
-                   "color:rgb(4, 255, 255);qproperty-alignment: 'AlignCenter';}").arg(fontName);
-    QString style2 = QString("QLabel{font-family:'%1';font-size:40px;"
-                       "color:rgb(255, 255, 255);qproperty-alignment: 'AlignCenter';}").arg(fontName);
-    QString style1 = QString(
-                "QLabel{background-image:url(:/TriggerMode/Rectangle 4581.png);border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    QString style3 = QString(
-                "QLabel{border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-    QString style4 = QString("QPushButton {border: none;background-repeat: no-repeat;"
-                                     " background-position: center;background-color: transparent;}");
-    ui->Finish_Button->setStyleSheet("QPushButton {background-image: url(:/TriggerMode/Group 10517.png);border: none;background-repeat: no-repeat;"
-                                     " background-position: center;background-color: transparent;}");
-    ui->Help_Button->setStyleSheet("QPushButton {background-image: url(:/TriggerMode/Group 4638.png);border: none;background-repeat: no-repeat;"
-                                     " background-position: center;background-color: transparent;}");
+    ui->label->setProperty("class","label_TriggerMode");
+    ui->Help_Button->setProperty("class","Help_Button");
     ui->ECG_Label->setText("ECG");
-    ui->ECG_Label->setFont(font);
-    ui->ECG_Label->setStyleSheet(style);
-    ui->ECG_backdrop->setStyleSheet(style1);
-    ui->ECG_Button->setStyleSheet(style4);
+    setLetterSpacing(ui->ECG_Label,5);
+    ui->ECG_Label->setProperty("class","38px,colour4,255,255,AlignCenter");
+    ui->ECG_backdrop->setProperty("class","TriggerMode_Select_background");
     ui->Pressure_Label->setText("压力");
-    ui->Pressure_Label->setFont(font);
-    ui->Pressure_Label->setStyleSheet(style2);
-    ui->Pressure_backdrop->setStyleSheet(style3);
-    ui->Pressure_Button->setStyleSheet(style4);
+    setLetterSpacing(ui->Pressure_Label,5);
+    ui->Pressure_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
     ui->Ventricular_AtrialFibrillationPacemaker_Label->setText("心室/房颤<br>起搏器");
-    // ui->Ventricular_AtrialFibrillationPacemaker_Label->setFont(font);
-    ui->Ventricular_AtrialFibrillationPacemaker_Label->setStyleSheet(style2);
-    ui->Ventricular_AtrialFibrillationPacemaker_backdrop->setStyleSheet(style1);
-    ui->Ventricular_AtrialFibrillationPacemaker_Button->setStyleSheet(style4);
+    ui->Ventricular_AtrialFibrillationPacemaker_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
     ui->AtrialPacemaker_Label->setText("心房<br>起搏器");
-    ui->AtrialPacemaker_Label->setFont(font);
-    ui->AtrialPacemaker_Label->setStyleSheet(style2);
-    ui->AtrialPacemaker_backdrop->setStyleSheet(style1);
-    ui->AtrialPacemaker_Button->setStyleSheet(style4);
+    setLetterSpacing(ui->AtrialPacemaker_Label,5);
+    ui->AtrialPacemaker_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
     ui->Inside_Label->setText("内部");
-    ui->Inside_Label->setFont(font);
-    ui->Inside_Label->setStyleSheet(style2);
-    ui->Inside_backdrop->setStyleSheet(style3);
-    ui->Inside_Button->setStyleSheet(style4);
+    setLetterSpacing(ui->Inside_Label,5);
+    ui->Inside_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
+
 
 }
 
+void TriggerMode::setLetterSpacing(QLabel* label,int spacing) {
+    QFont font = label->font();
+    font.setLetterSpacing(QFont::AbsoluteSpacing,spacing);
+    label->setFont(font);
+}
 TriggerMode::~TriggerMode() {
     delete ui;
 }

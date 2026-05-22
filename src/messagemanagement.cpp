@@ -13,9 +13,8 @@ MessageManagement::MessageManagement(QWidget *parent) : QWidget(parent), ui(new 
     move(148, 98);
     setVisible(false);
     ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    ui->Close_Button->setStyleSheet("QPushButton{border: none;background-repeat: no-repeat;"
-                "background-position: center;background-color: transparent;}");
-
+    ui->label->setProperty("class","MessageManagement_label");
+    ui->widget->setProperty("class","MessageManagement_Widget");
 }
 
 MessageManagement::~MessageManagement() {

@@ -12,8 +12,7 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     ui->setupUi(this);
     move( 808, 390);
     setVisible(false);
-    ui->label->setStyleSheet("QLabel{background-image:url(:/Set/Group 10402.png);border: none;background-repeat: no-repeat;"
-               "background-position: center;background-color: transparent;}");
+ ui->label->setProperty("class","label_SET");
 }
 
 Set::~Set() {
