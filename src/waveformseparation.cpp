@@ -13,25 +13,25 @@ WaveformSeparation::WaveformSeparation(QWidget *parent) : QWidget(parent), ui(ne
     move(0, 80);
 
     ui->ECGHigh_label->setText("120");
-    ui->ECGHigh_label->setProperty("class","20px,colour255,255,255,114");
+    ui->ECGHigh_label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->ECGHigh_label);
-    ui->ECGLow_label->setProperty("class","20px,colour255,255,255,114");
+    ui->ECGLow_label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->ECGLow_label);
     ui->ECGLow_label->setText("120");
-    ui->ArteryHigh_label->setProperty("class","20px,colour255,255,255,114");
+    ui->ArteryHigh_label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->ArteryHigh_label);
     ui->ArteryHigh_label->setText("120");
-    ui->ArteryLow_label->setProperty("class","20px,colour255,255,255,114");
+    ui->ArteryLow_label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->ArteryLow_label);
     ui->ArteryLow_label->setText("120");
-    ui->BalloonPressureHigh_label->setProperty("class","20px,colour255,255,255,114");
+    ui->BalloonPressureHigh_label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->BalloonPressureHigh_label);
     ui->BalloonPressureHigh_label->setText("120");
-    ui->ECGLeadNumber_label->setProperty("class","20px,colour255,255,255,114");
+    ui->ECGLeadNumber_label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->ECGLeadNumber_label);
     ui->ECGLeadNumber_label->setText("I");
     ui->BalloonPressureLow_label->setText("120");
-    ui->BalloonPressureLow_label->setProperty("class","20px,colour255,255,255,114");
+    ui->BalloonPressureLow_label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->BalloonPressureLow_label);
 
 

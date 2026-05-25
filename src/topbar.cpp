@@ -11,14 +11,14 @@
 Topbar::Topbar(QWidget *parent) : QWidget(parent), ui(new Ui::Topbar) {
     ui->setupUi(this);
     move(0,0);
-    ui->label->setProperty("class","label_Topbar");
-    ui->AlarmBbell_button->setProperty("class","AlarmBbell_button");
-    ui->HeliumGasCylinderIcon_label->setProperty("class","HeliumGasCylinderIcon_label");
-    ui->BatteryIcon_label->setProperty("class","BatteryIcon_label");
-    ui->GasPressure_label->setProperty("class","20px,colour172, 181, 197");
-    ui->BatteryRemainingCapacity_label->setProperty("class","20px,colour172, 181, 197");
-    ui->label_3->setProperty("class","20px,colour172, 181, 197");
-    ui->label_6->setProperty("class","20px,colour172, 181, 197");
+    ui->label->setProperty("mode","label_Topbar");
+    ui->AlarmBbell_button->setProperty("mode","AlarmBbell_button_false");
+    ui->HeliumGasCylinderIcon_label->setProperty("mode","HeliumGasCylinderIcon_100");
+    ui->BatteryIcon_label->setProperty("mode","BatteryIcon_100");
+    ui->GasPressure_label->setProperty("mode","20px,colour172, 181, 197");
+    ui->BatteryRemainingCapacity_label->setProperty("mode","20px,colour172, 181, 197");
+    ui->label_3->setProperty("mode","20px,colour172, 181, 197");
+    ui->label_6->setProperty("mode","20px,colour172, 181, 197");
     ui->GasPressure_label->setText("100 psi");
     ui->BatteryRemainingCapacity_label->setText("100%");
 

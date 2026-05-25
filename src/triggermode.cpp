@@ -12,26 +12,25 @@
 TriggerMode::TriggerMode(QWidget *parent) : QWidget(parent), ui(new Ui::TriggerMode) {
     ui->setupUi(this);
     move(282, 704);
-    setVisible(false);
-    ui->label->setProperty("class","label_TriggerMode");
-    ui->Help_Button->setProperty("class","Help_Button");
+    // setVisible(false);
+    ui->label->setProperty("mode","label_TriggerMode");
+    ui->Help_Button->setProperty("mode","Help_Button");
     ui->ECG_Label->setText("ECG");
     setLetterSpacing(ui->ECG_Label,5);
-    ui->ECG_Label->setProperty("class","38px,colour4,255,255,AlignCenter");
-    ui->ECG_backdrop->setProperty("class","TriggerMode_Select_background");
+    ui->ECG_Label->setProperty("mode","38px,colour4,255,255,AlignCenter");
+    ui->ECG_backdrop->setProperty("mode","background_true");
     ui->Pressure_Label->setText("压力");
     setLetterSpacing(ui->Pressure_Label,5);
-    ui->Pressure_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
+    ui->Pressure_Label->setProperty("mode","38px,colour255,255,255,AlignCenter");
     ui->Ventricular_AtrialFibrillationPacemaker_Label->setText("心室/房颤<br>起搏器");
-    ui->Ventricular_AtrialFibrillationPacemaker_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
+    ui->Ventricular_AtrialFibrillationPacemaker_Label->setProperty("mode","38px,colour255,255,255,AlignCenter");
     ui->AtrialPacemaker_Label->setText("心房<br>起搏器");
     setLetterSpacing(ui->AtrialPacemaker_Label,5);
-    ui->AtrialPacemaker_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
+    ui->AtrialPacemaker_Label->setProperty("mode","38px,colour255,255,255,AlignCenter");
     ui->Inside_Label->setText("内部");
     setLetterSpacing(ui->Inside_Label,5);
-    ui->Inside_Label->setProperty("class","38px,colour255,255,255,AlignCenter");
-
-
+    ui->Inside_Label->setProperty("mode","38px,colour255,255,255,AlignCenter");
+    ui->Finish_Button->setProperty("mode","Finish_Button_false");
 }
 
 void TriggerMode::setLetterSpacing(QLabel* label,int spacing) {

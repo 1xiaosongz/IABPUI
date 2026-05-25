@@ -11,11 +11,11 @@
 Level1Alarm::Level1Alarm(QWidget *parent) : QFrame(parent), ui(new Ui::Level1Alarm) {
     ui->setupUi(this);
 
-    // setVisible(false);
+    setVisible(false);
     ui->AlarmText_label->setText("一级告警提示一级告警提示一级告警提示");
-    ui->AlarmText_label->setProperty("class","30px,colour255,255,255");
-    ui->Help_Button->setProperty("class","Help_Button");
-    ui->Level1_label->setProperty("class","Level1_advanced");
+    ui->AlarmText_label->setProperty("mode","30px,colour255,255,255");
+    ui->Help_Button->setProperty("mode","Help_Button");
+    ui->Level1_label->setProperty("mode","Level1_advanced");
 
 }
 

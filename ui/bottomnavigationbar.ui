@@ -513,7 +513,7 @@
    <property name="geometry">
     <rect>
      <x>650</x>
-     <y>10</y>
+     <y>9</y>
      <width>289</width>
      <height>86</height>
     </rect>
@@ -531,7 +531,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/BottomNavigationBar/Group 10600.png);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>

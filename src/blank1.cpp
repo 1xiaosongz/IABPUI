@@ -12,7 +12,7 @@ Blank1::Blank1(QWidget *parent) : QWidget(parent), ui(new Ui::Blank1) {
     ui->setupUi(this);
     move(520, 118);
     setVisible(false);
-    ui->label->setProperty("class","label_Blank1");
+    ui->label->setProperty("mode","label_Blank1");
 }
 
 Blank1::~Blank1() {

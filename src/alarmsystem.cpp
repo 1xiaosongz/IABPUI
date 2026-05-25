@@ -14,8 +14,8 @@ AlarmSystem::AlarmSystem(QWidget *parent) : QWidget(parent), ui(new Ui::AlarmSys
     move(185, 10);
     setVisible(false);
 
-    ui->AlarmText_label->setProperty("class","30px,colour255,255,255");
-    ui->Help_Button->setProperty("class","Help_Button");
+    ui->AlarmText_label->setProperty("mode","30px,colour255,255,255");
+    ui->Help_Button->setProperty("mode","Help_Button");
     ui->AlarmLevelIcon_Label->setProperty("mode","AlarmLevelIcon_advanced");
 
     QMovie *movie = new QMovie("D:/IABP/IABPUI/resource/AlarmSystem/中低级警告.gif");

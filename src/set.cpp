@@ -12,7 +12,7 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     ui->setupUi(this);
     move( 808, 390);
     setVisible(false);
- ui->label->setProperty("class","label_SET");
+ ui->label->setProperty("mode","label_SET");
 }
 
 Set::~Set() {

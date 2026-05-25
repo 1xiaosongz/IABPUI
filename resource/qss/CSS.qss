@@ -11,7 +11,7 @@ QLabel {
     background-color: transparent;
 }
 /*160px,颜色22, 226, 58,加粗,文字居中对齐*/
-QLabel[class="160px,colour22, 226, 58"] {
+QLabel[mode="160px,colour22, 226, 58"] {
     font-family: "Source Han Sans CN";
     font-size: 160px;
     font-weight: bold;
@@ -19,7 +19,7 @@ QLabel[class="160px,colour22, 226, 58"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*80px,颜色252, 86, 78,加粗,文字居中对齐*/
-QLabel[class="80px,colour252, 86, 78"] {
+QLabel[mode="80px,colour252, 86, 78"] {
     font-family: "Source Han Sans CN";
     font-size: 80px;
     font-weight: bold;
@@ -27,7 +27,7 @@ QLabel[class="80px,colour252, 86, 78"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*60px,颜色172, 181, 197,加粗,文字居中对齐*/
-QLabel[class="60px,colour172, 181, 197"] {
+QLabel[mode="60px,colour172, 181, 197"] {
     font-family: "Source Han Sans CN";
     font-size: 60px;
     font-weight: bold;
@@ -35,7 +35,7 @@ QLabel[class="60px,colour172, 181, 197"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*20px,颜色172, 181, 197,加粗,文字居中对齐*/
-QLabel[class="20px,colour172, 181, 197"] {
+QLabel[mode="20px,colour172, 181, 197"] {
     font-family: "Source Han Sans CN";
     font-size: 20px;
     font-weight: bold;
@@ -43,7 +43,7 @@ QLabel[class="20px,colour172, 181, 197"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*20px,颜色255, 255, 255,加粗,文字居中对齐*/
-QLabel[class="20px,colour255, 255, 255"] {
+QLabel[mode="20px,colour255, 255, 255"] {
     font-family: "Source Han Sans CN";
     font-size: 20px;
     font-weight: bold;
@@ -51,7 +51,7 @@ QLabel[class="20px,colour255, 255, 255"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*20px,颜色216,225,234,加粗,文字居中对齐*/
-QLabel[class="20px,colour216,225,234"] {
+QLabel[mode="20px,colour216,225,234"] {
     font-family: "Source Han Sans CN";
     font-size: 20px;
     font-weight: bold;
@@ -59,7 +59,7 @@ QLabel[class="20px,colour216,225,234"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*20px,颜色255, 255, 255,透明度114,加粗,文字居中对齐*/
-QLabel[class="20px,colour255,255,255,114"] {
+QLabel[mode="20px,colour255,255,255,114"] {
     font-family: "Source Han Sans CN";
     font-size: 20px;
     font-weight: bold;
@@ -67,7 +67,7 @@ QLabel[class="20px,colour255,255,255,114"] {
     qproperty-alignment: 'AlignRight|AlignVCenter';
 }
 /*100px,颜色252, 86, 78,加粗,文字居中对齐*/
-QLabel[class="100px,colour252, 86, 78"] {
+QLabel[mode="100px,colour252, 86, 78"] {
     font-family: "Source Han Sans CN";
     font-size: 100px;
     font-weight: bold;
@@ -76,7 +76,7 @@ QLabel[class="100px,colour252, 86, 78"] {
 }
 
 /*100px,颜色63, 184, 248,加粗,文字居中对齐*/
-QLabel[class="100px,colour63, 184, 248"] {
+QLabel[mode="100px,colour63, 184, 248"] {
     font-family: "Source Han Sans CN";
     font-size: 100px;
     font-weight: bold;
@@ -85,7 +85,7 @@ QLabel[class="100px,colour63, 184, 248"] {
 }
 
 /*38px,颜色4,255,255,加粗,文字水平右对齐 + 垂直居中对齐*/
-QLabel[class="38px,colour4,255,255"] {
+QLabel[mode="38px,colour4,255,255"] {
     font-family: "Source Han Sans CN";
     font-size: 38px;
     font-weight: bold;
@@ -94,7 +94,7 @@ QLabel[class="38px,colour4,255,255"] {
 }
 
 /*38px,颜色255,255,255,加粗,文字水平右对齐 + 垂直居中对齐*/
-QLabel[class="38px,colour255,255,255"] {
+QLabel[mode="38px,colour255,255,255"] {
     font-family: "Source Han Sans CN";
     font-size: 38px;
     font-weight: bold;
@@ -102,7 +102,7 @@ QLabel[class="38px,colour255,255,255"] {
     qproperty-alignment: 'AlignRight | AlignVCenter';
 }
 /*38px,颜色4,255,255,加粗,文字居中*/
-QLabel[class="38px,colour4,255,255,AlignCenter"] {
+QLabel[mode="38px,colour4,255,255,AlignCenter"] {
     font-family: "Source Han Sans CN";
     font-size: 38px;
     font-weight: bold;
@@ -111,7 +111,7 @@ QLabel[class="38px,colour4,255,255,AlignCenter"] {
 }
 
 /*38px,颜色255,255,255,加粗,文字居中*/
-QLabel[class="38px,colour255,255,255,AlignCenter"] {
+QLabel[mode="38px,colour255,255,255,AlignCenter"] {
     font-family: "Source Han Sans CN";
     font-size: 38px;
     font-weight: bold;
@@ -119,7 +119,7 @@ QLabel[class="38px,colour255,255,255,AlignCenter"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*40px,颜色4,255,255,加粗,文字水平右对齐 + 垂直居中对齐*/
-QLabel[class="40px,colour4,255,255"] {
+QLabel[mode="40px,colour4,255,255"] {
     font-family: "Source Han Sans CN";
     font-size: 40px;
     font-weight: bold;
@@ -127,7 +127,7 @@ QLabel[class="40px,colour4,255,255"] {
     qproperty-alignment: 'AlignRight | AlignVCenter';
 }
 /*40px,颜色255,255,255,加粗,文字水平右对齐 + 垂直居中对齐*/
-QLabel[class="40px,colour255,255,255"] {
+QLabel[mode="40px,colour255,255,255"] {
     font-family: "Source Han Sans CN";
     font-size: 40px;
     font-weight: bold;
@@ -136,7 +136,7 @@ QLabel[class="40px,colour255,255,255"] {
 }
 
 /*40px,颜色4,255,255,加粗,居中*/
-QLabel[class="40px,colour4,255,255,AlignCenter"] {
+QLabel[mode="40px,colour4,255,255,AlignCenter"] {
     font-family: "Source Han Sans CN";
     font-size: 40px;
     font-weight: bold;
@@ -144,7 +144,7 @@ QLabel[class="40px,colour4,255,255,AlignCenter"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*40px,颜色255,255,255,加粗,居中*/
-QLabel[class="40px,colour255,255,255,AlignCenter"] {
+QLabel[mode="40px,colour255,255,255,AlignCenter"] {
     font-family: "Source Han Sans CN";
     font-size: 40px;
     font-weight: bold;
@@ -152,7 +152,7 @@ QLabel[class="40px,colour255,255,255,AlignCenter"] {
     qproperty-alignment: 'AlignCenter';
 }
 /*30px,颜色4,255,255,加粗,文字水平左对齐 + 垂直居中对齐*/
-QLabel[class="30px,colour4,255,255"] {
+QLabel[mode="30px,colour4,255,255"] {
     font-family: "Source Han Sans CN";
     font-size: 30px;
     font-weight: bold;
@@ -160,7 +160,7 @@ QLabel[class="30px,colour4,255,255"] {
     qproperty-alignment: 'AlignLeft | AlignVCenter';
 }
 /*30px,颜色255,255,255,加粗,文字水平左对齐 + 垂直居中对齐*/
-QLabel[class="30px,colour255,255,255"] {
+QLabel[mode="30px,colour255,255,255"] {
     font-family: "Source Han Sans CN";
     font-size: 30px;
     font-weight: bold;
@@ -168,7 +168,7 @@ QLabel[class="30px,colour255,255,255"] {
     qproperty-alignment: 'AlignLeft | AlignVCenter';
 }
 
-QLabel[class="Label_No_background"] {
+QLabel[mode="Label_No_background"] {
    background-image: none;
 }
 QPushButton#PushButton_No_background {
@@ -176,10 +176,10 @@ QPushButton#PushButton_No_background {
 }
 
 /* ----- BottomNavigationBar ---- */
-QPushButton#CounterpulsationPump_Button[class = "true"] {
+QPushButton#CounterpulsationPump_Button[mode = "true"] {
     background-image:url(:/BottomNavigationBar/Group 10174.png);
 }
-QPushButton#CounterpulsationPump_Button[class = "false"] {
+QPushButton#CounterpulsationPump_Button[mode = "false"] {
     background-image:url(:/BottomNavigationBar/Group 10254.png);
 }
 QPushButton#Mode_Button[mode = "manual_mode_false"]{
@@ -254,32 +254,32 @@ QLabel#BalloonVolume_Label[mode = "BalloonVolume_false"]{
 QLabel#BalloonVolume_Label[mode = "BalloonVolume_true"]{
     background-image:url(:/BottomNavigationBar/Group 10585.png);
 }
-QLabel#Blank_1_Button_Label {
+QLabel#Blank_1_Button_Label{
     background-image:url(:/BottomNavigationBar/Frame 10102.png);
 }
-QLabel#Blank_2_Button_Label {
+QLabel#Blank_2_Button_Label{
     background-image:url(:/BottomNavigationBar/Frame 10102.png);
 }
-QLabel#Blank_3_Button_Label {
+QLabel#Blank_3_Button_Label{
     background-image:url(:/BottomNavigationBar/Frame 10102.png);
 }
-QLabel#Help_Button_Label {
+QLabel#Help_Button_Label{
     background-image:url(:/BottomNavigationBar/Frame 10103.png);
 }
-QLabel#Set_Button_Label {
+QLabel#Set_Button_Label{
     background-image:url(:/BottomNavigationBar/Frame 10104.png);
 }
-QLabel#Switch_Button_Label {
+QLabel#Switch_Button_Label{
     background-image:url(:/BottomNavigationBar/Frame 10105.png);
 }
-QLabel[class="label_BottomNavigationBar"] {
+QLabel[mode="label_BottomNavigationBar"] {
   background-image:url(:/BottomNavigationBar/Group 10611.png);
 }
 /*  Inflation_Deflation_Timing  */
-QLabel[class="label_Inflation_Deflation_Timing"] {
+QLabel[mode="label_Inflation_Deflation_Timing"] {
   background-image:url(:/Inflation_Deflation_Timing/Group 10532.png);
 }
-QPushButton[class="Help_Button"] {
+QPushButton[mode="Help_Button"] {
    background-image:url(:/Inflation_Deflation_Timing/Group 10259.png);
 }
 QPushButton#Finish_Button[mode="Finish_Button_false"]{
@@ -312,38 +312,38 @@ QPushButton#DeflateAdd_Button[mode="DeflateAdd_Button_false"]{
 QPushButton#DeflateAdd_Button[mode="DeflateAdd_Button_true"]{
     background-image:url(:/Inflation_Deflation_Timing/Group 10446.png);
 }
-QLabel[class="ratio1_1backdrop_true"]{
+QLabel[mode="ratio1_1backdrop_true"]{
 background-image:url(:/Inflation_Deflation_Timing/Group 10535.png);
 }
-QLabel[class="ratio1_1backdrop_false"]{
+QLabel[mode="ratio1_1backdrop_false"]{
 background-image:none;
 }
-QLabel[class="ratio1_2backdrop_true"]{
+QLabel[mode="ratio1_2backdrop_true"]{
 background-image:url(:/Inflation_Deflation_Timing/Group 10535.png);
 }
-QLabel[class="ratio1_2backdrop_false"]{
+QLabel[mode="ratio1_2backdrop_false"]{
 background-image:none;
 }
 /*  ---- InflationRatio-------   */
-QLabel[class="InflationRatio_label"] {
+QLabel[mode="InflationRatio_label"] {
    background-image:url(:/InflationRatio/Group 10551.png);
 }
-QLabel[class="ratio1_1_true"] {
+QLabel[mode="ratio1_1_true"] {
    background-image:url(:/InflationRatio/Rectangle 4585.png);
 }
-QLabel[class="ratio1_1_false"] {
+QLabel[mode="ratio1_1_false"] {
    background-image:none;
 }
-QLabel[class="ratio1_2_true"] {
+QLabel[mode="ratio1_2_true"] {
    background-image:url(:/InflationRatio/Rectangle 4585.png);
 }
-QLabel[class="ratio1_2_false"] {
+QLabel[mode="ratio1_2_false"] {
    background-image:none;
 }
-QLabel[class="ratio1_3_true"] {
+QLabel[mode="ratio1_3_true"] {
    background-image:url(:/InflationRatio/Rectangle 4585.png);
 }
-QLabel[class="ratio1_3_false"] {
+QLabel[mode="ratio1_3_false"] {
    background-image:none;
 }
 /*  ---- AlarmSystem-------   */
@@ -366,7 +366,7 @@ QLabel#AlarmLevelIcon_Label[mode="AlarmLevelIcon_low_level"]{
     background-image:url(:/AlarmSystem/Group 10022.png);
 }
 /*  ---- BalloonVolume-------   */
-QLabel[class="label_BalloonVolume"] {
+QLabel[mode="label_BalloonVolume"] {
    background-image:url(:/BalloonVolume/Group 10558.png);
 }
 QPushButton#Add_Button[mode="Add_Button_false"]{
@@ -382,65 +382,102 @@ QPushButton#Reduce_Button[mode="Reduce_Button_true"]{
     background-image:url(:/BalloonVolume/Reduction_tap.png);
 }
 /*  ---- Blank1-------   */
-QLabel[class="label_Blank1"] {
+QLabel[mode="label_Blank1"] {
    background-image:url(:/Blank1/Group 10402.png);
 }
 /*  ---- Blank2-------   */
-QLabel[class="label_Blank2"] {
+QLabel[mode="label_Blank2"] {
    background-image:url(:/Blank1/Group 10402.png);
 }
 /*  ---- Level1Alarm-------   */
-QLabel[class="Level1_advanced"] {
+QLabel[mode="Level1_advanced"] {
    background-image:url(:/MessageManagement/Group 10568X.png);
 }
-QLabel[class="Level1_middle_rank"] {
+QLabel[mode="Level1_middle_rank"] {
    background-image:url(:/MessageManagement/Group 10569.png);
 }
-QLabel[class="Level1_low_level"] {
+QLabel[mode="Level1_low_level"] {
    background-image:url(:/MessageManagement/Group 10570.png);
 }
 /*  ---- MessageManagement-------   */
-QLabel[class="MessageManagement_label"] {
+QLabel[mode="MessageManagement_label"] {
    background-image: url(:/MessageManagement/Group 10568.png);
 }
-QWidget[class="MessageManagement_Widget"] {
+QWidget[mode="MessageManagement_Widget"] {
    background-image: url(:/MessageManagement/darker-huge.png);
 }
-QPushButton#Close_Button {
+QPushButton#Close_Button[mode="Close_Button"]{
     background-image:url(:/MessageManagement/Group 10037.png);
 }
 /*  ---- ModeSelection-------   */
-QLabel[class="ModeSelection_label"] {
+QLabel[mode="ModeSelection_label"] {
    background-image: url(:/ModeSelection/Group 10507.png);
 }
-QLabel#Automatic_backdrop {
+QLabel#Automatic_backdrop[mode="Automatic_backdrop_true"]{
     background-image:url(:/ModeSelection/Rectangle 4580.png);
 }
+QLabel#Automatic_backdrop[mode="Automatic_backdrop_false"]{
+    background-image:none;
+}
+QLabel#Manual_backdrop[mode="Manual_backdrop_true"]{
+    background-image:url(:/ModeSelection/Rectangle 4580.png);
+}
+QLabel#Manual_backdrop[mode="Manual_backdrop_false"]{
+    background-image:none;
+}
 /*  ---- SET-------   */
-QLabel[class="label_SET"] {
+QLabel[mode="label_SET"] {
    background-image:url(:/Set/Group 10402.png);
 }
 /*  ---- Statusbar-------   */
-QLabel[class="label_Statusbar"] {
+QLabel[mode="label_Statusbar"] {
    background-image:url(:/Statusbar/Group 10448.png);
 }
+
 /*  ---- Topbar-------   */
-QLabel[class="label_Topbar"] {
+QLabel[mode="label_Topbar"] {
    background-image:url(:/Topbar/Rectangle 2846.png);
 }
-QPushButton[class="AlarmBbell_button"] {
-background-image:url(:/Topbar/Group 9904.png);
+QPushButton#AlarmBbell_button[mode="AlarmBbell_button_false"]{
+    background-image:url(:/Topbar/Group 9904.png);
 }
-QLabel[class="HeliumGasCylinderIcon_label"] {
+QPushButton#AlarmBbell_button[mode="AlarmBbell_button_true"]{
+    background-image:url(:/Topbar/Group 10503.png);
+}
+QLabel[mode="HeliumGasCylinderIcon_100"] {
    background-image:url(:/Topbar/Frame 10039.png);
 }
-QLabel[class="BatteryIcon_label"] {
+QLabel[mode="HeliumGasCylinderIcon_50"] {
+   background-image:url(:/Topbar/Group 10289.png);
+}
+QLabel[mode="HeliumGasCylinderIcon_20"] {
+   background-image:url(:/Topbar/Group 10290.png);
+}
+QLabel[mode="HeliumGasCylinderIcon_0"] {
+   background-image:url(:/Topbar/Group 10295.png);
+}
+QLabel[mode="BatteryIcon_100"] {
    background-image:url(:/Topbar/Group 9906.png);
 }
+QLabel[mode="BatteryIcon_50"] {
+   background-image:url(:/Topbar/Group 10291.png);
+}
+QLabel[mode="BatteryIcon_20"] {
+   background-image:url(:/Topbar/Group 10292.png);
+}
+QLabel[mode="BatteryIcon_0"] {
+   background-image:url(:/Topbar/Group 10296.png);
+}
+QLabel[mode="BatteryIcon_recharge"] {
+   background-image:url(:/Topbar/Group 10305.png);
+}
 /*  ---- TriggerMode-------   */
-QLabel[class="label_TriggerMode"] {
+QLabel[mode="label_TriggerMode"] {
    background-image:url(:/TriggerMode/Group 10516.png);
 }
-QLabel[class="TriggerMode_Select_background"] {
+QLabel[mode="background_true"] {
    background-image:url(:/TriggerMode/Rectangle 4581.png);
+}
+QLabel[mode="background_false"] {
+   background-image:none;
 }
