@@ -16,14 +16,14 @@ ModeSelection::ModeSelection(QWidget *parent) : QWidget(parent), ui(new Ui::Mode
     move(228, 704);
     setVisible(false);
     ui->Help_Button->setProperty("mode","Help_Button");
-    ui->label->setProperty("mode","ModeSelection_label");
+    ui->Label->setProperty("mode","ModeSelection_Label");
     ui->Automatic_Label->setText("自动模式");
     ui->Manual_Label->setText("手动模式");
     ui->Automatic_Label->setProperty("mode","40px,colour4,255,255,AlignCenter");
     ui->Manual_Label->setProperty("mode","40px,colour255,255,255,AlignCenter");
-    ui->Automatic_backdrop->setProperty("mode","Automatic_backdrop_true");
-    ui->Manual_backdrop->setProperty("mode","Manual_backdrop_false");
-    ui->Finish_Button->setProperty("mode","Finish_Button_false");
+    ui->Automatic_Backdrop->setProperty("mode","Automatic_Backdrop_True");
+    ui->Manual_Backdrop->setProperty("mode","Manual_Backdrop_False");
+    ui->Finish_Button->setProperty("mode","Finish_Button_False");
 }
 ModeSelection::~ModeSelection() {
     delete ui;

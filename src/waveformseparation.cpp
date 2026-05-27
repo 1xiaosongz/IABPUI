@@ -12,27 +12,27 @@ WaveformSeparation::WaveformSeparation(QWidget *parent) : QWidget(parent), ui(ne
     ui->setupUi(this);
     move(0, 80);
 
-    ui->ECGHigh_label->setText("120");
-    ui->ECGHigh_label->setProperty("mode","20px,colour255,255,255,114");
-    refreshStyle(ui->ECGHigh_label);
-    ui->ECGLow_label->setProperty("mode","20px,colour255,255,255,114");
-    refreshStyle(ui->ECGLow_label);
-    ui->ECGLow_label->setText("120");
-    ui->ArteryHigh_label->setProperty("mode","20px,colour255,255,255,114");
-    refreshStyle(ui->ArteryHigh_label);
-    ui->ArteryHigh_label->setText("120");
-    ui->ArteryLow_label->setProperty("mode","20px,colour255,255,255,114");
-    refreshStyle(ui->ArteryLow_label);
-    ui->ArteryLow_label->setText("120");
-    ui->BalloonPressureHigh_label->setProperty("mode","20px,colour255,255,255,114");
-    refreshStyle(ui->BalloonPressureHigh_label);
-    ui->BalloonPressureHigh_label->setText("120");
-    ui->ECGLeadNumber_label->setProperty("mode","20px,colour255,255,255,114");
-    refreshStyle(ui->ECGLeadNumber_label);
-    ui->ECGLeadNumber_label->setText("I");
-    ui->BalloonPressureLow_label->setText("120");
-    ui->BalloonPressureLow_label->setProperty("mode","20px,colour255,255,255,114");
-    refreshStyle(ui->BalloonPressureLow_label);
+    ui->ECGHigh_Label->setText("120");
+    ui->ECGHigh_Label->setProperty("mode","20px,colour255,255,255,114");
+    refreshStyle(ui->ECGHigh_Label);
+    ui->ECGLow_Label->setProperty("mode","20px,colour255,255,255,114");
+    refreshStyle(ui->ECGLow_Label);
+    ui->ECGLow_Label->setText("120");
+    ui->ArteryHigh_Label->setProperty("mode","20px,colour255,255,255,114");
+    refreshStyle(ui->ArteryHigh_Label);
+    ui->ArteryHigh_Label->setText("120");
+    ui->ArteryLow_Label->setProperty("mode","20px,colour255,255,255,114");
+    refreshStyle(ui->ArteryLow_Label);
+    ui->ArteryLow_Label->setText("120");
+    ui->BalloonPressureHigh_Label->setProperty("mode","20px,colour255,255,255,114");
+    refreshStyle(ui->BalloonPressureHigh_Label);
+    ui->BalloonPressureHigh_Label->setText("120");
+    ui->ECGLeadNumber_Label->setProperty("mode","20px,colour255,255,255,114");
+    refreshStyle(ui->ECGLeadNumber_Label);
+    ui->ECGLeadNumber_Label->setText("I");
+    ui->BalloonPressureLow_Label->setText("120");
+    ui->BalloonPressureLow_Label->setProperty("mode","20px,colour255,255,255,114");
+    refreshStyle(ui->BalloonPressureLow_Label);
 
 
 }

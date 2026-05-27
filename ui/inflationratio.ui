@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>InflationRatio</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -100,7 +100,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_1backdrop">
+  <widget class="QLabel" name="Ratio1_1_Backdrop">
    <property name="geometry">
     <rect>
      <x>38</x>
@@ -125,7 +125,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_2backdrop">
+  <widget class="QLabel" name="Ratio1_2_Backdrop">
    <property name="geometry">
     <rect>
      <x>238</x>
@@ -150,7 +150,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_3backdrop">
+  <widget class="QLabel" name="Ratio1_3_Backdrop">
    <property name="geometry">
     <rect>
      <x>438</x>
@@ -175,7 +175,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_1Num_label">
+  <widget class="QLabel" name="Ratio1_1_Num_Label">
    <property name="geometry">
     <rect>
      <x>93</x>
@@ -209,7 +209,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_2Num_label">
+  <widget class="QLabel" name="Ratio1_2_Num_Label">
    <property name="geometry">
     <rect>
      <x>293</x>
@@ -243,7 +243,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_3Num_label">
+  <widget class="QLabel" name="Ratio1_3_Num_Label">
    <property name="geometry">
     <rect>
      <x>493</x>
@@ -277,7 +277,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="ratio1_1Button">
+  <widget class="QPushButton" name="Ratio1_1_Button">
    <property name="geometry">
     <rect>
      <x>41</x>
@@ -302,7 +302,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="ratio1_2Button">
+  <widget class="QPushButton" name="Ratio1_2_Button">
    <property name="geometry">
     <rect>
      <x>241</x>
@@ -327,7 +327,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="ratio1_3Button">
+  <widget class="QPushButton" name="Ratio1_3_Button">
    <property name="geometry">
     <rect>
      <x>441</x>

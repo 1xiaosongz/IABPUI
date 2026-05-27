@@ -15,18 +15,18 @@ InflationRatio::InflationRatio(QWidget *parent) : QWidget(parent), ui(new Ui::In
     ui->setupUi(this);
     move(488, 704);
     setVisible(false);
-    ui->label->setProperty("mode","InflationRatio_label");
-    ui->ratio1_1backdrop->setProperty("mode","ratio1_1_true");
-    ui->ratio1_2backdrop->setProperty("mode","ratio1_2_false");
-    ui->ratio1_3backdrop->setProperty("mode","ratio1_3_false");
-    ui->ratio1_1Num_label->setProperty("mode","40px,colour4,255,255,AlignCenter");
-    ui->ratio1_2Num_label->setProperty("mode","40px,colour255,255,255,AlignCenter");
-    ui->ratio1_3Num_label->setProperty("mode","40px,colour255,255,255,AlignCenter");
-    setLetterSpacing(ui->ratio1_1Num_label,5);
-    setLetterSpacing(ui->ratio1_2Num_label,5);
-    setLetterSpacing(ui->ratio1_3Num_label,5);
+    ui->Label->setProperty("mode","InflationRatio_Label");
+    ui->Ratio1_1_Backdrop->setProperty("mode","Ratio1_1_True");
+    ui->Ratio1_2_Backdrop->setProperty("mode","Ratio1_2_False");
+    ui->Ratio1_3_Backdrop->setProperty("mode","Ratio1_3_False");
+    ui->Ratio1_1_Num_Label->setProperty("mode","40px,colour4,255,255,AlignCenter");
+    ui->Ratio1_2_Num_Label->setProperty("mode","40px,colour255,255,255,AlignCenter");
+    ui->Ratio1_3_Num_Label->setProperty("mode","40px,colour255,255,255,AlignCenter");
+    setLetterSpacing(ui->Ratio1_1_Num_Label,5);
+    setLetterSpacing(ui->Ratio1_2_Num_Label,5);
+    setLetterSpacing(ui->Ratio1_3_Num_Label,5);
     ui->Help_Button->setProperty("mode","Help_Button");
-    ui->Finish_Button->setProperty("mode","Finish_Button_false");
+    ui->Finish_Button->setProperty("mode","Finish_Button_False");
 }
 
 InflationRatio::~InflationRatio() {

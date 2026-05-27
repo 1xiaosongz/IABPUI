@@ -13,8 +13,8 @@ MessageManagement::MessageManagement(QWidget *parent) : QWidget(parent), ui(new 
     move(148, 98);
     setVisible(false);
     ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    ui->label->setProperty("mode","MessageManagement_label");
-    ui->widget->setProperty("mode","MessageManagement_Widget");
+    ui->Label->setProperty("mode","MessageManagement_Label");
+    ui->Widget->setProperty("mode","MessageManagement_Widget");
     ui->Close_Button->setProperty("mode","Close_Button");
 }
 

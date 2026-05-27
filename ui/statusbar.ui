@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>Statusbar</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -154,7 +154,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Anti_embolismPressureAlarm_label">
+  <widget class="QLabel" name="Anti_embolismPressureAlarm_Label">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -179,7 +179,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="QuenchingFrequency_label">
+  <widget class="QLabel" name="QuenchingFrequency_Label">
    <property name="geometry">
     <rect>
      <x>301</x>
@@ -204,7 +204,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="mm_label">
+  <widget class="QLabel" name="Mm_Label">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -229,7 +229,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="voluntarily_label">
+  <widget class="QLabel" name="Voluntarily_Label">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -254,7 +254,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="Label_4">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -279,7 +279,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string>阈 值:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ThresholdValue_label">
+  <widget class="QLabel" name="ThresholdValue_Label">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -304,7 +304,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string>占位占位</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="Label_6">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -329,7 +329,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string>触发源:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="TriggerSource_label">
+  <widget class="QLabel" name="TriggerSource_Label">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -379,7 +379,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="HeartRate_label">
+  <widget class="QLabel" name="Heart_Rate_Label">
    <property name="geometry">
     <rect>
      <x>58</x>
@@ -404,7 +404,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="HighBloodPressure_label">
+  <widget class="QLabel" name="HighBloodPressure_Label">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -429,7 +429,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="LowBloodPressure_label">
+  <widget class="QLabel" name="LowBloodPressure_Label">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -454,7 +454,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="MeanBloodPressure_label">
+  <widget class="QLabel" name="MeanBloodPressure_Label">
    <property name="geometry">
     <rect>
      <x>144</x>
@@ -479,7 +479,7 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="CounterpulsationPressure_label">
+  <widget class="QLabel" name="CounterpulsationPressure_Label">
    <property name="geometry">
     <rect>
      <x>100</x>

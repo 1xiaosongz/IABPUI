@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>Topbar</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -50,7 +50,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="AlarmBbell_button">
+  <widget class="QPushButton" name="AlarmBell_Button">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -75,7 +75,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="HeliumGasCylinderIcon_label">
+  <widget class="QLabel" name="HeliumGasCylinderIcon_Label">
    <property name="geometry">
     <rect>
      <x>1506</x>
@@ -100,7 +100,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="Label_3">
    <property name="geometry">
     <rect>
      <x>1624</x>
@@ -125,7 +125,7 @@
     <string>氦气</string>
    </property>
   </widget>
-  <widget class="QLabel" name="GasPressure_label">
+  <widget class="QLabel" name="GasPressure_Label">
    <property name="geometry">
     <rect>
      <x>1624</x>
@@ -150,7 +150,7 @@
     <string>000 psi</string>
    </property>
   </widget>
-  <widget class="QLabel" name="BatteryIcon_label">
+  <widget class="QLabel" name="BatteryIcon_Label">
    <property name="geometry">
     <rect>
      <x>1733</x>
@@ -175,7 +175,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="Label_6">
    <property name="geometry">
     <rect>
      <x>1831</x>
@@ -200,7 +200,7 @@
     <string>电池</string>
    </property>
   </widget>
-  <widget class="QLabel" name="BatteryRemainingCapacity_label">
+  <widget class="QLabel" name="BatteryRemainingCapacity_Label">
    <property name="geometry">
     <rect>
      <x>1831</x>
@@ -225,14 +225,14 @@
     <string>100%</string>
    </property>
   </widget>
-  <zorder>label</zorder>
-  <zorder>AlarmBbell_button</zorder>
-  <zorder>label_3</zorder>
-  <zorder>GasPressure_label</zorder>
-  <zorder>label_6</zorder>
-  <zorder>BatteryRemainingCapacity_label</zorder>
-  <zorder>BatteryIcon_label</zorder>
-  <zorder>HeliumGasCylinderIcon_label</zorder>
+  <zorder>Label</zorder>
+  <zorder>AlarmBell_Button</zorder>
+  <zorder>Label_3</zorder>
+  <zorder>GasPressure_Label</zorder>
+  <zorder>Label_6</zorder>
+  <zorder>BatteryRemainingCapacity_Label</zorder>
+  <zorder>BatteryIcon_Label</zorder>
+  <zorder>HeliumGasCylinderIcon_Label</zorder>
  </widget>
  <resources/>
  <connections/>

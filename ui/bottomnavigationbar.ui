@@ -178,7 +178,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Blank_2_Button_Label">
+  <widget class="QLabel" name="FreezeWindow_Label">
    <property name="geometry">
     <rect>
      <x>1470</x>
@@ -203,7 +203,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Blank_3_Button_Label">
+  <widget class="QLabel" name="Printer_Label">
    <property name="geometry">
     <rect>
      <x>1560</x>
@@ -328,7 +328,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Blank_2_Button">
+  <widget class="QPushButton" name="FreezeWindow_Button">
    <property name="geometry">
     <rect>
      <x>1485</x>
@@ -353,7 +353,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Blank_3_Button">
+  <widget class="QPushButton" name="Printer_Button">
    <property name="geometry">
     <rect>
      <x>1575</x>
@@ -646,14 +646,14 @@
   <zorder>TriggerMode_Button</zorder>
   <zorder>InflationRatio_Button</zorder>
   <zorder>Blank_1_Button_Label</zorder>
-  <zorder>Blank_2_Button_Label</zorder>
-  <zorder>Blank_3_Button_Label</zorder>
+  <zorder>FreezeWindow_Label</zorder>
+  <zorder>Printer_Label</zorder>
   <zorder>Help_Button_Label</zorder>
   <zorder>Switch_Button_Label</zorder>
   <zorder>Set_Button_Label</zorder>
   <zorder>Blank_1_Button</zorder>
-  <zorder>Blank_2_Button</zorder>
-  <zorder>Blank_3_Button</zorder>
+  <zorder>FreezeWindow_Button</zorder>
+  <zorder>Printer_Button</zorder>
   <zorder>Help_Button</zorder>
   <zorder>Set_Button</zorder>
   <zorder>Switch_Button</zorder>

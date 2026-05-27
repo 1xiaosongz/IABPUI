@@ -13,12 +13,12 @@ TriggerMode::TriggerMode(QWidget *parent) : QWidget(parent), ui(new Ui::TriggerM
     ui->setupUi(this);
     move(282, 704);
     // setVisible(false);
-    ui->label->setProperty("mode","label_TriggerMode");
+    ui->Label->setProperty("mode","Label_TriggerMode");
     ui->Help_Button->setProperty("mode","Help_Button");
     ui->ECG_Label->setText("ECG");
     setLetterSpacing(ui->ECG_Label,5);
     ui->ECG_Label->setProperty("mode","38px,colour4,255,255,AlignCenter");
-    ui->ECG_backdrop->setProperty("mode","background_true");
+    ui->ECG_Backdrop->setProperty("mode","Background_True");
     ui->Pressure_Label->setText("压力");
     setLetterSpacing(ui->Pressure_Label,5);
     ui->Pressure_Label->setProperty("mode","38px,colour255,255,255,AlignCenter");
@@ -30,7 +30,7 @@ TriggerMode::TriggerMode(QWidget *parent) : QWidget(parent), ui(new Ui::TriggerM
     ui->Inside_Label->setText("内部");
     setLetterSpacing(ui->Inside_Label,5);
     ui->Inside_Label->setProperty("mode","38px,colour255,255,255,AlignCenter");
-    ui->Finish_Button->setProperty("mode","Finish_Button_false");
+    ui->Finish_Button->setProperty("mode","Finish_Button_False");
 }
 
 void TriggerMode::setLetterSpacing(QLabel* label,int spacing) {

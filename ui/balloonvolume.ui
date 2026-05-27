@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>BalloonVolume</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -184,7 +184,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="Label_2">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -209,7 +209,7 @@
     <string>型号</string>
    </property>
   </widget>
-  <widget class="QLabel" name="model_label">
+  <widget class="QLabel" name="Model_Label">
    <property name="geometry">
     <rect>
      <x>80</x>

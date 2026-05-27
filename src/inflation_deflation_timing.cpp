@@ -16,23 +16,23 @@ ui(new Ui::Inflation_Deflation_Timing) {
     ui->setupUi(this);
     move(201, 594);
     setVisible(false);
-    ui->label->setProperty("mode","label_Inflation_Deflation_Timing");
-    ui->Finish_Button->setProperty("mode","Finish_Button_false");
-    ui->InflationReduce_Button->setProperty("mode","InflationReduce_Button_false");
-    ui->InflationAdd_Button->setProperty("mode","InflationAdd_Button_false");
-    ui->DeflateReduce_Button->setProperty("mode","DeflateReduce_Button_false");
-    ui->DeflateAdd_Button->setProperty("mode","DeflateAdd_Button_false");
-    ui->InflationNum_label->setText("50");
-    ui->InflationNum_label->setProperty("mode","40px,colour255,255,255");
-    ui->DeflateNum_label->setText("100");
-    ui->DeflateNum_label->setProperty("mode","40px,colour255,255,255");
-    ui->ratio1_1Num_label->setProperty("mode","40px,colour4,255,255,AlignCenter");
-    ui->ratio1_1backdrop->setProperty("mode","ratio1_1backdrop_true");
-    setLetterSpacing(ui->ratio1_1Num_label,5);
-    ui->ratio1_2Num_label->setProperty("mode","40px,colour255,255,255,AlignCenter");
+    ui->Label->setProperty("mode","Label_Inflation_Deflation_Timing");
+    ui->Finish_Button->setProperty("mode","Finish_Button_False");
+    ui->InflationReduce_Button->setProperty("mode","InflationReduce_Button_False");
+    ui->InflationAdd_Button->setProperty("mode","InflationAdd_Button_False");
+    ui->DeflateReduce_Button->setProperty("mode","DeflateReduce_Button_False");
+    ui->DeflateAdd_Button->setProperty("mode","DeflateAdd_Button_False");
+    ui->InflationNum_Label->setText("50");
+    ui->InflationNum_Label->setProperty("mode","40px,colour255,255,255");
+    ui->DeflateNum_Label->setText("100");
+    ui->DeflateNum_Label->setProperty("mode","40px,colour255,255,255");
+    ui->Ratio1_1_Num_Label->setProperty("mode","40px,colour4,255,255,AlignCenter");
+    ui->Ratio1_1_Backdrop->setProperty("mode","Ratio1_1_Backdrop_True");
+    setLetterSpacing(ui->Ratio1_1_Num_Label,5);
+    ui->Ratio1_2_Num_Label->setProperty("mode","40px,colour255,255,255,AlignCenter");
     ui->Help_Button->setProperty("mode","Help_Button");
-    setLetterSpacing(ui->ratio1_2Num_label,5);
-    ui->ratio1_2backdrop->setProperty("mode","ratio1_2backdrop_false");
+    setLetterSpacing(ui->Ratio1_2_Num_Label,5);
+    ui->Ratio1_2_Backdrop->setProperty("mode","Ratio1_2_Backdrop_False");
 
 
 }

@@ -1,11 +1,6 @@
 <RCC>
     <qresource prefix="/Typeface">
         <file>SourceHanSansCN-Bold.otf</file>
-        <file>SourceHanSansCN-ExtraLight.otf</file>
-        <file>SourceHanSansCN-Heavy.otf</file>
-        <file>SourceHanSansCN-Light.otf</file>
-        <file>SourceHanSansCN-Medium.otf</file>
-        <file>SourceHanSansCN-Normal.otf</file>
-        <file>SourceHanSansCN-Regular.otf</file>
+
     </qresource>
 </RCC>

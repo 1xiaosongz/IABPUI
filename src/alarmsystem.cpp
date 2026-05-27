@@ -14,14 +14,14 @@ AlarmSystem::AlarmSystem(QWidget *parent) : QWidget(parent), ui(new Ui::AlarmSys
     move(185, 10);
     setVisible(false);
 
-    ui->AlarmText_label->setProperty("mode","30px,colour255,255,255");
+    ui->AlarmText_Label->setProperty("mode","30px,colour255,255,255");
     ui->Help_Button->setProperty("mode","Help_Button");
-    ui->AlarmLevelIcon_Label->setProperty("mode","AlarmLevelIcon_advanced");
+    ui->AlarmLevelIcon_Label->setProperty("mode","AlarmLevelIcon_Advanced");
 
     QMovie *movie = new QMovie("D:/IABP/IABPUI/resource/AlarmSystem/中低级警告.gif");
-    ui->Background_label->setMovie(movie);
-    ui->Background_label->setScaledContents(true);
-    movie->setScaledSize(ui->Background_label->size());
+    ui->BackGround_Label->setMovie(movie);
+    ui->BackGround_Label->setScaledContents(true);
+    movie->setScaledSize(ui->BackGround_Label->size());
     movie->start();          // 开始播放动画
 }
 

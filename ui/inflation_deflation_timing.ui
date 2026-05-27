@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>Inflation_Deflation_Timing</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -175,7 +175,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="InflationNum_label">
+  <widget class="QLabel" name="InflationNum_Label">
    <property name="geometry">
     <rect>
      <x>185</x>
@@ -209,7 +209,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="DeflateNum_label">
+  <widget class="QLabel" name="DeflateNum_Label">
    <property name="geometry">
     <rect>
      <x>647</x>
@@ -244,7 +244,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_1Num_label">
+  <widget class="QLabel" name="Ratio1_1_Num_Label">
    <property name="geometry">
     <rect>
      <x>938</x>
@@ -275,7 +275,7 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;1:1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_2Num_label">
+  <widget class="QLabel" name="Ratio1_2_Num_Label">
    <property name="geometry">
     <rect>
      <x>1060</x>
@@ -331,7 +331,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_1backdrop">
+  <widget class="QLabel" name="Ratio1_1_Backdrop">
    <property name="geometry">
     <rect>
      <x>913</x>
@@ -356,7 +356,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="ratio1_2backdrop">
+  <widget class="QLabel" name="Ratio1_2_Backdrop">
    <property name="geometry">
     <rect>
      <x>1033</x>
@@ -381,7 +381,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="ratio1_1Button">
+  <widget class="QPushButton" name="Ratio1_1_Button">
    <property name="geometry">
     <rect>
      <x>916</x>
@@ -406,7 +406,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="ratio1_2Button">
+  <widget class="QPushButton" name="Ratio1_2_Button">
    <property name="geometry">
     <rect>
      <x>1036</x>
@@ -431,21 +431,21 @@
     <string/>
    </property>
   </widget>
-  <zorder>label</zorder>
+  <zorder>Label</zorder>
   <zorder>InflationReduce_Button</zorder>
   <zorder>InflationAdd_Button</zorder>
   <zorder>DeflateReduce_Button</zorder>
   <zorder>DeflateAdd_Button</zorder>
   <zorder>Finish_Button</zorder>
-  <zorder>InflationNum_label</zorder>
-  <zorder>DeflateNum_label</zorder>
+  <zorder>InflationNum_Label</zorder>
+  <zorder>DeflateNum_Label</zorder>
   <zorder>Help_Button</zorder>
-  <zorder>ratio1_1backdrop</zorder>
-  <zorder>ratio1_2backdrop</zorder>
-  <zorder>ratio1_1Num_label</zorder>
-  <zorder>ratio1_2Num_label</zorder>
-  <zorder>ratio1_1Button</zorder>
-  <zorder>ratio1_2Button</zorder>
+  <zorder>Ratio1_1_Backdrop</zorder>
+  <zorder>Ratio1_2_Backdrop</zorder>
+  <zorder>Ratio1_1_Num_Label</zorder>
+  <zorder>Ratio1_2_Num_Label</zorder>
+  <zorder>Ratio1_1_Button</zorder>
+  <zorder>Ratio1_2_Button</zorder>
  </widget>
  <resources/>
  <connections/>

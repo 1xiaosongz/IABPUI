@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>WaveformSeparation</string>
   </property>
-  <widget class="QStackedWidget" name="stackedWidget">
+  <widget class="QStackedWidget" name="StackedWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -48,6 +48,9 @@
    </property>
    <property name="styleSheet">
     <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QCustomPlot" name="widget" native="true">
@@ -100,7 +103,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="Label">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -228,7 +231,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QLabel" name="ECGHigh_label">
+    <widget class="QLabel" name="ECGHigh_Label">
      <property name="geometry">
       <rect>
        <x>119</x>
@@ -256,7 +259,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="ECGLow_label">
+    <widget class="QLabel" name="ECGLow_Label">
      <property name="geometry">
       <rect>
        <x>119</x>
@@ -284,7 +287,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="ArteryHigh_label">
+    <widget class="QLabel" name="ArteryHigh_Label">
      <property name="geometry">
       <rect>
        <x>119</x>
@@ -312,7 +315,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="BalloonPressureLow_label">
+    <widget class="QLabel" name="BalloonPressureLow_Label">
      <property name="geometry">
       <rect>
        <x>119</x>
@@ -340,7 +343,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="ArteryLow_label">
+    <widget class="QLabel" name="ArteryLow_Label">
      <property name="geometry">
       <rect>
        <x>119</x>
@@ -368,7 +371,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="BalloonPressureHigh_label">
+    <widget class="QLabel" name="BalloonPressureHigh_Label">
      <property name="geometry">
       <rect>
        <x>119</x>
@@ -396,7 +399,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="ECGLeadNumber_label">
+    <widget class="QLabel" name="ECGLeadNumber_Label">
      <property name="geometry">
       <rect>
        <x>168</x>
@@ -426,17 +429,17 @@
       <string>I</string>
      </property>
     </widget>
-    <zorder>label</zorder>
+    <zorder>Label</zorder>
     <zorder>widget</zorder>
     <zorder>widget_2</zorder>
     <zorder>widget_3</zorder>
-    <zorder>ECGLeadNumber_label</zorder>
-    <zorder>ECGHigh_label</zorder>
-    <zorder>ECGLow_label</zorder>
-    <zorder>ArteryHigh_label</zorder>
-    <zorder>ArteryLow_label</zorder>
-    <zorder>BalloonPressureHigh_label</zorder>
-    <zorder>BalloonPressureLow_label</zorder>
+    <zorder>ECGLeadNumber_Label</zorder>
+    <zorder>ECGHigh_Label</zorder>
+    <zorder>ECGLow_Label</zorder>
+    <zorder>ArteryHigh_Label</zorder>
+    <zorder>ArteryLow_Label</zorder>
+    <zorder>BalloonPressureHigh_Label</zorder>
+    <zorder>BalloonPressureLow_Label</zorder>
    </widget>
    <widget class="QWidget" name="page_2"/>
   </widget>

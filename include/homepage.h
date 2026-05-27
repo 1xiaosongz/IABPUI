@@ -17,8 +17,7 @@
 #include "inflationratio.h"
 #include "balloonvolume.h"
 #include "set.h"
-#include "blank1.h"
-#include "blank2.h"
+
 #include "alarmsystem.h"
 #include "messagemanagement.h"
 #include "level1alarm.h"
@@ -55,8 +54,7 @@ private:
     InflationRatio * inflationRatio;
     BalloonVolume * balloonvolume;
     Set * set;
-    Blank1 * blank1;
-    Blank2 * blank2;
+
     AlarmSystem * alarmsystem;
     MessageManagement * messageManagement;
     Level1Alarm * level1alarm;

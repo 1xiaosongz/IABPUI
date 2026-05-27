@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>AlarmSystem</string>
   </property>
-  <widget class="QLabel" name="Background_label">
+  <widget class="QLabel" name="BackGround_Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -50,7 +50,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="AlarmText_label">
+  <widget class="QLabel" name="AlarmText_Label">
    <property name="geometry">
     <rect>
      <x>95</x>

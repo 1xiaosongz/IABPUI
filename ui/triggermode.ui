@@ -32,7 +32,7 @@
   <property name="windowTitle">
    <string>TriggerMode</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -107,7 +107,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="ECG_backdrop">
+  <widget class="QLabel" name="ECG_Backdrop">
    <property name="geometry">
     <rect>
      <x>27</x>
@@ -157,7 +157,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Ventricular_AtrialFibrillationPacemaker_backdrop">
+  <widget class="QLabel" name="Ventricular_AtrialFibrillationPacemaker_Backdrop">
    <property name="geometry">
     <rect>
      <x>430</x>
@@ -182,7 +182,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="AtrialPacemaker_backdrop">
+  <widget class="QLabel" name="AtrialPacemaker_Backdrop">
    <property name="geometry">
     <rect>
      <x>630</x>
@@ -207,7 +207,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Inside_backdrop">
+  <widget class="QLabel" name="Inside_Backdrop">
    <property name="geometry">
     <rect>
      <x>830</x>

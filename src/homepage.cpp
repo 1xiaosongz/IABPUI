@@ -22,8 +22,7 @@ Homepage::Homepage(QWidget *parent) : QWidget(parent), ui(new Ui::Homepage) {
     inflationRatio = new InflationRatio(this);
     balloonvolume = new BalloonVolume(this);
     set = new Set(this);
-    blank1 = new Blank1(this);
-    blank2 = new Blank2(this);
+
     alarmsystem = new AlarmSystem(this);
     messageManagement = new MessageManagement(this);
     level1alarm = new Level1Alarm(this);
