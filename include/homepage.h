@@ -1,11 +1,10 @@
 //
-// Created by Administrator on 2026/3/31.
+// Created by Administrator on 2026/5/28.
 //
 
 #ifndef IABPUI_HOMEPAGE_H
 #define IABPUI_HOMEPAGE_H
 
-#include <QWidget>
 #include "QMainWindow"
 #include "topbar.h"
 #include "waveformseparation.h"
@@ -17,7 +16,6 @@
 #include "inflationratio.h"
 #include "balloonvolume.h"
 #include "set.h"
-
 #include "alarmsystem.h"
 #include "messagemanagement.h"
 #include "level1alarm.h"
@@ -25,29 +23,26 @@
 #include <QObject>
 
 
-#include <QThread>
 QT_BEGIN_NAMESPACE
 
 namespace Ui {
-    class Homepage;
-
+    class HomePage;
 }
 
 QT_END_NAMESPACE
 
-class Homepage : public QWidget {
+class HomePage : public QWidget {
     Q_OBJECT
 
 public:
-    explicit Homepage(QWidget *parent = nullptr);
+    explicit HomePage(QWidget *parent = nullptr);
 
-    ~Homepage() override;
-
+    ~HomePage() override;
 private:
-    Topbar * topbar;
+    TopBar * topbar;
     WaveformSeparation * waveformseparation;
     BottomNavigationBar * bottomnavigationbar;
-    Statusbar * statusbar;
+    StatusBar * statusbar;
     ModeSelection * modeselection;
     TriggerMode * triggermode;
     Inflation_Deflation_Timing * inflation_Deflation_Timing;
@@ -58,21 +53,10 @@ private:
     AlarmSystem * alarmsystem;
     MessageManagement * messageManagement;
     Level1Alarm * level1alarm;
-
- signals:
-        // 用于触发Worker开始工作
-        void startWork(int maxCount);
-
-private slots:
-
+    // HelpInterface * helpinterface;
 
 private:
-
-
-
-
-private:
-    Ui::Homepage *ui;
+    Ui::HomePage *ui;
 };
 
 

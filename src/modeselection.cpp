@@ -22,8 +22,8 @@ ModeSelection::ModeSelection(QWidget *parent) : QWidget(parent), ui(new Ui::Mode
     ui->Automatic_Label->setProperty("mode","40px,colour4,255,255,AlignCenter");
     ui->Manual_Label->setProperty("mode","40px,colour255,255,255,AlignCenter");
     ui->Automatic_Backdrop->setProperty("mode","Automatic_Backdrop_True");
-    ui->Manual_Backdrop->setProperty("mode","Manual_Backdrop_False");
-    ui->Finish_Button->setProperty("mode","Finish_Button_False");
+    ui->Manual_Backdrop->setProperty("mode","Automatic_Backdrop_False");
+    // ui->Finish_Button->setProperty("mode","Finish_Button_False");
 }
 ModeSelection::~ModeSelection() {
     delete ui;

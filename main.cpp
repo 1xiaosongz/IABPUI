@@ -23,12 +23,12 @@ int main(int argc, char *argv[]) {
         ":/Typeface/SourceHanSansCN-Bold.otf");
     QString style;
 
-    style += loadQss(":/qss/CSS.qss");
+    style += loadQss(":/QSS/CSS.qss");
 
 
     a.setStyleSheet(style);
 
-    Homepage w;
+    HomePage w;
 
     w.setWindowState(w.windowState() | Qt::WindowFullScreen);
 

@@ -1,21 +1,20 @@
 //
-// Created by Administrator on 2026/3/31.
+// Created by Administrator on 2026/5/28.
 //
 
-// You may need to build the project (run Qt uic code generator) to get "ui_Homepage.h" resolved
+// You may need to build the project (run Qt uic code generator) to get "ui_HomePage.h" resolved
 
 #include "../include/homepage.h"
-#include "ui_Homepage.h"
+#include "ui_HomePage.h"
 
-#include <QFontDatabase>
-#include <QThread>
-Homepage::Homepage(QWidget *parent) : QWidget(parent), ui(new Ui::Homepage) {
+
+HomePage::HomePage(QWidget *parent) : QWidget(parent), ui(new Ui::HomePage) {
     ui->setupUi(this);
-    topbar = new Topbar(this);
+    topbar = new TopBar(this);
     waveformseparation = new WaveformSeparation(this);
     bottomnavigationbar = new BottomNavigationBar(this);
     bottomnavigationbar->move(0,960);
-    statusbar = new Statusbar(this);
+    statusbar = new StatusBar(this);
     modeselection = new ModeSelection(this);
     triggermode = new TriggerMode(this);
     inflation_Deflation_Timing = new Inflation_Deflation_Timing(this);
@@ -26,9 +25,9 @@ Homepage::Homepage(QWidget *parent) : QWidget(parent), ui(new Ui::Homepage) {
     alarmsystem = new AlarmSystem(this);
     messageManagement = new MessageManagement(this);
     level1alarm = new Level1Alarm(this);
+    // helpinterface = new HelpInterface(this);
 }
 
-Homepage::~Homepage() {
-
+HomePage::~HomePage() {
     delete ui;
 }

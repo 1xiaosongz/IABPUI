@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>Inflation_Deflation_Timing</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
@@ -45,6 +48,9 @@
      <width>1208</width>
      <height>380</height>
     </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Inflation_Deflation_Timing/Group 10532.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -178,8 +184,8 @@
   <widget class="QLabel" name="InflationNum_Label">
    <property name="geometry">
     <rect>
-     <x>185</x>
-     <y>224</y>
+     <x>178</x>
+     <y>223</y>
      <width>71</width>
      <height>60</height>
     </rect>
@@ -212,7 +218,7 @@
   <widget class="QLabel" name="DeflateNum_Label">
    <property name="geometry">
     <rect>
-     <x>647</x>
+     <x>640</x>
      <y>223</y>
      <width>71</width>
      <height>60</height>
@@ -244,68 +250,6 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="Ratio1_1_Num_Label">
-   <property name="geometry">
-    <rect>
-     <x>938</x>
-     <y>88</y>
-     <width>71</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>71</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>71</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>思源黑体 CN Bold</family>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;1:1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Ratio1_2_Num_Label">
-   <property name="geometry">
-    <rect>
-     <x>1060</x>
-     <y>88</y>
-     <width>71</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>71</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>71</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>思源黑体 CN Bold</family>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;1:2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="Help_Button">
    <property name="geometry">
     <rect>
@@ -331,122 +275,9 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Ratio1_1_Backdrop">
-   <property name="geometry">
-    <rect>
-     <x>913</x>
-     <y>69</y>
-     <width>126</width>
-     <height>86</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>126</width>
-     <height>86</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>126</width>
-     <height>86</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Ratio1_2_Backdrop">
-   <property name="geometry">
-    <rect>
-     <x>1033</x>
-     <y>69</y>
-     <width>126</width>
-     <height>86</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>126</width>
-     <height>86</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>126</width>
-     <height>86</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Ratio1_1_Button">
-   <property name="geometry">
-    <rect>
-     <x>916</x>
-     <y>72</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>120</width>
-     <height>80</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>120</width>
-     <height>80</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Ratio1_2_Button">
-   <property name="geometry">
-    <rect>
-     <x>1036</x>
-     <y>72</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>120</width>
-     <height>80</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>120</width>
-     <height>80</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <zorder>Label</zorder>
-  <zorder>InflationReduce_Button</zorder>
-  <zorder>InflationAdd_Button</zorder>
-  <zorder>DeflateReduce_Button</zorder>
-  <zorder>DeflateAdd_Button</zorder>
-  <zorder>Finish_Button</zorder>
-  <zorder>InflationNum_Label</zorder>
-  <zorder>DeflateNum_Label</zorder>
-  <zorder>Help_Button</zorder>
-  <zorder>Ratio1_1_Backdrop</zorder>
-  <zorder>Ratio1_2_Backdrop</zorder>
-  <zorder>Ratio1_1_Num_Label</zorder>
-  <zorder>Ratio1_2_Num_Label</zorder>
-  <zorder>Ratio1_1_Button</zorder>
-  <zorder>Ratio1_2_Button</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource/Inflation_Deflation_Timing/Inflation_Deflation_Timing.qrc"/>
+ </resources>
  <connections/>
 </ui>

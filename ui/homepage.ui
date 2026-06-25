@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Homepage</class>
- <widget class="QWidget" name="Homepage">
+ <class>HomePage</class>
+ <widget class="QWidget" name="HomePage">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1200</height>
+    <height>1080</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>1920</width>
-    <height>1200</height>
+    <height>1080</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>1920</width>
-    <height>1200</height>
+    <height>1080</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>Homepage</string>
+   <string>HomePage</string>
   </property>
  </widget>
- <resources>
-  <include location="../resource/homepage/homepage.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Topbar</class>
- <widget class="QWidget" name="Topbar">
+ <class>TopBar</class>
+ <widget class="QWidget" name="TopBar">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -23,31 +23,31 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Topbar</string>
+   <string>TopBar</string>
   </property>
-  <widget class="QLabel" name="Label">
+  <widget class="QLabel" name="GasPressure_Label">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1920</width>
-     <height>80</height>
+     <x>1624</x>
+     <y>40</y>
+     <width>69</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>1920</width>
-     <height>80</height>
+     <width>69</width>
+     <height>30</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>1920</width>
-     <height>80</height>
+     <width>69</width>
+     <height>30</height>
     </size>
    </property>
    <property name="text">
-    <string/>
+    <string>000 psi</string>
    </property>
   </widget>
   <widget class="QPushButton" name="AlarmBell_Button">
@@ -75,25 +75,25 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="HeliumGasCylinderIcon_Label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
-     <x>1506</x>
-     <y>10</y>
-     <width>108</width>
-     <height>60</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>80</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>108</width>
-     <height>60</height>
+     <width>1920</width>
+     <height>80</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>108</width>
-     <height>60</height>
+     <width>1920</width>
+     <height>80</height>
     </size>
    </property>
    <property name="text">
@@ -125,11 +125,11 @@
     <string>氦气</string>
    </property>
   </widget>
-  <widget class="QLabel" name="GasPressure_Label">
+  <widget class="QLabel" name="Label_6">
    <property name="geometry">
     <rect>
-     <x>1624</x>
-     <y>40</y>
+     <x>1831</x>
+     <y>10</y>
      <width>69</width>
      <height>30</height>
     </rect>
@@ -147,7 +147,32 @@
     </size>
    </property>
    <property name="text">
-    <string>000 psi</string>
+    <string>电池</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HeliumGasCylinderIcon_Label">
+   <property name="geometry">
+    <rect>
+     <x>1506</x>
+     <y>10</y>
+     <width>108</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>108</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>108</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="BatteryIcon_Label">
@@ -175,31 +200,6 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Label_6">
-   <property name="geometry">
-    <rect>
-     <x>1831</x>
-     <y>10</y>
-     <width>69</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>69</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>69</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="text">
-    <string>电池</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="BatteryRemainingCapacity_Label">
    <property name="geometry">
     <rect>
@@ -225,14 +225,92 @@
     <string>100%</string>
    </property>
   </widget>
+  <widget class="QLabel" name="Label_4">
+   <property name="geometry">
+    <rect>
+     <x>1397</x>
+     <y>10</y>
+     <width>69</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>69</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>69</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>模式</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Pattern_Label">
+   <property name="geometry">
+    <rect>
+     <x>1397</x>
+     <y>40</y>
+     <width>69</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>69</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>69</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>转运</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PatternIcon">
+   <property name="geometry">
+    <rect>
+     <x>1314</x>
+     <y>10</y>
+     <width>73</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>73</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>73</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>Label</zorder>
-  <zorder>AlarmBell_Button</zorder>
   <zorder>Label_3</zorder>
-  <zorder>GasPressure_Label</zorder>
   <zorder>Label_6</zorder>
-  <zorder>BatteryRemainingCapacity_Label</zorder>
+  <zorder>AlarmBell_Button</zorder>
   <zorder>BatteryIcon_Label</zorder>
+  <zorder>BatteryRemainingCapacity_Label</zorder>
+  <zorder>GasPressure_Label</zorder>
   <zorder>HeliumGasCylinderIcon_Label</zorder>
+  <zorder>Label_4</zorder>
+  <zorder>Pattern_Label</zorder>
+  <zorder>PatternIcon</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -1,30 +1,19 @@
 //
-// Created by Administrator on 2026/3/31.
+// Created by Administrator on 2026/5/28.
 //
 
-// You may need to build the project (run Qt uic code generator) to get "ui_Statusbar.h" resolved
+// You may need to build the project (run Qt uic code generator) to get "ui_StatusBar.h" resolved
 
-#include "statusbar.h"
-#include "ui_Statusbar.h"
-#include <QFontDatabase>
+#include "../include/statusbar.h"
+#include "ui_StatusBar.h"
+#include <QMovie>
 
-
-Statusbar::Statusbar(QWidget *parent) : QWidget(parent), ui(new Ui::Statusbar) {
+StatusBar::StatusBar(QWidget *parent) : QWidget(parent), ui(new Ui::StatusBar) {
     ui->setupUi(this);
     move(1570, 80);
     ui->Heart_Rate_Label->setText("999");
     ui->Heart_Rate_Label->setProperty("mode","160px,colour22,226,58");
-    ui->Label->setProperty("mode","Label_Statusbar");
-    ui->Mm_Label->setProperty("mode","20px,colour172,181,197");
-    ui->Mm_Label->setText("20mm");
-    ui->Voluntarily_Label->setProperty("mode","20px,colour172,181,197");
-    ui->Voluntarily_Label->setText("自动");
-    ui->Label_4->setText("阈   值:");
-    ui->Label_4->setProperty("mode","20px,colour172,181,197");
-    ui->Label_6->setText("触发源:");
-    ui->Label_6->setProperty("mode","20px,colour172,181,197");
-    ui->TriggerSource_Label->setText("压力");
-    ui->TriggerSource_Label->setProperty("mode","20px,colour172,181,197");
+    ui->Label->setProperty("mode","Label_StatusBar");
     ui->HighBloodPressure_Label->setText("999");
     ui->HighBloodPressure_Label->setProperty("mode","100px,colour252,86,78");
     ui->LowBloodPressure_Label->setText("999");
@@ -37,11 +26,23 @@ Statusbar::Statusbar(QWidget *parent) : QWidget(parent), ui(new Ui::Statusbar) {
     ui->Anti_embolismPressureAlarm_Label->setProperty("mode","20px,colour255,255,255");
     ui->QuenchingFrequency_Label->setText("1:1");
     ui->QuenchingFrequency_Label->setProperty("mode","20px,colour255,255,255");
+    ui->TriggerSource->setText("触 发 源  :");
+    ui->TriggerSource->setProperty("mode","20px,colour172,181,197,AlignLeft");
+    ui->ThresholdValue->setText("自动阈值:");
+    ui->ThresholdValue->setProperty("mode","20px,colour172,181,197,AlignLeft");
+    ui->Mmhg->setText("20mmHg");
+    ui->Mmhg->setProperty("mode","20px,colour172,181,197,AlignLeft");
+    ui->TriggerSource_Label->setText("心房/心室起搏器");
+    ui->TriggerSource_Label->setProperty("mode","20px,colour172,181,197,AlignLeft");
 
+
+    QMovie *movie1 = new QMovie("../resource/StatusBar/100.gif");
+    ui->HeartbeatImage->setMovie(movie1);
+    ui->HeartbeatImage->setScaledContents(true);
+    movie1->setScaledSize(ui->HeartbeatImage->size());
+    movie1->start();          // 开始播放动画
 }
 
-
-
-Statusbar::~Statusbar() {
+StatusBar::~StatusBar() {
     delete ui;
 }

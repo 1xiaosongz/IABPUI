@@ -1,3 +1,4 @@
+
 cmake_minimum_required(VERSION 4.1)
 project(IABPUI)
 
@@ -35,60 +36,75 @@ add_executable(IABPUI main.cpp
         ${UI_FILES}
         ${HEAD}
         ${HEADHPP}
-#        src/homepage.cpp
-#        include/homepage.h
-#        ui/homepage.ui
-#        src/topbar.cpp
-#        include/topbar.h
-#        ui/topbar.ui
-#        src/statusbar.cpp
-#        include/statusbar.h
-#        ui/statusbar.ui
-#        src/bottomnavigationbar.cpp
-#        include/bottomnavigationbar.h
-#        ui/bottomnavigationbar.ui
-#        src/waveformseparation.cpp
-#        include/waveformseparation.h
-#        ui/waveformseparation.ui
-#        src/modeselection.cpp
-#        include/modeselection.h
-#        ui/modeselection.ui
-#        src/inflation_deflation_timing.cpp
-#        include/inflation_deflation_timing.h
-#        ui/inflation_deflation_timing.ui
-#        src/balloonvolume.cpp
-#        include/balloonvolume.h
-#        ui/balloonvolume.ui
-#        src/inflationratio.cpp
-#        include/inflationratio.h
-#        ui/inflationratio.ui
-#        src/triggermode.cpp
-#        include/triggermode.h
-#        ui/triggermode.ui
-#        src/blank1.cpp
-#        include/blank1.h
-#        ui/blank1.ui
-#        src/set.cpp
-#        include/set.h
-#        ui/set.ui
-#        src/blank2.cpp
-#        include/blank2.h
-#        ui/blank2.ui
-#        src/alarmsystem.cpp
-#        include/alarmsystem.h
-#        ui/alarmsystem.ui
-#        src/messagemanagement.cpp
-#        include/messagemanagement.h
-#        ui/messagemanagement.ui
-#        src/level1alarm.cpp
-#        include/level1alarm.h
-#        ui/level1alarm.ui
-#        src/readfile.cpp
-#        include/readfile.h
-#        sendingthread.cpp
-#        sendingthread.h
+        src/topbar.cpp
+        include/topbar.h
+        src/topbar.cpp
+        include/topbar.h
+        ui/topbar.ui
+        src/statusbar.cpp
+        include/statusbar.h
+        ui/statusbar.ui
+        src/homepage.cpp
+        include/homepage.h
+        ui/homepage.ui
 
 
+
+        #
+#        #        src/Homepage.cpp
+##        include/Homepage.h
+##        ui/Homepage.ui
+##        src/topbar.cpp
+##        include/topbar.h
+##        ui/topbar.ui
+##        src/statusbar.cpp
+##        include/statusbar.h
+##        ui/statusbar.ui
+##        src/bottomnavigationbar.cpp
+##        include/bottomnavigationbar.h
+##        ui/bottomnavigationbar.ui
+##        src/waveformseparation.cpp
+##        include/waveformseparation.h
+##        ui/waveformseparation.ui
+##        src/modeselection.cpp
+##        include/modeselection.h
+##        ui/modeselection.ui
+##        src/inflation_deflation_timing.cpp
+##        include/inflation_deflation_timing.h
+##        ui/inflation_deflation_timing.ui
+##        src/balloonvolume.cpp
+##        include/balloonvolume.h
+##        ui/balloonvolume.ui
+##        src/inflationratio.cpp
+##        include/inflationratio.h
+##        ui/inflationratio.ui
+##        src/triggermode.cpp
+##        include/triggermode.h
+##        ui/triggermode.ui
+##        src/blank1.cpp
+##        include/blank1.h
+##        ui/blank1.ui
+##        src/set.cpp
+##        include/set.h
+##        ui/set.ui
+##        src/blank2.cpp
+##        include/blank2.h
+##        ui/blank2.ui
+##        src/alarmsystem.cpp
+##        include/alarmsystem.h
+##        ui/alarmsystem.ui
+##        src/messagemanagement.cpp
+##        include/messagemanagement.h
+##        ui/messagemanagement.ui
+##        src/level1alarm.cpp
+##        include/level1alarm.h
+##        ui/level1alarm.ui
+##        src/readfile.cpp
+##        include/readfile.h
+##        sendingthread.cpp
+##        sendingthread.h
+#
+#
 )
 target_link_libraries(IABPUI
 
@@ -97,6 +113,12 @@ target_link_libraries(IABPUI
         Qt::Widgets
         Qt6::PrintSupport
 )
+
+
+
+
+
+
 
 
 

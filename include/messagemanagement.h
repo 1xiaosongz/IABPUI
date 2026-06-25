@@ -6,7 +6,7 @@
 #define IABPUI_MESSAGEMANAGEMENT_H
 
 #include <QWidget>
-
+#include <QScroller>
 
 QT_BEGIN_NAMESPACE
 

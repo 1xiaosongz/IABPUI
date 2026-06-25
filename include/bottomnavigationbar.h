@@ -27,9 +27,10 @@ public:
 
 
 private slots:
-    // void on_Set_Button_clicked();
+
 
 private:
+
     Ui::BottomNavigationBar *ui;
 };
 

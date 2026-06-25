@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1304</width>
+    <width>1192</width>
     <height>542</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1304</width>
+    <width>1192</width>
     <height>542</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1304</width>
+    <width>1192</width>
     <height>542</height>
    </size>
   </property>
@@ -30,24 +30,24 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1304</width>
+     <width>1192</width>
      <height>542</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>1304</width>
+     <width>1192</width>
      <height>542</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>1304</width>
+     <width>1192</width>
      <height>542</height>
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">/*background-image: url(:/MessageManagement/Group 10568.png);</string>
+    <string notr="true">background-image: url(:/MessageManagement/Group 10568.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -58,7 +58,7 @@
     <rect>
      <x>12</x>
      <y>87</y>
-     <width>1280</width>
+     <width>1161</width>
      <height>440</height>
     </rect>
    </property>
@@ -82,8 +82,8 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>1242</width>
-      <height>392</height>
+      <width>1127</width>
+      <height>401</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -91,7 +91,7 @@
       <widget class="QScrollArea" name="scrollArea">
        <property name="minimumSize">
         <size>
-         <width>1240</width>
+         <width>1125</width>
          <height>390</height>
         </size>
        </property>
@@ -113,9 +113,21 @@ background: transparent;</string>
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1240</width>
-          <height>390</height>
+          <width>1110</width>
+          <height>676</height>
          </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
         </property>
         <property name="styleSheet">
          <string notr="true">border: none; 
@@ -128,16 +140,91 @@ background: transparent;</string>
             <number>30</number>
            </property>
            <item>
-            <widget class="QFrame" name="frame_4">
+            <widget class="QFrame" name="frame">
              <property name="minimumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
+               <height>68</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_6">
+             <property name="minimumSize">
+              <size>
+               <width>1090</width>
+               <height>68</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1090</width>
+               <height>68</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="minimumSize">
+              <size>
+               <width>1090</width>
+               <height>68</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1090</width>
+               <height>68</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_7">
+             <property name="minimumSize">
+              <size>
+               <width>1090</width>
+               <height>68</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
@@ -156,18 +243,18 @@ background: transparent;</string>
             <widget class="QFrame" name="frame_3">
              <property name="minimumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10570.png);</string>
+              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -178,16 +265,16 @@ background: transparent;</string>
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_5">
+            <widget class="QFrame" name="frame_4">
              <property name="minimumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
@@ -206,18 +293,18 @@ background: transparent;</string>
             <widget class="QFrame" name="frame_2">
              <property name="minimumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>1200</width>
+               <width>1090</width>
                <height>68</height>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10569.png);</string>
+              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -239,7 +326,7 @@ background: transparent;</string>
   <widget class="QPushButton" name="Close_Button">
    <property name="geometry">
     <rect>
-     <x>1232</x>
+     <x>1120</x>
      <y>25</y>
      <width>60</width>
      <height>60</height>

@@ -1,5 +1,5 @@
 //
-// Created by Administrator on 2026/3/31.
+// Created by Administrator on 2026/5/28.
 //
 
 #ifndef IABPUI_TOPBAR_H
@@ -11,21 +11,21 @@
 QT_BEGIN_NAMESPACE
 
 namespace Ui {
-    class Topbar;
+    class TopBar;
 }
 
 QT_END_NAMESPACE
 
-class Topbar : public QWidget {
+class TopBar : public QWidget {
     Q_OBJECT
 
 public:
-    explicit Topbar(QWidget *parent = nullptr);
+    explicit TopBar(QWidget *parent = nullptr);
 
-    ~Topbar() override;
+    ~TopBar() override;
 
 private:
-    Ui::Topbar *ui;
+    Ui::TopBar *ui;
 };
 
 

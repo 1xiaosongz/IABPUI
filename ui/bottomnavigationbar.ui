@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>BottomNavigationBar</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Label">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -56,7 +56,7 @@
   <widget class="QPushButton" name="CounterpulsationPump_Button">
    <property name="geometry">
     <rect>
-     <x>15</x>
+     <x>13</x>
      <y>10</y>
      <width>148</width>
      <height>80</height>
@@ -81,7 +81,7 @@
   <widget class="QPushButton" name="Mode_Button">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>185</x>
      <y>10</y>
      <width>169</width>
      <height>86</height>
@@ -106,7 +106,7 @@
   <widget class="QPushButton" name="TriggerMode_Button">
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>370</x>
      <y>10</y>
      <width>249</width>
      <height>86</height>
@@ -131,7 +131,7 @@
   <widget class="QPushButton" name="InflationRatio_Button">
    <property name="geometry">
     <rect>
-     <x>984</x>
+     <x>959</x>
      <y>3</y>
      <width>120</width>
      <height>100</height>
@@ -153,24 +153,24 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Blank_1_Button_Label">
+  <widget class="QLabel" name="Set_Button_Label">
    <property name="geometry">
     <rect>
-     <x>1380</x>
-     <y>5</y>
-     <width>90</width>
+     <x>1404</x>
+     <y>0</y>
+     <width>86</width>
      <height>90</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
@@ -181,21 +181,21 @@
   <widget class="QLabel" name="FreezeWindow_Label">
    <property name="geometry">
     <rect>
-     <x>1470</x>
-     <y>5</y>
-     <width>90</width>
+     <x>1490</x>
+     <y>0</y>
+     <width>86</width>
      <height>90</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
@@ -206,21 +206,21 @@
   <widget class="QLabel" name="Printer_Label">
    <property name="geometry">
     <rect>
-     <x>1560</x>
-     <y>5</y>
-     <width>90</width>
+     <x>1576</x>
+     <y>0</y>
+     <width>86</width>
      <height>90</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
@@ -231,21 +231,21 @@
   <widget class="QLabel" name="Help_Button_Label">
    <property name="geometry">
     <rect>
-     <x>1650</x>
-     <y>5</y>
-     <width>90</width>
+     <x>1662</x>
+     <y>0</y>
+     <width>86</width>
      <height>90</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
@@ -256,21 +256,21 @@
   <widget class="QLabel" name="Switch_Button_Label">
    <property name="geometry">
     <rect>
-     <x>1830</x>
-     <y>5</y>
-     <width>90</width>
+     <x>1834</x>
+     <y>0</y>
+     <width>86</width>
      <height>90</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
@@ -278,24 +278,24 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Set_Button_Label">
+  <widget class="QLabel" name="Blank_1_Button_Label">
    <property name="geometry">
     <rect>
-     <x>1740</x>
-     <y>5</y>
-     <width>90</width>
+     <x>1748</x>
+     <y>0</y>
+     <width>86</width>
      <height>90</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>90</width>
+     <width>86</width>
      <height>90</height>
     </size>
    </property>
@@ -303,10 +303,10 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Blank_1_Button">
+  <widget class="QPushButton" name="Set_Button">
    <property name="geometry">
     <rect>
-     <x>1395</x>
+     <x>1420</x>
      <y>20</y>
      <width>60</width>
      <height>60</height>
@@ -331,7 +331,7 @@
   <widget class="QPushButton" name="FreezeWindow_Button">
    <property name="geometry">
     <rect>
-     <x>1485</x>
+     <x>1513</x>
      <y>20</y>
      <width>60</width>
      <height>60</height>
@@ -356,7 +356,7 @@
   <widget class="QPushButton" name="Printer_Button">
    <property name="geometry">
     <rect>
-     <x>1575</x>
+     <x>1599</x>
      <y>20</y>
      <width>60</width>
      <height>60</height>
@@ -381,7 +381,7 @@
   <widget class="QPushButton" name="Help_Button">
    <property name="geometry">
     <rect>
-     <x>1665</x>
+     <x>1680</x>
      <y>20</y>
      <width>60</width>
      <height>60</height>
@@ -403,10 +403,10 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Set_Button">
+  <widget class="QPushButton" name="Blank_1_Button">
    <property name="geometry">
     <rect>
-     <x>1755</x>
+     <x>1764</x>
      <y>20</y>
      <width>60</width>
      <height>60</height>
@@ -431,7 +431,7 @@
   <widget class="QPushButton" name="Switch_Button">
    <property name="geometry">
     <rect>
-     <x>1845</x>
+     <x>1847</x>
      <y>20</y>
      <width>60</width>
      <height>60</height>
@@ -456,7 +456,7 @@
   <widget class="QLabel" name="Inflatable_Numbers_label">
    <property name="geometry">
     <rect>
-     <x>669</x>
+     <x>654</x>
      <y>20</y>
      <width>71</width>
      <height>60</height>
@@ -484,7 +484,7 @@
   <widget class="QLabel" name="Deflating_Number_label">
    <property name="geometry">
     <rect>
-     <x>802</x>
+     <x>787</x>
      <y>20</y>
      <width>71</width>
      <height>60</height>
@@ -512,7 +512,7 @@
   <widget class="QLabel" name="Inflation_Deflation_Timing_Label">
    <property name="geometry">
     <rect>
-     <x>650</x>
+     <x>634</x>
      <y>9</y>
      <width>289</width>
      <height>86</height>
@@ -540,7 +540,7 @@
   <widget class="QPushButton" name="Inflation_Deflation_Timing_Button">
    <property name="geometry">
     <rect>
-     <x>653</x>
+     <x>637</x>
      <y>10</y>
      <width>280</width>
      <height>80</height>
@@ -565,21 +565,21 @@
   <widget class="QLabel" name="BalloonVolume_Label">
    <property name="geometry">
     <rect>
-     <x>1130</x>
+     <x>1091</x>
      <y>10</y>
-     <width>209</width>
+     <width>283</width>
      <height>86</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>209</width>
+     <width>283</width>
      <height>86</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>209</width>
+     <width>283</width>
      <height>86</height>
     </size>
    </property>
@@ -593,21 +593,21 @@
   <widget class="QLabel" name="BalloonVolume_Number_label">
    <property name="geometry">
     <rect>
-     <x>1160</x>
-     <y>22</y>
-     <width>88</width>
+     <x>1117</x>
+     <y>20</y>
+     <width>48</width>
      <height>60</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>88</width>
+     <width>48</width>
      <height>60</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>88</width>
+     <width>48</width>
      <height>60</height>
     </size>
    </property>
@@ -618,21 +618,21 @@
   <widget class="QPushButton" name="BalloonVolume_Button">
    <property name="geometry">
     <rect>
-     <x>1130</x>
+     <x>1092</x>
      <y>10</y>
-     <width>200</width>
+     <width>274</width>
      <height>80</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>200</width>
+     <width>274</width>
      <height>80</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>200</width>
+     <width>274</width>
      <height>80</height>
     </size>
    </property>
@@ -640,22 +640,397 @@
     <string/>
    </property>
   </widget>
-  <zorder>label</zorder>
+  <widget class="QLabel" name="Bottom_BalloonVolume_Label">
+   <property name="geometry">
+    <rect>
+     <x>1286</x>
+     <y>92</y>
+     <width>40</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>40</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>40</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>92</y>
+     <width>54</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>54</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>54</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>反搏泵</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>92</y>
+     <width>36</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>36</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>36</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>模式</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>438</x>
+     <y>92</y>
+     <width>107</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>107</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>107</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>ECG触发模式</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>732</x>
+     <y>92</y>
+     <width>90</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>90</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>90</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>充放气时机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>981</x>
+     <y>92</y>
+     <width>72</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>充气比率</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>1126</x>
+     <y>92</y>
+     <width>72</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>球囊容量</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>1244</x>
+     <y>92</y>
+     <width>42</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>42</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>42</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>型号:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>1411</x>
+     <y>92</y>
+     <width>72</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>1497</x>
+     <y>92</y>
+     <width>72</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>冻结屏幕</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>1592</x>
+     <y>92</y>
+     <width>54</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>54</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>54</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>打印机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>1687</x>
+     <y>92</y>
+     <width>36</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>36</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>36</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>1773</x>
+     <y>92</y>
+     <width>36</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>36</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>36</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>1841</x>
+     <y>92</y>
+     <width>72</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>72</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>电源开关</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="BalloonPercentage">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>20</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>71</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>Label</zorder>
   <zorder>CounterpulsationPump_Button</zorder>
   <zorder>Mode_Button</zorder>
   <zorder>TriggerMode_Button</zorder>
   <zorder>InflationRatio_Button</zorder>
-  <zorder>Blank_1_Button_Label</zorder>
+  <zorder>Set_Button_Label</zorder>
   <zorder>FreezeWindow_Label</zorder>
   <zorder>Printer_Label</zorder>
   <zorder>Help_Button_Label</zorder>
   <zorder>Switch_Button_Label</zorder>
-  <zorder>Set_Button_Label</zorder>
-  <zorder>Blank_1_Button</zorder>
+  <zorder>Blank_1_Button_Label</zorder>
+  <zorder>Set_Button</zorder>
   <zorder>FreezeWindow_Button</zorder>
   <zorder>Printer_Button</zorder>
   <zorder>Help_Button</zorder>
-  <zorder>Set_Button</zorder>
+  <zorder>Blank_1_Button</zorder>
   <zorder>Switch_Button</zorder>
   <zorder>Inflation_Deflation_Timing_Label</zorder>
   <zorder>Inflatable_Numbers_label</zorder>
@@ -663,6 +1038,21 @@
   <zorder>Inflation_Deflation_Timing_Button</zorder>
   <zorder>BalloonVolume_Label</zorder>
   <zorder>BalloonVolume_Number_label</zorder>
+  <zorder>Bottom_BalloonVolume_Label</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>label_13</zorder>
+  <zorder>BalloonPercentage</zorder>
   <zorder>BalloonVolume_Button</zorder>
  </widget>
  <resources>

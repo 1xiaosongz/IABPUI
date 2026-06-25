@@ -16,9 +16,9 @@ InflationRatio::InflationRatio(QWidget *parent) : QWidget(parent), ui(new Ui::In
     move(488, 704);
     setVisible(false);
     ui->Label->setProperty("mode","InflationRatio_Label");
-    ui->Ratio1_1_Backdrop->setProperty("mode","Ratio1_1_True");
-    ui->Ratio1_2_Backdrop->setProperty("mode","Ratio1_2_False");
-    ui->Ratio1_3_Backdrop->setProperty("mode","Ratio1_3_False");
+    ui->Ratio1_1_Backdrop->setProperty("mode","Ratio_True");
+    ui->Ratio1_2_Backdrop->setProperty("mode","Ratio_False");
+    ui->Ratio1_3_Backdrop->setProperty("mode","Ratio_False");
     ui->Ratio1_1_Num_Label->setProperty("mode","40px,colour4,255,255,AlignCenter");
     ui->Ratio1_2_Num_Label->setProperty("mode","40px,colour255,255,255,AlignCenter");
     ui->Ratio1_3_Num_Label->setProperty("mode","40px,colour255,255,255,AlignCenter");
@@ -26,7 +26,7 @@ InflationRatio::InflationRatio(QWidget *parent) : QWidget(parent), ui(new Ui::In
     setLetterSpacing(ui->Ratio1_2_Num_Label,5);
     setLetterSpacing(ui->Ratio1_3_Num_Label,5);
     ui->Help_Button->setProperty("mode","Help_Button");
-    ui->Finish_Button->setProperty("mode","Finish_Button_False");
+    // ui->Finish_Button->setProperty("mode","Finish_Button_False");
 }
 
 InflationRatio::~InflationRatio() {

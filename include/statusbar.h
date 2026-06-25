@@ -1,32 +1,31 @@
 //
-// Created by Administrator on 2026/3/31.
+// Created by Administrator on 2026/5/28.
 //
 
 #ifndef IABPUI_STATUSBAR_H
 #define IABPUI_STATUSBAR_H
 
 #include <QWidget>
-// #include "homepage.h"
-class Homepage;
+
+
 QT_BEGIN_NAMESPACE
 
 namespace Ui {
-    class Statusbar;
+    class StatusBar;
 }
 
 QT_END_NAMESPACE
 
-class Statusbar : public QWidget {
+class StatusBar : public QWidget {
     Q_OBJECT
 
 public:
-    explicit Statusbar(QWidget *parent = nullptr);
-    ~Statusbar() override;
-    Homepage *homepage;
-public slots:
+    explicit StatusBar(QWidget *parent = nullptr);
+
+    ~StatusBar() override;
 
 private:
-    Ui::Statusbar *ui;
+    Ui::StatusBar *ui;
 };
 
 

@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/Topbar">
+    <qresource prefix="/TopBar">
         <file>Frame 10039.png</file>
         <file>Group 10289.png</file>
         <file>Group 10290.png</file>
@@ -8,6 +8,8 @@
         <file>Group 10295.png</file>
         <file>Group 10296.png</file>
         <file>Group 10305.png</file>
+        <file>Group 10645.png</file>
+        <file>Group 10648.png</file>
         <file>Group 10309.png</file>
         <file>Group 9904.png</file>
         <file>Group 9906.png</file>

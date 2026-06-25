@@ -12,7 +12,7 @@
 TriggerMode::TriggerMode(QWidget *parent) : QWidget(parent), ui(new Ui::TriggerMode) {
     ui->setupUi(this);
     move(282, 704);
-    // setVisible(false);
+    setVisible(false);
     ui->Label->setProperty("mode","Label_TriggerMode");
     ui->Help_Button->setProperty("mode","Help_Button");
     ui->ECG_Label->setText("ECG");
@@ -30,7 +30,7 @@ TriggerMode::TriggerMode(QWidget *parent) : QWidget(parent), ui(new Ui::TriggerM
     ui->Inside_Label->setText("内部");
     setLetterSpacing(ui->Inside_Label,5);
     ui->Inside_Label->setProperty("mode","38px,colour255,255,255,AlignCenter");
-    ui->Finish_Button->setProperty("mode","Finish_Button_False");
+    // ui->Finish_Button->setProperty("mode","Finish_Button_False");
 }
 
 void TriggerMode::setLetterSpacing(QLabel* label,int spacing) {

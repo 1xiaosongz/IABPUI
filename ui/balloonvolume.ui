@@ -150,24 +150,24 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Capacity_Label">
+  <widget class="QLabel" name="CapacityRatio_Label">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>206</x>
      <y>159</y>
-     <width>84</width>
+     <width>71</width>
      <height>60</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>84</width>
+     <width>71</width>
      <height>60</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>84</width>
+     <width>71</width>
      <height>60</height>
     </size>
    </property>
@@ -228,6 +228,31 @@
     <size>
      <width>45</width>
      <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Capacity_Label">
+   <property name="geometry">
+    <rect>
+     <x>247</x>
+     <y>79</y>
+     <width>53</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>53</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>53</width>
+     <height>45</height>
     </size>
    </property>
    <property name="text">

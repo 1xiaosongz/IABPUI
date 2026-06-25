@@ -10,12 +10,26 @@
 
 MessageManagement::MessageManagement(QWidget *parent) : QWidget(parent), ui(new Ui::MessageManagement) {
     ui->setupUi(this);
-    move(148, 98);
+    move(68 , 68);
     setVisible(false);
-    ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui->scrollArea->setWidgetResizable(true);
+    setWindowFlags(Qt::Widget | Qt::FramelessWindowHint);
+    setAttribute(Qt::WA_TranslucentBackground);
+
+    QPixmap backgroundPixmap(":/MessageManagement/Group 10568.png");
+    if (!backgroundPixmap.isNull()) {
+        ui->Label->setPixmap(backgroundPixmap.scaled(ui->Label->size(), Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation));
+        ui->Label->setScaledContents(true);
+    }
+    ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
     ui->Label->setProperty("mode","MessageManagement_Label");
     ui->Widget->setProperty("mode","MessageManagement_Widget");
     ui->Close_Button->setProperty("mode","Close_Button");
+    ui->verticalLayout_2->setAlignment(Qt::AlignTop);
+    QScroller::grabGesture(
+        ui->scrollArea->viewport(),
+        QScroller::LeftMouseButtonGesture
+    );
 }
 
 MessageManagement::~MessageManagement() {

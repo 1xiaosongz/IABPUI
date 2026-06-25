@@ -1,5 +1,23 @@
 <RCC>
     <qresource prefix="/Set">
+
         <file>Group 10402.png</file>
+
+
+
+        <file>Group 10783.png</file>
+        <file>Group 10791.png</file>
+        <file>Group 10795.png</file>
+        <file>Group 10796.png</file>
+        <file>Group 10797.png</file>
+        <file>Group 10798.png</file>
+        <file>Group 10799.png</file>
+        <file>Group 10800.png</file>
+        <file>Group 10802.png</file>
+        <file>Group 10810.png</file>
+        <file>Group 10782.png</file>
+        <file>Frame 40692.png</file>
+        <file>Day.png</file>
+        <file>Day1.png</file>
     </qresource>
 </RCC>
