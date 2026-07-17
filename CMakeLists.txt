@@ -47,7 +47,18 @@ add_executable(IABPUI main.cpp
         src/homepage.cpp
         include/homepage.h
         ui/homepage.ui
-
+        src/pressurezeroadjustment.cpp
+        include/pressurezeroadjustment.h
+        ui/pressurezeroadjustment.ui
+        src/horizontalreferenceline.cpp
+        include/horizontalreferenceline.h
+        ui/horizontalreferenceline.ui
+        src/logexport.cpp
+        include/logexport.h
+        ui/logexport.ui
+        src/datewidget.cpp
+        include/datewidget.h
+        ui/datewidget.ui
 
 
         #

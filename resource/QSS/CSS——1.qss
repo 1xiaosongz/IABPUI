@@ -1,0 +1,1220 @@
+/* ======================== 基础样式 ======================== */
+QPushButton {
+    outline: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+QLineEdit {
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+
+}
+QLabel {
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    font-family: "Source Han Sans CN";
+    font-weight: bold;
+}
+
+QLabel[mode="Label_No_background"],
+QPushButton#PushButton_No_background {
+    background-image: none;
+}
+
+/* ======================== 字体大小 ======================== */
+
+QLabel[mode="160px,colour22,226,58"]                                              { font-size: 160px; }
+QLabel[mode="100px,colour252,86,78"],
+QLabel[mode="100px,colour63,184,248"]                                             { font-size: 100px; }
+QLabel[mode="80px,colour252,86,78"]                                               { font-size: 80px; }
+QLabel[mode="60px,colour172,181,197"]                                             { font-size: 60px; }
+QLabel[mode="40px,colour4,255,255"],
+QLabel[mode="40px,colour255,255,255"],
+QLabel[mode="40px,colour4,255,255,AlignCenter"],
+QLabel[mode="40px,colour252,86,78"],
+QLabel[mode="40px,colour255,255,255,AlignCenter"]                                 { font-size: 40px; }
+QLabel[mode="38px,colour4,255,255"],
+QLabel[mode="38px,colour255,255,255"],
+QLabel[mode="38px,colour4,255,255,AlignCenter"],
+QLabel[mode="38px,colour255,255,255,AlignCenter"]                                 { font-size: 38px; }
+QLabel[mode="30px,colour4,255,255"],
+QLabel[mode="30px,colour255,255,255"],
+QLabel[mode="30px,colour255,255,255,AlignCenter"],
+QLabel[mode="30px,colour255,255,255,font-weight: normal"],
+QLabel[mode="30px,colour172,181,197,AlignRight"]                                  { font-size: 30px; }
+QLabel[mode="25px,colour4,255,255"],
+QLabel[mode="25px,colour255,255,255"],
+QLabel[mode="25px,colour210,215,224"]                                              { font-size: 25px; }
+QLabel[mode="22px,colour210,215,224"],
+QLabel[mode="22px,colour4,255,255"]                                           { font-size: 22px; }
+QLabel[mode="20px,colour172,181,197"],
+QLabel[mode="20px,colour172,181,197,AlignLeft"],
+QLabel[mode="20px,colour172,181,197,AlignTop"],
+QLabel[mode="20px,colour255,255,255"],
+QLabel[mode="20px,colour216,225,234"],
+QLabel[mode="20px,colour255,255,255,font-weight: normal"],
+QLabel[mode="20px,colour252,86,78"],
+QLabel[mode="20px,colour255,255,255,114"]                                         { font-size: 20px; }
+QLabel[mode="18px,colour172,181,197"]                                             { font-size: 18px; }
+QLabel[mode="24px,colour252,86,78"]                                                { font-size: 24px; }
+QLabel[mode="14px,colour4,255,255"]                                               { font-size: 14px; }
+/* ======================== 字体颜色 ======================== */
+
+/* 青色 rgb(4,255,255) */
+QLabel[mode="40px,colour4,255,255"],
+QLabel[mode="40px,colour4,255,255,AlignCenter"],
+QLabel[mode="38px,colour4,255,255"],
+QLabel[mode="38px,colour4,255,255,AlignCenter"],
+QLabel[mode="14px,colour4,255,255"],
+QLabel[mode="25px,colour4,255,255"],
+QLabel[mode="22px,colour4,255,255"],
+QLabel[mode="30px,colour4,255,255"]                                               { color: rgb(4, 255, 255); }
+
+/* 白色 rgb(255,255,255) */
+QLabel[mode="40px,colour255,255,255"],
+QLabel[mode="40px,colour255,255,255,AlignCenter"],
+QLabel[mode="38px,colour255,255,255"],
+QLabel[mode="38px,colour255,255,255,AlignCenter"],
+QLabel[mode="30px,colour255,255,255"],
+QLabel[mode="30px,colour255,255,255,AlignCenter"],
+QLabel[mode="30px,colour255,255,255,font-weight: normal"],
+QLabel[mode="25px,colour255,255,255"],
+QLabel[mode="20px,colour255,255,255,font-weight: normal"],
+QLabel[mode="20px,colour255,255,255"]                                             { color: rgb(255, 255, 255); }
+
+/* 红色 rgb(252,86,78) */
+QLabel[mode="100px,colour252,86,78"],
+QLabel[mode="20px,colour252,86,78"],
+QLabel[mode="40px,colour252,86,78"],
+QLabel[mode="24px,colour252,86,78"] ,
+QLabel[mode="80px,colour252,86,78"]                                               { color: rgb(252, 86, 78); }
+
+/* 绿色 rgb(22,226,58) */
+QLabel[mode="160px,colour22,226,58"]                                              { color: rgb(22, 226, 58); }
+
+/* 蓝色 rgb(63,184,248) */
+QLabel[mode="100px,colour63,184,248"]                                             { color: rgb(63, 184, 248); }
+
+/* 灰色 rgb(172,181,197) */
+QLabel[mode="60px,colour172,181,197"],
+QLabel[mode="20px,colour172,181,197"],
+QLabel[mode="20px,colour172,181,197,AlignLeft"],
+QLabel[mode="30px,colour172,181,197,AlignRight"],
+QLabel[mode="20px,colour172,181,197,AlignTop"],
+QLabel[mode="18px,colour172,181,197"]                                             { color: rgb(172, 181, 197); }
+
+/* 浅灰 rgb(216,225,234) */
+QLabel[mode="20px,colour216,225,234"]                                             { color: rgb(216, 225, 234); }
+
+/* 半透明白 rgba(255,255,255,114) */
+QLabel[mode="20px,colour255,255,255,114"]                                         { color: rgba(255, 255, 255, 114); }
+QLabel[mode="22px,colour210,215,224"],
+QLabel[mode="25px,colour210,215,224"]                                               { color: rgb(210,215,224); }
+
+
+/* ======================== 对齐方式 ======================== */
+
+/* 居中 */
+QLabel[mode="160px,colour22,226,58"],
+QLabel[mode="100px,colour252,86,78"],
+QLabel[mode="100px,colour63,184,248"],
+QLabel[mode="80px,colour252,86,78"],
+QLabel[mode="60px,colour172,181,197"],
+QLabel[mode="40px,colour4,255,255,AlignCenter"],
+QLabel[mode="40px,colour255,255,255,AlignCenter"],
+QLabel[mode="40px,colour252,86,78"],
+QLabel[mode="38px,colour4,255,255,AlignCenter"],
+QLabel[mode="38px,colour255,255,255,AlignCenter"],
+QLabel[mode="30px,colour255,255,255,AlignCenter"],
+QLabel[mode="25px,colour4,255,255"],
+QLabel[mode="25px,colour210,215,224"],
+QLabel[mode="25px,colour255,255,255"],
+QLabel[mode="24px,colour252,86,78"],
+QLabel[mode="22px,colour210,215,224"],
+QLabel[mode="22px,colour4,255,255"],
+QLabel[mode="20px,colour172,181,197"],
+QLabel[mode="20px,colour252,86,78"],
+QLabel[mode="20px,colour255,255,255"],
+QLabel[mode="20px,colour216,225,234"],
+QLabel[mode="14px,colour4,255,255"],
+QLabel[mode="18px,colour172,181,197"]                                             { qproperty-alignment: 'AlignCenter'; }
+
+/* 右对齐 + 垂直居中 */
+QLabel[mode="40px,colour4,255,255"],
+QLabel[mode="40px,colour255,255,255"],
+QLabel[mode="38px,colour4,255,255"],
+QLabel[mode="38px,colour255,255,255"],
+QLabel[mode="30px,colour172,181,197,AlignRight"],
+QLabel[mode="20px,colour255,255,255,114"]                                         { qproperty-alignment: 'AlignRight | AlignVCenter'; }
+
+/* 左对齐 + 垂直居中 */
+QLabel[mode="30px,colour4,255,255"],
+QLabel[mode="20px,colour172,181,197,AlignLeft"],
+QLabel[mode="30px,colour255,255,255,font-weight: normal"],
+QLabel[mode="20px,colour255,255,255,font-weight: normal"],
+QLabel[mode="30px,colour255,255,255"]                                             { qproperty-alignment: 'AlignLeft | AlignVCenter'; }
+/* 左对齐 + 垂直靠上 */
+QLabel[mode="20px,colour172,181,197,AlignTop"]                                    { qproperty-alignment: 'AlignLeft | AlignTop'; }
+
+QLabel[mode="30px,colour255,255,255,font-weight: normal"]                         {font-weight: normal;}
+
+
+
+/* ----- BottomNavigationBar ---- */
+QPushButton#CounterpulsationPump_Button[mode = "CounterpulsationPump_Button_True"] {
+    background-image:url(:/BottomNavigationBar/Group 10174.png);
+}
+QPushButton#CounterpulsationPump_Button[mode = "CounterpulsationPump_Button_False"] {
+    background-image:url(:/BottomNavigationBar/Group 10254.png);
+}
+QPushButton#Mode_Button[mode = "Manual_Mode_False"]{
+    background-image:url(:/BottomNavigationBar/Group 103991.png);
+}
+QPushButton#Mode_Button[mode = "Manual_Mode_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10573.png);
+}
+QPushButton#Mode_Button[mode = "Automatic_Mode_False"] {
+    background-image:url(:/BottomNavigationBar/Group 10399.png);
+}
+QPushButton#Mode_Button[mode = "Automatic_Mode_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10407.png);
+}
+QPushButton#TriggerMode_Button[mode = "ECG_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10575.png);
+}
+QPushButton#TriggerMode_Button[mode = "Pressure_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10576.png);
+}
+QPushButton#TriggerMode_Button[mode = "Ventricular_Atrial_Fibrillation_Pacemaker_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10577.png);
+}
+QPushButton#TriggerMode_Button[mode = "Atrial_Pacemaker_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10574.png);
+}
+QPushButton#TriggerMode_Button[mode = "Interior_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10404.png);
+}
+QPushButton#TriggerMode_Button[mode = "ECG_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10376.png);
+}
+QPushButton#TriggerMode_Button[mode = "Pressure_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10578.png);
+}
+QPushButton#TriggerMode_Button[mode = "Ventricular_Atrial_Fibrillation_Pacemaker_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10579.png);
+}
+QPushButton#TriggerMode_Button[mode = "Atrial_Pacemaker_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10580.png);
+}
+QPushButton#TriggerMode_Button[mode = "Interior_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10581.png);
+}
+QPushButton#InflationRatio_Button[mode = "1_1_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10401.png);
+}
+QPushButton#InflationRatio_Button[mode = "1_2_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10453.png);
+}
+QPushButton#InflationRatio_Button[mode = "1_3_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10454.png);
+}
+QPushButton#InflationRatio_Button[mode = "1_1_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10431.png);
+}
+QPushButton#InflationRatio_Button[mode = "1_2_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10451.png);
+}
+QPushButton#InflationRatio_Button[mode = "1_3_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10452.png);
+}
+QLabel#Inflation_Deflation_Timing_Label[mode = "Inflation_Deflation_Timing_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10400.png);
+}
+QLabel#Inflation_Deflation_Timing_Label[mode = "Inflation_Deflation_Timing_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10600.png);
+}
+QLabel#BalloonVolume_Label[mode = "BalloonVolume_False"]{
+    background-image:url(:/BottomNavigationBar/Group 10341.png);
+}
+QLabel#BalloonVolume_Label[mode = "BalloonVolume_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10585.png);
+}
+QLabel#Blank_1_Button_Label{
+    background-image:url(:/BottomNavigationBar/Frame 10102.png);
+}
+QLabel#FreezeWindow_Label[mode = "FreezeWindow_Label_False"]{
+    background-image:url(:/BottomNavigationBar/Frame 10155.png);
+}
+QLabel#FreezeWindow_Label[mode = "FreezeWindow_Label_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10620.png);
+}
+QLabel#PressureZeroing_Label[mode = "PressureZeroing_Label_False"]{
+    background-image:url(:/BottomNavigationBar/Frame 10151.png);
+}
+QLabel#PressureZeroing_Label[mode = "PressureZeroing_Label_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10626.png);
+}
+QLabel#Help_Button_Label[mode = "Help_Button_Label_False"]{
+    background-image:url(:/BottomNavigationBar/Frame 10103.png);
+}
+QLabel#Help_Button_Label[mode = "Help_Button_Label_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10285.png);
+}
+QLabel#Set_Button_Label[mode = "Set_Button_Label_False"]{
+    background-image:url(:/BottomNavigationBar/Frame 10104.png);
+}
+QLabel#Set_Button_Label[mode = "Set_Button_Label_True"]{
+    background-image:url(:/BottomNavigationBar/Group 9809.png);
+}
+QLabel#Switch_Button_Label[mode = "Switch_Button_Label_False"]{
+    background-image:url(:/BottomNavigationBar/Frame 10105.png);
+}
+QLabel#Switch_Button_Label[mode = "Switch_Button_Label_True"]{
+    background-image:url(:/BottomNavigationBar/Group 10021.png);
+}
+QLabel[mode="Label_BottomNavigationBar"] {
+  background-image:url(:/BottomNavigationBar/Mask group.png);
+}
+/*  Inflation_Deflation_Timing  */
+
+QPushButton#Finish_Button {
+   border:none;
+    background-color:transparent;
+    background-image: url(:/Inflation_Deflation_Timing/Group 10257.png);
+}
+
+QPushButton#Finish_Button:pressed {
+    background-image: url(:/Inflation_Deflation_Timing/Group 10286.png);
+}
+QLabel[mode="Label_Inflation_Deflation_Timing"] {
+  background-image:url(:/Inflation_Deflation_Timing/Group 10532.png);
+}
+QPushButton#Help_Button[mode="Help_Button"] {
+   background-image:url(:/Inflation_Deflation_Timing/Group 10259.png);
+}
+/* 减号按钮 */
+QPushButton[mode="Reduce"]{
+    background-image:url(:/Inflation_Deflation_Timing/Group 10533.png);
+}
+QPushButton[mode="Reduce"]:pressed{
+    background-image:url(:/Inflation_Deflation_Timing/Group 10445.png);
+}
+/* 加号按钮 */
+QPushButton[mode="Add"]{
+    background-image:url(:/Inflation_Deflation_Timing/Group 10534.png);
+}
+QPushButton[mode="Add"]:pressed{
+    background-image:url(:/Inflation_Deflation_Timing/Group 10446.png);
+}
+QLabel[mode="Ratio_Backdrop_True"]{
+background-image:url(:/Inflation_Deflation_Timing/Group 10535.png);
+}
+QLabel[mode="Ratio_Backdrop_False"]{
+background-image:none;
+}
+/*  ---- InflationRatio-------   */
+QLabel[mode="InflationRatio_Label"] {
+   background-image:url(:/InflationRatio/Group 10551.png);
+}
+QLabel[mode="Ratio_True"] {
+   background-image:url(:/InflationRatio/Rectangle 4585.png);
+}
+QLabel[mode="Ratio_False"] {
+   background-image:none;
+}
+
+/*  ---- AlarmSystem-------   */
+QPushButton#Audio_Button {
+    background-image:url(:/AlarmSystem/Frame 10091.png);
+}
+QPushButton#More_Button {
+    background-image:url(:/AlarmSystem/Frame 10092.png);
+}
+QPushButton[mode="AlarmLevelIcon_Close_Button"]{
+    background-image:url(:/AlarmSystem/Frame 10089.png);
+}
+QLabel#AlarmLevelIcon_Label[mode="AlarmLevelIcon_Advanced"]{
+    background-image:url(:/AlarmSystem/Group 10028.png);
+}
+QLabel#AlarmLevelIcon_Label[mode="AlarmLevelIcon_Middle_Rank"]{
+    background-image:url(:/AlarmSystem/Group 10026.png);
+}
+QLabel#AlarmLevelIcon_Label[mode="AlarmLevelIcon_Low_Level"]{
+    background-image:url(:/AlarmSystem/Group 10022.png);
+}
+/*  ---- BalloonVolume-------   */
+QLabel[mode="Label_BalloonVolume"] {
+   background-image:url(:/BalloonVolume/Group 10558.png);
+}
+QPushButton#Add_Button{
+    background-image:url(:/BalloonVolume/Group 10554.png);
+}
+QPushButton#Add_Button:pressed{
+    background-image:url(:/BalloonVolume/add_tap.png);
+}
+QPushButton#Reduce_Button{
+    background-image:url(:/BalloonVolume/Group 10555.png);
+}
+QPushButton#Reduce_Button:pressed{
+    background-image:url(:/BalloonVolume/Reduction_tap.png);
+}
+
+/*  ---- Level1Alarm-------   */
+QLabel[mode="Level1_Advanced"] {
+   background-image:url(:/MessageManagement/Group 10568X.png);
+}
+QLabel[mode="Level1_Middle_Rank"] {
+   background-image:url(:/MessageManagement/Group 10569.png);
+}
+QLabel[mode="Level1_Low_Level"] {
+   background-image:url(:/MessageManagement/Group 10570.png);
+}
+/*  ---- MessageManagement-------   */
+QLabel[mode="MessageManagement_Label"] {
+   background-image: url(:/MessageManagement/Group 10568.png);
+}
+QWidget[mode="MessageManagement_Widget"] {
+   background-image: url(:/MessageManagement/darker-huge.png);
+}
+QPushButton[mode="Close_Button"]{
+    background-image:url(:/MessageManagement/Group 10037.png);
+}
+/*  ---- ModeSelection-------   */
+QLabel[mode="ModeSelection_Label"] {
+   background-image: url(:/ModeSelection/Group 10507.png);
+}
+QLabel[mode="Automatic_Backdrop_True"]{
+    background-image:url(:/ModeSelection/Rectangle 4580.png);
+}
+QLabel[mode="Automatic_Backdrop_False"]{
+    background-image:none;
+}
+QLabel[mode="Manual_Backdrop_True"]{
+    background-image:url(:/ModeSelection/Rectangle 4580.png);
+}
+QLabel[mode="Manual_Backdrop_False"]{
+    background-image:none;
+}
+/*  ---- PressureZeroAdjustment-------   */
+QLabel[mode="PressureZeroAdjustment_Label"] {
+   background-image: url(:/PressureZeroAdjustment/Group 10862.png);
+}
+QLabel[mode="Affirm_Backdrop_True"]{
+    background-image:url(:/ModeSelection/Rectangle 4580.png);
+}
+QLabel[mode="Affirm_Backdrop_False"]{
+    background-image:none;
+}
+QLabel[mode="Cancel_Backdrop_True"]{
+    background-image:url(:/ModeSelection/Rectangle 4580.png);
+}
+QLabel[mode="Cancel_Backdrop_False"]{
+    background-image:none;
+}
+
+/*  ---- SET-------   */
+QLabel[mode="Label_SET"] {
+   background-image:url(:/Set/Group 10402.png);
+}
+
+QTabBar::tab {
+    width: 176px;          /* 每个标签的固定宽度 */
+    height: 66px;          /* 每个标签的固定高度 */
+}
+
+QTabWidget {
+    background: transparent;
+}
+QTabWidget::pane {
+    border: none;
+    background: transparent;
+}
+QTabBar::tab {
+    border: none;
+    background-image: url(:/Set/Group 10802.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255,255,255);
+    font-family: "Source Han Sans CN";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+QTabBar::tab:selected {
+    background-image: url(:/Set/Group 10810.png);
+}
+QTabBar::tab:pressed {
+    background-image: url(:/Set/Group 10802.png);
+}
+QTabBar::tab {
+    margin-right: 10px;
+}
+QTabWidget::pane {
+    border:none;
+    background-image:url(:/Set/Group 10783.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+QLabel[mode1="Trumpet_Label"] {
+   border-image:url(:/Sound/Group 10815.png);
+}
+/*----------- 声音------------*/
+QPushButton#Sound_Off[mode="Sound_Off_True"]{
+    background-image:url(:/Sound/Group 10284.png);
+}
+QPushButton#Sound_Off[mode="Sound_Off_False"]{
+    background-image:url(:/Sound/Group 10816.png);
+}
+QPushButton#Sound_Low[mode = "Sound_Low_True"] {
+    background-image:url(:/Sound/Group 10696.png);
+}
+QPushButton#Sound_Low[mode = "Sound_Low_False"] {
+    background-image:url(:/Sound/Group 10819.png);
+}
+QPushButton#Sound_Medium[mode = "Sound_Medium_True"] {
+    background-image:url(:/Sound/Group 10812.png);
+}
+QPushButton#Sound_Medium[mode = "Sound_Medium_False"] {
+    background-image:url(:/Sound/Group 10824.png);
+}
+QPushButton#Sound_High[mode = "Sound_High_True"] {
+    background-image:url(:/Sound/Group 10747.png);
+}
+QPushButton#Sound_High[mode = "Sound_High_False"] {
+    background-image:url(:/Sound/Group 10817.png);
+}
+QPushButton#Standby_Off[mode = "Standby_Off_True"] {
+    background-image:url(:/Sound/Group 10284.png);
+}
+QPushButton#Standby_Off[mode = "Standby_Off_False"] {
+    background-image:url(:/Sound/Group 10816.png);
+}
+QPushButton#Standby_On[mode = "Standby_On_True"] {
+    background-image:url(:/Sound/Group 10770.png);
+}
+QPushButton#Standby_On[mode = "Standby_On_False"] {
+    background-image:url(:/Sound/Group 10822.png);
+}
+/*----------- 显示------------*/
+QPushButton#ECG_Off[mode = "ECG_Off_True"] {
+    background-image:url(:/Show/Group 10780.png);
+}
+QPushButton#ECG_Off[mode = "ECG_Off_False"] {
+    background-image:url(:/Show/Group 10851.png);
+}
+QPushButton#ECG_On[mode = "ECG_On_True"] {
+    background-image:url(:/Show/Group 10781.png);
+}
+QPushButton#ECG_On[mode = "ECG_On_False"] {
+    background-image:url(:/Show/Group 10848.png);
+}
+QPushButton#Inflation_Interval_Off[mode = "Inflation_Interval_Off_True"] {
+    background-image:url(:/Show/Group 10780.png);
+}
+QPushButton#Inflation_Interval_Off[mode = "Inflation_Interval_Off_False"] {
+    background-image:url(:/Show/Group 10851.png);
+}
+QPushButton#Inflation_Interval_On[mode = "Inflation_Interval_On_True"] {
+    background-image:url(:/Show/Group 10781.png);
+}
+QPushButton#Inflation_Interval_On[mode = "Inflation_Interval_On_False"] {
+    background-image:url(:/Show/Group 10848.png);
+}
+QPushButton#Brightness_Off[mode = "Brightness_Off_True"] {
+    background-image:url(:/Show/Group 10780.png);
+}
+QPushButton#Brightness_Off[mode = "Brightness_Off_False"] {
+    background-image:url(:/Show/Group 10851.png);
+}
+QPushButton#Brightness_Low[mode = "Brightness_Low_True"] {
+    background-image:url(:/Show/Group 10775.png);
+}
+QPushButton#Brightness_Low[mode = "Brightness_Low_False"] {
+    background-image:url(:/Show/Group 10849.png);
+}
+QPushButton#Brightness_Medium[mode = "Brightness_Medium_True"] {
+    background-image:url(:/Show/Group 10776.png);
+}
+QPushButton#Brightness_Medium[mode = "Brightness_Medium_False"] {
+    background-image:url(:/Show/Group 10850.png);
+}
+QPushButton#Brightness_High[mode = "Brightness_High_True"] {
+    background-image:url(:/Show/Group 10777.png);
+}
+QPushButton#Brightness_High[mode = "Brightness_High_False"] {
+    background-image:url(:/Show/Group 10847.png);
+}
+QPushButton#ScanningSpeed_25[mode = "ScanningSpeed_25_True"] {
+    background-image:url(:/Show/Group 10844_1.png);
+}
+QPushButton#ScanningSpeed_25[mode = "ScanningSpeed_25_False"] {
+    background-image:url(:/Show/Group 10844.png);
+}
+QPushButton#ScanningSpeed_50[mode = "ScanningSpeed_50_True"] {
+    background-image:url(:/Show/Group 10845.png);
+}
+QPushButton#ScanningSpeed_50[mode = "ScanningSpeed_50_False"] {
+    background-image:url(:/Show/Group 10845_1.png);
+}
+/*-----------打印机-------------*/
+QPushButton#Timing_7S[mode = "Timing_7S_True"] {
+    background-image:url(:/Printer/Group 10783.png);
+}
+QPushButton#Timing_7S[mode = "Timing_7S_False"] {
+    background-image:url(:/Printer/Group 10857.png);
+}
+QPushButton#Timing_15S[mode = "Timing_15S_True"] {
+    background-image:url(:/Printer/Group 10784.png);
+}
+QPushButton#Timing_15S[mode = "Timing_15S_False"] {
+    background-image:url(:/Printer/Group 10876.png);
+}
+QPushButton#Timing_30S[mode = "Timing_30S_True"] {
+    background-image:url(:/Printer/Group 10777.png);
+}
+QPushButton#Timing_30S[mode = "Timing_30S_False"] {
+    background-image:url(:/Printer/Group 10877.png);
+}
+QPushButton#Timing_60S[mode = "Timing_60S_True"] {
+    background-image:url(:/Printer/Group 10785.png);
+}
+QPushButton#Timing_60S[mode = "Timing_60S_False"] {
+    background-image:url(:/Printer/Group 10878.png);
+}
+QPushButton#Call_The_Police_Off[mode = "Call_The_Police_Off_True"] {
+    background-image:url(:/Printer/Group 10787.png);
+}
+QPushButton#Call_The_Police_Off[mode = "Call_The_Police_Off_False"] {
+    background-image:url(:/Printer/Group 10879.png);
+}
+QPushButton#Call_The_Police_15Min[mode = "Call_The_Police_15Min_True"] {
+    background-image:url(:/Printer/Group 10779.png);
+}
+QPushButton#Call_The_Police_15Min[mode = "Call_The_Police_15Min_False"] {
+    background-image:url(:/Printer/Group 10880.png);
+}
+QPushButton#Call_The_Police_30Min[mode = "Call_The_Police_30Min_True"] {
+     background-image:url(:/Printer/Group 10781.png);
+ }
+QPushButton#Call_The_Police_30Min[mode = "Call_The_Police_30Min_False"] {
+     background-image:url(:/Printer/Group 10881.png);
+ }
+QPushButton#Call_The_Police_1Hour[mode = "Call_The_Police_1Hour_True"] {
+     background-image:url(:/Printer/Group 10780.png);
+ }
+QPushButton#Call_The_Police_1Hour[mode = "Call_The_Police_1Hour_False"] {
+     background-image:url(:/Printer/Group 10882.png);
+ }
+QPushButton#Call_The_Police_2Hour[mode = "Call_The_Police_2Hour_True"] {
+     background-image:url(:/Printer/Group 10775.png);
+ }
+QPushButton#Call_The_Police_2Hour[mode = "Call_The_Police_2Hour_False"] {
+     background-image:url(:/Printer/Group 10883.png);
+ }
+QPushButton#Call_The_Police_4Hour[mode = "Call_The_Police_4Hour_True"] {
+     background-image:url(:/Printer/Group 10776.png);
+ }
+QPushButton#Call_The_Police_4Hour[mode = "Call_The_Police_4Hour_False"] {
+     background-image:url(:/Printer/Group 10884.png);
+ }
+QPushButton#Log_Printing[mode = "Log_Printing_True"] {
+     background-image:url(:/Printer/Group 10885.png);
+ }
+QPushButton#Log_Printing[mode = "Log_Printing_False"] {
+     background-image:url(:/Printer/Group 10875.png);
+ }
+/*-----------参考线-------------*/
+QPushButton[mode = "up_arrow_True"] {
+    background-image:url(:/LineOfReference/Group 10866.png);
+}
+QPushButton[mode = "up_arrow_False"] {
+    background-image:url(:/LineOfReference/Group 10870.png);
+}
+QPushButton[mode = "down_arrow_True"] {
+    background-image:url(:/LineOfReference/Group 10868.png);
+}
+QPushButton[mode = "down_arrow_False"] {
+    background-image:url(:/LineOfReference/Group 10886.png);
+}
+QLabel[mode = "Digit_Frame"] {
+    background-image:url(:/LineOfReference/Group 10174.png);
+}
+QPushButton#Dial_Button[mode = "Dial_Button"]{
+    background-image:url(:/WaveformSeparation/Group 10895.png);
+}
+QWidget#HorizontalReferenceLine
+{
+    background:black;
+}
+QDial#Dial
+{
+    background:transparent;
+    border:none;
+}
+
+/*-------时间日期-----*/
+QWidget#Header_Widget
+{
+    background:rgb(62, 67, 78);
+}
+QPushButton#Month_Button
+{
+    color:white;
+    border:none;
+    background:transparent;
+    font-size:22px;
+    text-align:left;
+}
+QPushButton#Prev_Button,
+QPushButton#Next_Button
+{
+    color:#0094ff;
+    border:none;
+    background:transparent;
+    font-size:24px;
+}
+QCalendarWidget QAbstractItemView
+{
+    background-color:rgb(62, 67, 78);
+    color: white;
+    selection-background-color: #0078D7;
+    selection-color: white;
+    font-size: 18px;
+}
+QCalendarWidget QTableView
+{
+    background-color: rgb(62, 67, 78);
+    color: white;
+    alternate-background-color: rgb(62, 67, 78);
+    border-radius: 0px; /* 清除可能继承的圆角 */
+        border: none;
+}
+QCalendarWidget QTableView:item:selected
+{
+    background-color: #0078D7; /* 选中时的蓝色背景 */
+    color: white;              /* 选中时的白色文字 */
+}
+QCalendarWidget QAbstractItemView:disabled
+{
+    color: rgb(62, 67, 78);
+}
+
+/*-----时间------*/
+QListWidget
+{
+    border:none;
+    background:rgb(62, 67, 78);;
+    color:white;
+    font-size:22px;
+    font-family:"Source Han Sans CN";
+    outline:none;
+}
+QListWidget::item
+{
+    height:60px;
+}
+QListWidget::item:selected
+{
+    background:transparent;
+    color:white;
+}
+QFrame#TopLine,
+QFrame#BottomLine
+{
+    background:white;
+    min-height:1px;
+    max-height:1px;
+}
+QPushButton[objectName^="Set_Button_"] {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: transparent;
+    font-family: "Source Han Sans CN";
+    font-weight: bold;
+}
+QPushButton[mode = "Set_Button_Back"]{
+    background-image:url(:/Set/Group 10795.png);
+}
+/* 意思是：找到 objectName 为 stackedWidget 的控件，并给它里面所有的子 QWidget 加上背景 */
+QStackedWidget#stackedWidget > QWidget {
+    background-image: url(":/Set/Group 10782.png"); /* 你的图片路径 */
+    background-repeat: no-repeat;                     /* 背景图不重复平铺 */
+    background-position: center;                      /* 背景图居中显示 */
+}
+QPushButton#Set_Confirm_Button[mode = "Set_Confirm_Button"]{
+    background-image:url(:/Set/Group 10791.png);
+}
+/* 整个滑动条的基底轨道 */
+QSlider::groove:horizontal {
+    border: none;
+    height: 24px; /* 根据你的需求调整高度 */
+    background: #D9D9D9; /* 右侧未填充部分的浅灰色 */
+    border-radius: 12px; /* 圆角大小，通常为高度的一半 */
+}
+/* 左侧已填充（划过）的轨道：实现渐变色 */
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #2C5E8A,  /* 左侧深蓝 */
+                                stop:0.5 #00B4D8, /* 中间青蓝 */
+                                stop:1 #00F5FF);  /* 右侧亮青 */
+    border-radius: 12px;
+}
+
+/* 滑块（Thumb）的样式 */
+QSlider::handle:horizontal {
+    background: #5B92E5; /* 滑块的蓝色 */
+    width: 14px;         /* 滑块的宽度 */
+    margin-top: -4px;    /* 让滑块高度超出轨道，往上突出一截 */
+    margin-bottom: -4px; /* 让滑块高度超出轨道，往下突出一截 */
+    border-radius: 2px;  /* 微微的圆角，呈现长方形 */
+}
+
+/*  ---- Statusbar-------   */
+QLabel[mode="Label_StatusBar"] {
+   background-image:url(:/StatusBar/Group 10448.png);
+}
+
+/*  ---- Topbar-------   */
+QLabel[mode="Label_Topbar"] {
+   background-image:url(:/TopBar/Rectangle 2846.png);
+}
+QPushButton#AlarmBell_Button[mode="AlarmBell_Button_False"]{
+    background-image:url(:/TopBar/Group 9904.png);
+}
+QPushButton#AlarmBell_Button[mode="AlarmBell_Button_True"]{
+    background-image:url(:/TopBar/Group 10503.png);
+}
+QLabel[mode="HeliumGasCylinderIcon_100"] {
+   background-image:url(:/TopBar/Frame 10039.png);
+}
+QLabel[mode="HeliumGasCylinderIcon_50"] {
+   background-image:url(:/TopBar/Group 10289.png);
+}
+QLabel[mode="HeliumGasCylinderIcon_20"] {
+   background-image:url(:/TopBar/Group 10290.png);
+}
+QLabel[mode="HeliumGasCylinderIcon_0"] {
+   background-image:url(:/TopBar/Group 10295.png);
+}
+QLabel[mode="BatteryIcon_100"] {
+   background-image:url(:/TopBar/Group 9906.png);
+}
+QLabel[mode="BatteryIcon_50"] {
+   background-image:url(:/TopBar/Group 10291.png);
+}
+QLabel[mode="BatteryIcon_20"] {
+   background-image:url(:/TopBar/Group 10292.png);
+}
+QLabel[mode="BatteryIcon_0"] {
+   background-image:url(:/TopBar/Group 10296.png);
+}
+QLabel[mode="BatteryIcon_Recharge"] {
+   background-image:url(:/TopBar/Group 10305.png);
+}
+QLabel[mode="PatternIcon_Hybrid"] {
+   background-image:url(:/TopBar/Group 10648.png);
+}
+QLabel[mode="PatternIcon_Rescue"] {
+   background-image:url(:/TopBar/Group 10645.png);
+}
+
+/*  ---- TriggerMode-------   */
+QLabel[mode="Label_TriggerMode"] {
+   background-image:url(:/TriggerMode/Group 10516.png);
+}
+QLabel[mode="Background_True"] {
+   background-image:url(:/TriggerMode/Rectangle 4581.png);
+}
+QLabel[mode="Background_False"] {
+   background-image:none;
+}
+
+/*-----------HelpInterface---------*/
+QLabel#HelpInterfaceLabel[mode="HelpInterfaceLabel"] {
+   background-image:url(:/HelpInterface/Union.png);
+}
+
+
+/* 1. 垂直滚动条整体轨道（Background Area） */
+QScrollArea#scrollArea QScrollBar:vertical {
+    background: #1E1E1E;        /* 滚动条背景色 */
+    width: 10px;                /* 滚动条宽度 */
+    margin: 0px 0px 0px 0px;    /* 外边距 */
+    border: none;               /* 边框置空 */
+}
+
+/* 2. 滚动条滑块（The Scroll Handle） */
+QScrollArea #scrollArea QScrollBar::handle:vertical {
+    background: #666666;        /* 滑块默认状态颜色 */
+    min-height: 40px;           /* 滑块最小高度，防止内容极多时滑块变得太小 */
+    border-radius: 5px;         /* 圆角半径：设为宽度的一半，滑块会呈现胶囊状 */
+}
+
+/* 3. 鼠标悬停在滑块上时的状态（Hover） */
+QScrollArea #scrollArea QScrollBar::handle:vertical:hover {
+    background: #888888;        /* 悬停时颜色变亮 */
+}
+
+/* 4. 鼠标点击并拖拽滑块时的状态（Pressed） */
+QScrollArea #scrollArea QScrollBar::handle:vertical:pressed {
+    background: #AAAAAA;        /* 点击时颜色进一步变亮 */
+}
+
+/* 5. 隐藏滚动条上下两端的箭头按钮（Add-line 和 Sub-line） */
+QScrollArea #scrollArea QScrollBar::add-line:vertical,
+QScrollArea #scrollArea QScrollBar::sub-line:vertical {
+    height: 0px;
+    border: none;
+    background: none;
+}
+
+/* 6. 隐藏滑块上下两侧空白轨道的点击高亮（Add-page 和 Sub-page） */
+QScrollArea #scrollArea QScrollBar::add-page:vertical,
+QScrollArea #scrollArea QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+QLabel[mode="Label11"]{
+    background-image:url(:/LogExport/Group 10944.png);
+}
+QLabel[mode="Label_DataPanel_Background"]{
+    background-image:url(:/LogExport/Group 109471.png);
+}
+QLabel[mode="Label_Top_Background"]{
+    background-image:url(:/LogExport/Group 10947.png);
+}
+QWidget #TableListPanel{
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+/*----QScrollArea-----*/
+/* 1. 把外层框架和内部视口都设为透明，并去掉边框 */
+QScrollArea#TableScrollArea,
+QScrollArea#TableScrollArea > QWidget > QWidget {
+    border: none;
+    background-color: transparent;
+    background-image: none;
+}
+/* 2. 把滚动区域内部包裹的那个滚动组件（Widget）也设为透明 */
+QScrollArea#MyScrollArea #ScrollAreaWidgetContents {
+    background-color: transparent;
+}
+
+/* 只匹配对象名以 btnTable_ 开头的 QPushButton */
+QPushButton[objectName^="BtnTable_"] {
+    outline: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    font-family: "Source Han Sans CN";
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+/* 2. 动态按钮被按下时，或者处于选中状态（高亮保持）时 */
+QPushButton[objectName^="BtnTable_"]:pressed,
+QPushButton[objectName^="BtnTable_"]:checked {
+    background-image: url(:/LogExport/Frame 40711.png);
+}
+QPushButton[mode="RefreshButton"]{
+    border-image: url(:/LogExport/Group 10977.png);
+}
+QPushButton[mode="RefreshButton"]:pressed{
+    border-image: url(:/LogExport/Group 10976.png);
+}
+QPushButton[mode="Left_Button"]{
+    border-image: url(:/LogExport/Group 10969.png);
+}
+QPushButton[mode="Left_Button"]:pressed{
+    border-image: url(:/LogExport/Group 10978.png);
+}
+QPushButton[mode="Right_Button"]{
+    border-image: url(:/LogExport/Group 10970.png);
+}
+QPushButton[mode="Right_Button"]:pressed{
+    border-image: url(:/LogExport/Group 10979.png);
+}
+QLabel[mode="PageLabel"] {
+  background-image:url(:/LogExport/Group 10981.png);
+}
+QPushButton[mode="Export_Button"]{
+    border-image: url(:/LogExport/Group 10982.png);
+}
+QPushButton[mode="Export_Button"]:pressed{
+    border-image: url(:/LogExport/Group 10968.png);
+}
+QPushButton[mode="LogExport_Close_Button"]{
+    border-image: url(:/LogExport/Group 11001.png);
+}
+QPushButton[mode="LogExport_Close_Button"]:pressed{
+    border-image: url(:/LogExport/Group 10928.png);
+}
+
+QLabel[mode="Label_Time"] {
+  background-image:url(:/LogExport/Group 10971.png);
+}
+
+/* ========================================================================
+   1. 表格整体样式（已修改为 20px 圆角）
+   ======================================================================== */
+QTableView {
+    background-color: #191c24;          /* 整体大背景：深暗色 */
+    alternate-background-color: #1f232d;/* 隔行变色的深灰 */
+    color: #e3e3e3;                     /* 正常文字颜色：浅白 */
+    gridline-color: transparent;        /* 隐藏原生网格线 */
+    outline: none; /* 👈 核心：干掉焦点线 */
+    border: none;
+    font-family: "Source Han Sans CN";
+    font-size: 20px;
+    border-radius: 20px;                /* 核心：给表格本身设置 20px 圆角 */
+    font-weight: bold;
+    padding: 0px;
+}
+
+/* ========================================================================
+   2. 表头样式：左上角和右上角裁剪为 20px 圆角
+   ======================================================================== */
+QHeaderView::section:horizontal:first {
+    border-top-left-radius: 20px;
+}
+QHeaderView::section:horizontal:last {
+    border-top-right-radius: 20px;
+}
+
+QHeaderView {
+    background-color: #1f232d;
+    border: none;
+}
+QHeaderView::section {
+    background-color: #1f232d;
+    color: #e3e3e3;
+    padding: 4px;
+    border: none;
+    font-size: 20px;
+}
+
+/* ========================================================================
+   3. 新增：水平滚动条样式（完美适配你的 13 列数据与暗黑风格）
+   ======================================================================== */
+/* 整个水平滚动条区域 */
+QScrollBar:horizontal {
+    border: none;
+    background: #191c24;                /* 与表格大背景一致 */
+    height: 12px;                       /* 滚动条高度 */
+    margin: 0px 20px 0px 20px;          /* 左右留出距离，防止滑块顶到表格的20px圆角边框 */
+}
+
+/* 滚动条上的滑块 */
+QScrollBar::handle:horizontal {
+    background: #2c313d;                /* 滑块颜色：稍微亮一点的深灰 */
+    min-width: 30px;
+    border-radius: 6px;                 /* 滑块自身的圆角 */
+}
+
+/* 鼠标悬浮在滑块上时的颜色 */
+QScrollBar::handle:horizontal:hover {
+    background: #00b4d8;                /* 悬浮时变成高亮青蓝色，呼应你的ID高亮色 */
+}
+
+/* 隐藏滚动条左右两端的自带箭头 */
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+    height: 0px;
+}
+
+/* 滚动条滑块两边的空白轨道背景（保持透明，露出表格背景） */
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+/* 选中行样式 */
+QTableView::item:selected {
+    background-color: #2a313e;          /* 选中行高亮成略带深蓝的灰色 */
+    color: #00b4d8;                     /* 选中行的文字变成高亮青蓝 */
+}
+
+/* 鼠标悬停行样式 */
+QTableView::item:hover {
+    background-color: #232935;          /* 鼠标悬停变色 */
+}
+/* 为表格的每一个格子单元格添加内边距 */
+QTableView::item {
+    padding-left: 10px;   /* 文字距离左边框 10px */
+    padding-right: 10px;  /* 文字距离右边框 10px */
+    padding-top: 10px;     /* 文字距离上边框 5px */
+    padding-bottom: 10px;  /* 文字距离下边框 5px */
+}
+/* 表头（Header）样式 */
+/* 1. 作用于整个表头视图：在这里设置贯穿整行的上下渐变边框 */
+QHeaderView {
+    background-color: #1f232d;          /* 确保表头整体背景色一致 */
+    /* 上边框整条渐变 (从左到右) */
+    border-top: 2px solid qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #22B6B6, stop:1 #04FFFF);
+    /* 下边框整条渐变 (从左到右) */
+    border-bottom: 2px solid qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #22B6B6, stop:1 #04FFFF);
+}
+
+/* 2. 作用于表头内部的每个格子 */
+QHeaderView::section {
+    background-color: #1f232d;          /* 表头格子用 #1f232d */
+    color: #e3e3e3;                     /* 表头文字颜色 */
+    padding: 10px;
+    /* 必须清除每个格子自带的边框，否则会遮挡或破坏外层 QHeaderView 的渐变线 */
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* ===============================
+   LineNumberComboBox 主体
+   =============================== */
+QComboBox#LineNumberComboBox {
+    font-family: "Source Han Sans CN";
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    background-image: url(:/LogExport/Group 10973.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0px;
+    padding-right: 0px;
+   /* 1. 设置宽度（根据你的切图微调数值） */
+       min-width: 93px;  /* 限制最小宽度 */
+       max-width: 93px;  /* 限制最大宽度 */
+
+       /* 2. 设置高度（你原本是 40px，如果需要改动直接在这里修改） */
+       min-height: 60px;  /* 限制最小高度 */
+       max-height: 60px;  /* 限制最大高度 */
+}
+
+/* 去掉右侧三角按钮 */
+QComboBox#LineNumberComboBox::drop-down {
+    border: none;
+    width: 0px;
+}
+QComboBox#LineNumberComboBox::down-arrow {
+    image: none;
+}
+
+/* ========================================================
+   下拉列表外层（现在可以安全地设置整体深色背景和完美大圆角了）
+   ======================================================== */
+QComboBox#LineNumberComboBox QAbstractItemView {
+    font-family: "Source Han Sans CN";
+    font-size: 26px;
+    color: white;
+
+    /* 核心：配合 C++ 的透明属性，这里才是真正的下拉弹窗大背景 */
+    background-color: #252932;
+    border: none ;
+    border-radius: 8px; /* 整个弹窗的大圆角 */
+    padding: 6px;
+    outline: none;
+}
+
+QComboBox#LineNumberComboBox QAbstractItemView::item {
+/* 1. 【核心】在这里设置每一个选项格子的长度（宽） */
+    height: 30px;
+    margin: 5px 2px;
+    border-radius: 6px; /* 单个选项的内圆角 */
+    padding-left: 0px;  /* 配合 C++ 居中 */
+    color: white;
+    background-color: #3E4552;
+}
+
+/* 鼠标经过 */
+QComboBox#LineNumberComboBox QAbstractItemView::item:hover {
+    background-color: #21B7BE;
+    color: white;
+}
+
+/* 当前选中 */
+QComboBox#LineNumberComboBox QAbstractItemView::item:selected {
+    background-color: #21B7BE;
+    color: white;
+}
+
+/* 1. 输入框 Patient_ID 基础样式 */
+QLineEdit[mode="Patient_ID"] {
+    background-image:url(:/LogExport/Group 10975.png);
+    font-family: "Source Han Sans CN";
+    font-size: 22px;             /* 在这里调整字体大小 */
+    color:rgb(4, 255, 255);                /* 输入框文字颜色 */
+    padding-left: 10px;          /* 适当加点左边距，防止文字紧贴背景图边缘 */
+    background-color: #2D3035;    /* 深灰色背景 */
+    border: 1px solid #3E4248;    /* 暗色边框 */
+    border-radius: 4px;           /* 圆角 */
+font-weight: bold;
+}
+
+QLineEdit[mode="Patient_ID"]:focus {
+    border: 1px solid #22B0AF;    /* 聚焦时显示为你图一的蓝绿色边框 */
+}
+
+/* QCompleter整体弹窗 */
+QAbstractItemView#PatientCompleterPopup
+{
+    background-color:#252932;
+    border:none;
+
+}
+/* 真正显示背景的位置 */
+QAbstractItemView#PatientCompleterPopup QAbstractScrollArea
+{
+    background-color:#252932;
+}
+QAbstractItemView#PatientCompleterPopup QAbstractScrollArea viewport
+{
+    background-color:#252932;
+}
+/* item */
+QAbstractItemView#PatientCompleterPopup::item
+{
+    background-color:#31353D;
+    color:white;
+    height:35px;
+    margin:3px;
+    border-radius:5px;
+    font-family: "Source Han Sans CN";                   /* 设置字体，优先微软雅黑 */
+    font-size: 20px;                                         /* 设置字号大小，可以根据需要调整 */
+
+}
+QAbstractItemView#PatientCompleterPopup::item:hover,
+QAbstractItemView#PatientCompleterPopup::item:selected
+{
+    background-color:#22B0AF;
+
+}

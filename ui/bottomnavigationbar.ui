@@ -203,7 +203,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Printer_Label">
+  <widget class="QLabel" name="PressureZeroing_Label">
    <property name="geometry">
     <rect>
      <x>1576</x>
@@ -353,7 +353,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Printer_Button">
+  <widget class="QPushButton" name="PressureZeroing_Button">
    <property name="geometry">
     <rect>
      <x>1599</x>
@@ -895,24 +895,24 @@
     <rect>
      <x>1592</x>
      <y>92</y>
-     <width>54</width>
+     <width>72</width>
      <height>27</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>54</width>
+     <width>72</width>
      <height>27</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>54</width>
+     <width>72</width>
      <height>27</height>
     </size>
    </property>
    <property name="text">
-    <string>打印机</string>
+    <string>压力调零</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_11">
@@ -1022,13 +1022,13 @@
   <zorder>InflationRatio_Button</zorder>
   <zorder>Set_Button_Label</zorder>
   <zorder>FreezeWindow_Label</zorder>
-  <zorder>Printer_Label</zorder>
+  <zorder>PressureZeroing_Label</zorder>
   <zorder>Help_Button_Label</zorder>
   <zorder>Switch_Button_Label</zorder>
   <zorder>Blank_1_Button_Label</zorder>
   <zorder>Set_Button</zorder>
   <zorder>FreezeWindow_Button</zorder>
-  <zorder>Printer_Button</zorder>
+  <zorder>PressureZeroing_Button</zorder>
   <zorder>Help_Button</zorder>
   <zorder>Blank_1_Button</zorder>
   <zorder>Switch_Button</zorder>

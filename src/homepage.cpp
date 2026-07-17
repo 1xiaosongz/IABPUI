@@ -21,11 +21,18 @@ HomePage::HomePage(QWidget *parent) : QWidget(parent), ui(new Ui::HomePage) {
     inflationRatio = new InflationRatio(this);
     balloonvolume = new BalloonVolume(this);
     set = new Set(this);
-
+    // helpinterface = new HelpInterface(this);
     alarmsystem = new AlarmSystem(this);
     messageManagement = new MessageManagement(this);
     level1alarm = new Level1Alarm(this);
-    // helpinterface = new HelpInterface(this);
+    horizontalReferenceLine = new HorizontalReferenceLine(this);
+    pressurezeroadjustment = new PressureZeroAdjustment(this);
+    logexport = new LogExport(this);
+
+    // horizontalReferenceLine = new HorizontalReferenceLine();
+    // horizontalReferenceLine = new HorizontalReferenceLine(this);
+    // horizontalReferenceLine->setGeometry(100, 100, 400, 300);
+    // horizontalReferenceLine->show();
 }
 
 HomePage::~HomePage() {

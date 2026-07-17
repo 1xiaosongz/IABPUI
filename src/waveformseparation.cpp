@@ -33,8 +33,20 @@ WaveformSeparation::WaveformSeparation(QWidget *parent) : QWidget(parent), ui(ne
     ui->BalloonPressureLow_Label->setText("120");
     ui->BalloonPressureLow_Label->setProperty("mode","20px,colour255,255,255,114");
     refreshStyle(ui->BalloonPressureLow_Label);
-
-
+    ui->Dial_Button->setProperty("mode","Dial_Button");
+    refreshStyle(ui->Dial_Button);
+    ui->PressureSource->setText("压力源:");
+    ui->SensingElement->setText("传感器");
+    ui->labelx->setText("-");
+    ui->Zeroing_Completed->setText("调零完成");
+    ui->PressureSource->setProperty("mode","24px,colour252,86,78");
+    ui->SensingElement->setProperty("mode","24px,colour252,86,78");
+    ui->labelx->setProperty("mode","24px,colour252,86,78");
+    ui->Zeroing_Completed->setProperty("mode","24px,colour252,86,78");
+    refreshStyle(ui->PressureSource);
+    refreshStyle(ui->SensingElement);
+    refreshStyle(ui->labelx);
+    refreshStyle(ui->Zeroing_Completed);
 }
 
 WaveformSeparation::~WaveformSeparation() {

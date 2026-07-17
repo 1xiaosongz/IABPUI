@@ -47,7 +47,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-image: url(:/ModeSelection/Group 10507.png);</string>
    </property>
    <property name="text">
     <string/>

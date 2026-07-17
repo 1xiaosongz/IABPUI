@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PressureZeroAdjustment</class>
+ <widget class="QWidget" name="PressureZeroAdjustment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>764</width>
+    <height>270</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>764</width>
+    <height>270</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PressureZeroAdjustment</string>
+  </property>
+  <widget class="QPushButton" name="Help_Button">
+   <property name="geometry">
+    <rect>
+     <x>697</x>
+     <y>18</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Finish_Button">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>67</y>
+     <width>136</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>136</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Cancel_Label">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>104</y>
+     <width>175</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Cancel_Button">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>69</y>
+     <width>260</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Cancel_Backdrop">
+   <property name="geometry">
+    <rect>
+     <x>299</x>
+     <y>69</y>
+     <width>266</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Affirm_Button">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>69</y>
+     <width>260</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>260</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>764</width>
+     <height>270</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>764</width>
+     <height>270</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>764</width>
+     <height>270</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/PressureZeroAdjustment/Group 10862.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Affirm_Backdrop">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>69</y>
+     <width>266</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>266</width>
+     <height>136</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Affirm_Label">
+   <property name="geometry">
+    <rect>
+     <x>82</x>
+     <y>104</y>
+     <width>175</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>175</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体 CN Bold</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>Label</zorder>
+  <zorder>Affirm_Backdrop</zorder>
+  <zorder>Cancel_Backdrop</zorder>
+  <zorder>Cancel_Label</zorder>
+  <zorder>Affirm_Label</zorder>
+  <zorder>Finish_Button</zorder>
+  <zorder>Cancel_Button</zorder>
+  <zorder>Affirm_Button</zorder>
+  <zorder>Help_Button</zorder>
+ </widget>
+ <resources>
+  <include location="../resource/PressureZeroAdjustment/PressureZeroAdjustment.qrc"/>
+ </resources>
+ <connections/>
+</ui>

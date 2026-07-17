@@ -35,6 +35,15 @@ StatusBar::StatusBar(QWidget *parent) : QWidget(parent), ui(new Ui::StatusBar) {
     ui->TriggerSource_Label->setText("心房/心室起搏器");
     ui->TriggerSource_Label->setProperty("mode","20px,colour172,181,197,AlignLeft");
 
+    ui->High_Pressure_Auxiliary->setText("未辅助");
+    ui->High_Pressure_Auxiliary_Value->setText("999");
+    ui->Low_Pressure_Without_Auxiliary->setText("未辅助");
+    ui->Low_Pressure_Without_Auxiliary_Value->setText("999");
+
+    ui->High_Pressure_Auxiliary->setProperty("mode","20px,colour252,86,78");
+    ui->High_Pressure_Auxiliary_Value->setProperty("mode","40px,colour252,86,78");
+    ui->Low_Pressure_Without_Auxiliary->setProperty("mode","20px,colour252,86,78");
+    ui->Low_Pressure_Without_Auxiliary_Value->setProperty("mode","40px,colour252,86,78");
 
     QMovie *movie1 = new QMovie("../resource/StatusBar/100.gif");
     ui->HeartbeatImage->setMovie(movie1);

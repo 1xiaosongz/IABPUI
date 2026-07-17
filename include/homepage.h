@@ -19,9 +19,11 @@
 #include "alarmsystem.h"
 #include "messagemanagement.h"
 #include "level1alarm.h"
-
+#include "pressurezeroadjustment.h"
+#include "horizontalreferenceline.h"
+#include "logexport.h"
 #include <QObject>
-
+#include "helpinterface.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -49,11 +51,14 @@ private:
     InflationRatio * inflationRatio;
     BalloonVolume * balloonvolume;
     Set * set;
-
+    PressureZeroAdjustment * pressurezeroadjustment;
     AlarmSystem * alarmsystem;
     MessageManagement * messageManagement;
     Level1Alarm * level1alarm;
+    HorizontalReferenceLine * horizontalReferenceLine;
     // HelpInterface * helpinterface;
+
+    LogExport * logexport;
 
 private:
     Ui::HomePage *ui;

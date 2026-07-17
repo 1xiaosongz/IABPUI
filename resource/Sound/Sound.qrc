@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/Sound">
+        <file>Group 10284.png</file>
+        <file>Group 10696.png</file>
+        <file>Group 10747.png</file>
+        <file>Group 10770.png</file>
+        <file>Group 10812.png</file>
+        <file>Group 10815.png</file>
+        <file>Group 10816.png</file>
+        <file>Group 10817.png</file>
+        <file>Group 10819.png</file>
+        <file>Group 10822.png</file>
+        <file>Group 10824.png</file>
+        <file>Group 10857.png</file>
+    </qresource>
+</RCC>

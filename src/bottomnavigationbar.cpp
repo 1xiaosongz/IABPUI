@@ -33,7 +33,7 @@ BottomNavigationBar::BottomNavigationBar(QWidget *parent) : QWidget(parent), ui(
     ui->BalloonPercentage->setProperty("mode","40px,colour4,255,255");
     ui->Label->setProperty("mode","Label_BottomNavigationBar");
     ui->FreezeWindow_Label->setProperty("mode","FreezeWindow_Label_False"); 
-    ui->Printer_Label->setProperty("mode","Printer_Label_False");
+    ui->PressureZeroing_Label->setProperty("mode","PressureZeroing_Label_False");
     ui->Help_Button_Label->setProperty("mode","Help_Button_Label_False");
     ui->Set_Button_Label->setProperty("mode","Set_Button_Label_False");
     ui->Switch_Button_Label->setProperty("mode","Switch_Button_Label_False");

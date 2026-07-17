@@ -429,6 +429,119 @@
       <string>I</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="Dial_Button">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>280</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PressureSource">
+     <property name="geometry">
+      <rect>
+       <x>184</x>
+       <y>296</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SensingElement">
+     <property name="geometry">
+      <rect>
+       <x>284</x>
+       <y>296</y>
+       <width>88</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>88</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>88</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelx">
+     <property name="geometry">
+      <rect>
+       <x>359</x>
+       <y>296</y>
+       <width>30</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Zeroing_Completed">
+     <property name="geometry">
+      <rect>
+       <x>378</x>
+       <y>296</y>
+       <width>107</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>107</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>107</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
     <zorder>Label</zorder>
     <zorder>widget</zorder>
     <zorder>widget_2</zorder>
@@ -440,6 +553,11 @@
     <zorder>ArteryLow_Label</zorder>
     <zorder>BalloonPressureHigh_Label</zorder>
     <zorder>BalloonPressureLow_Label</zorder>
+    <zorder>Dial_Button</zorder>
+    <zorder>PressureSource</zorder>
+    <zorder>SensingElement</zorder>
+    <zorder>labelx</zorder>
+    <zorder>Zeroing_Completed</zorder>
    </widget>
    <widget class="QWidget" name="page_2"/>
   </widget>

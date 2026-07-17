@@ -11,8 +11,6 @@
 #include <QMouseEvent>
 #include <QSlider>
 #include <QDate>
-#include <QCalendarWidget>
-#include <QPainter>
 #include <QListWidget>
 QT_BEGIN_NAMESPACE
 
@@ -31,11 +29,13 @@ public:
     ~Set() override;
     void refreshStyle(QWidget* w);
 
+
 private:
+
+    QDate currentMonth;
+
     QDate m_currentMonth;
     void CenterCurrentItem(QListWidget *list);
-private slots:
-    // void UpdateTime();
 private:
     Ui::Set *ui;
 };
@@ -56,6 +56,5 @@ protected:
         QSlider::mousePressEvent(event); // 保证原有的滑动逻辑不受影响
     }
 };
-
 
 #endif //IABPUI_SET_H

@@ -204,7 +204,7 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>280</y>
+     <y>260</y>
      <width>200</width>
      <height>150</height>
     </rect>
@@ -279,7 +279,7 @@
    <property name="geometry">
     <rect>
      <x>144</x>
-     <y>497</y>
+     <y>531</y>
      <width>112</width>
      <height>90</height>
     </rect>
@@ -372,8 +372,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-background-image: url(:/Statusbar/Group 10448.png);</string>
+    <string notr="true">background-image: url(:/Statusbar/Group 10448.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -473,6 +472,106 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="High_Pressure_Auxiliary">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>360</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="High_Pressure_Auxiliary_Value">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>360</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Low_Pressure_Without_Auxiliary">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>480</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Low_Pressure_Without_Auxiliary_Value">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>480</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>90</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>HighBloodPressure_Background</zorder>
   <zorder>LowBloodPressure_Background</zorder>
   <zorder>Heart_Rate_Background</zorder>
@@ -491,7 +590,13 @@ background-image: url(:/Statusbar/Group 10448.png);</string>
   <zorder>Mmhg</zorder>
   <zorder>TriggerSource_Label</zorder>
   <zorder>HeartbeatImage</zorder>
+  <zorder>High_Pressure_Auxiliary</zorder>
+  <zorder>High_Pressure_Auxiliary_Value</zorder>
+  <zorder>Low_Pressure_Without_Auxiliary</zorder>
+  <zorder>Low_Pressure_Without_Auxiliary_Value</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource/StatusBar/StatusBar.qrc"/>
+ </resources>
  <connections/>
 </ui>
