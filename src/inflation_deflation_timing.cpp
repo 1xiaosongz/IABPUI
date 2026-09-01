@@ -19,9 +19,9 @@ ui(new Ui::Inflation_Deflation_Timing) {
     setVisible(false);
     ui->Label->setProperty("mode","Label_Inflation_Deflation_Timing");
     ui->Finish_Button->setProperty("mode","Finish_Button_False");
-    ui->InflationNum_Label->setText("50");
+    ui->InflationNum_Label->setText("999");
     ui->InflationNum_Label->setProperty("mode","40px,colour255,255,255");
-    ui->DeflateNum_Label->setText("6");
+    ui->DeflateNum_Label->setText("99");
     ui->DeflateNum_Label->setProperty("mode","40px,colour255,255,255");
     ui->InflationReduce_Button->setProperty("mode", "Reduce");
     ui->DeflateReduce_Button->setProperty("mode", "Reduce");

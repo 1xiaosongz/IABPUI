@@ -1,9 +1,11 @@
 <RCC>
-    <qresource prefix="/Statusbar">
+    <qresource prefix="/StatusBar">
         <file>Group 10448.png</file>
         <file>40.gif</file>
         <file>80.gif</file>
         <file>100.gif</file>
         <file>140.gif</file>
+        <file>Group 11074.png</file>
+        <file>Group 11075.png</file>
     </qresource>
 </RCC>

@@ -31,7 +31,6 @@ private:
         Cancel
     };
 
-private:
     void setSelection(Selection selection);
     void refreshStyle(QWidget* widget);
 

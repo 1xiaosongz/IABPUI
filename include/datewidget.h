@@ -7,7 +7,13 @@
 
 #include <QWidget>
 #include <QDate>
-
+#include <QButtonGroup>
+// 在类定义外部增加视图状态枚举
+enum CalendarViewMode {
+    DayView, // 日期视图
+    MonthView, // 月份视图
+    YearView // 年份视图
+};
 QT_BEGIN_NAMESPACE
 
 namespace Ui {
@@ -32,6 +38,19 @@ public:
 private:
     Ui::DateWidget *ui;
     QDate m_currentMonth;
+    CalendarViewMode m_currentMode ;
+    QButtonGroup *m_monthButtonGroup; // 用于集中管理12个月份按钮
+    QButtonGroup *m_yearButtonGroup;
+    int m_startYearOfDecade;
+    // 更新头部文本的函数
+    void updateHeader();
+    void initMonthView(); // 初始化月份按钮的绑定
+
+    // 3. 增加初始化年份网格和刷新年份文字的函数
+    void initYearView();
+    void updateYearButtons();
+private slots:
+    void onTitleButtonClicked(); // 处理左上角那个 "2026年7月 >" 按钮的点击
 };
 
 

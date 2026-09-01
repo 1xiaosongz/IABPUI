@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>350</width>
-    <height>350</height>
+    <width>401</width>
+    <height>405</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>350</width>
-    <height>350</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>350</width>
-    <height>350</height>
+    <width>16777215</width>
+    <height>16777215</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -30,20 +30,20 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>350</width>
-     <height>350</height>
+     <width>401</width>
+     <height>401</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>350</width>
-     <height>350</height>
+     <width>0</width>
+     <height>0</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>350</width>
-     <height>350</height>
+     <width>16777215</width>
+     <height>16777215</height>
     </size>
    </property>
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -51,8 +51,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>351</width>
-      <height>351</height>
+      <width>401</width>
+      <height>401</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -63,106 +63,684 @@
       <widget class="QWidget" name="Header_Widget" native="true">
        <property name="minimumSize">
         <size>
-         <width>349</width>
-         <height>349</height>
+         <width>0</width>
+         <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>349</width>
-         <height>349</height>
+         <width>16777215</width>
+         <height>16777215</height>
         </size>
        </property>
-       <widget class="QWidget" name="horizontalLayoutWidget">
+       <widget class="QStackedWidget" name="YearToDateStackedWidget">
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
-          <width>351</width>
-          <height>32</height>
+          <y>50</y>
+          <width>398</width>
+          <height>300</height>
          </rect>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QPushButton" name="Month_Button">
-           <property name="minimumSize">
-            <size>
-             <width>200</width>
-             <height>0</height>
-            </size>
+        <property name="minimumSize">
+         <size>
+          <width>398</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>398</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <widget class="QCalendarWidget" name="CalendarWidget">
+          <property name="geometry">
+           <rect>
+            <x>25</x>
+            <y>0</y>
+            <width>350</width>
+            <height>300</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>350</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>350</width>
+            <height>300</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QWidget" name="gridLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>0</y>
+            <width>344</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="spacing">
+            <number>0</number>
            </property>
-           <property name="maximumSize">
-            <size>
-             <width>200</width>
-             <height>16777215</height>
-            </size>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="MonthBtn_6">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>6月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="MonthBtn_10">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>10月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="MonthBtn_4">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>4月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="MonthBtn_8">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>8月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="MonthBtn_1">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>1月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="MonthBtn_2">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>2月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="MonthBtn_3">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>3月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="MonthBtn_7">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>7月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="MonthBtn_5">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>5月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="MonthBtn_9">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>9月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="MonthBtn_11">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>11月</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPushButton" name="MonthBtn_12">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>12月</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>0</y>
+            <width>342</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="spacing">
+            <number>0</number>
            </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>0</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QPushButton" name="Prev_Button">
-           <property name="minimumSize">
-            <size>
-             <width>45</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>45</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>&lt;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="Next_Button">
-           <property name="minimumSize">
-            <size>
-             <width>45</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>45</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>&gt;</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="YearBtn_6">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="YearBtn_10">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="YearBtn_4">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="YearBtn_8">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="YearBtn_1">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="YearBtn_2">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="YearBtn_3">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="YearBtn_7">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="YearBtn_5">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="YearBtn_9">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="YearBtn_11">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPushButton" name="YearBtn_12">
+             <property name="minimumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>85</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
        </widget>
-       <widget class="QCalendarWidget" name="CalendarWidget">
+       <widget class="QPushButton" name="ClearDate_Button">
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>32</y>
-          <width>351</width>
-          <height>321</height>
+          <y>354</y>
+          <width>146</width>
+          <height>46</height>
          </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>146</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>146</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none; </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Cancel_Button">
+        <property name="geometry">
+         <rect>
+          <x>294</x>
+          <y>354</y>
+          <width>106</width>
+          <height>46</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>106</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>106</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none; </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Month_Button">
+        <property name="geometry">
+         <rect>
+          <x>25</x>
+          <y>0</y>
+          <width>180</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Prev_Button">
+        <property name="geometry">
+         <rect>
+          <x>299</x>
+          <y>0</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Next_Button">
+        <property name="geometry">
+         <rect>
+          <x>349</x>
+          <y>0</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&gt;</string>
         </property>
        </widget>
       </widget>

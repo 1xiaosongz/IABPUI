@@ -63,7 +63,7 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     refreshStyle(ui->ScanningSpeed_50);
     refreshStyle(ui->Timing_7S);
     refreshStyle(ui->Timing_15S);
-    refreshStyle(ui->Timing_30S);
+    refreshStyle(ui->Timing_30S); 
     refreshStyle(ui->Timing_60S);
     refreshStyle(ui->Call_The_Police_Off);
     refreshStyle(ui->Call_The_Police_15Min);
@@ -73,35 +73,12 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     refreshStyle(ui->Call_The_Police_4Hour);
     refreshStyle(ui->Log_Printing);
 
-    ui->label_26->setProperty("mode", "30px,colour255,255,255,AlignCenter");
-    ui->label_18->setProperty("mode", "30px,colour255,255,255,AlignCenter");
-    ui->Blood_Pressure_Increase_Botton->setProperty("mode", "up_arrow_True");
-    ui->Blood_Pressure_Drops_Botton->setProperty("mode", "down_arrow_True");
-    ui->Increased_Counterpulsation_Pressure_Botton->setProperty("mode", "up_arrow_True");
-    ui->Counterpulsation_Pressure_Reduction_Botton->setProperty("mode", "down_arrow_True");
-    ui->Label_14->setProperty("mode", "Digit_Frame");
-    ui->Label_13->setProperty("mode", "Digit_Frame");
-    ui->Anti_embolism_Pressure_Reading_Label->setText("666");
-    ui->Blood_Pressure_Reading_Label->setText("999");
-    ui->Anti_embolism_Pressure_Reading_Label->setProperty("mode", "30px,colour255,255,255,AlignCenter");
-    ui->Blood_Pressure_Reading_Label->setProperty("mode", "30px,colour255,255,255,AlignCenter");
-    refreshStyle(ui->Blood_Pressure_Increase_Botton);
-    refreshStyle(ui->Blood_Pressure_Drops_Botton);
-    refreshStyle(ui->Increased_Counterpulsation_Pressure_Botton);
-    refreshStyle(ui->Counterpulsation_Pressure_Reduction_Botton);
-    refreshStyle(ui->Anti_embolism_Pressure_Reading_Label);
-    refreshStyle(ui->Blood_Pressure_Reading_Label);
-    refreshStyle(ui->label_26);
-    refreshStyle(ui->label_18);
-    refreshStyle(ui->Label_13);
-    refreshStyle(ui->Label_14);
+
 //----------按键连接子界面-------------
     // 第一步：把你的 13 个按钮按照顺序放进一个 QVector 容器中
     QVector<QPushButton *> setButtons = {
         ui->Set_Button_1, ui->Set_Button_2, ui->Set_Button_3, ui->Set_Button_4,
-        ui->Set_Button_5, ui->Set_Button_6, ui->Set_Button_7, ui->Set_Button_8,
-        ui->Set_Button_9, ui->Set_Button_10, ui->Set_Button_11, ui->Set_Button_12,
-        ui->Set_Button_13, ui->Set_Button_14
+        ui->Set_Button_5, ui->Set_Button_6
     };
 
     // 第二步：用一个 for 循环，一次性搞定 13 个按钮的绑定
@@ -111,7 +88,7 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
             // 关键点：将当前的循环次数 i 传给 Lambda 表达式 [i]
             connect(setButtons[i], &QPushButton::clicked, this, [=]() {
                 // 点击第 i 个按钮，右侧的 stackedWidget 就切到第 i 页
-                ui->stackedWidget->setCurrentIndex(i);
+                ui->SetstackedWidget->setCurrentIndex(i);
             });
         }
     }
@@ -138,12 +115,10 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     ui->label_15->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     ui->label_16->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     ui->label_17->setProperty("mode", "30px,colour255,255,255,AlignCenter");
-
     refreshStyle(ui->label_14);
     refreshStyle(ui->label_15);
     refreshStyle(ui->label_16);
     refreshStyle(ui->label_17);
-
 
 
     // 1. 初始化 QSlider 范围（通常是 0 - 100）
@@ -254,6 +229,38 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
         amPmRow = 2; // 如果小于 12 点，则选中 AM
     }
     ui->AmPm_List->setCurrentRow(amPmRow);
+    ui->External_Trigger->setProperty("mode", "External_Trigger");
+    ui->Internal_Trigger->setProperty("mode", "Internal_Trigger");
+    ui->Iock_Screen->setProperty("mode", "Iock_Screen");
+    ui->Screen_Unlock->setProperty("mode", "Screen_Unlock");
+    ui->Display_Freeze->setProperty("mode", "Display_Freeze");
+    ui->Unfreeze->setProperty("mode", "Unfreeze");
+    ui->label_13->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    ui->label_21->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    ui->label_27->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    refreshStyle(ui->External_Trigger);
+    refreshStyle(ui->Internal_Trigger);
+    refreshStyle(ui->Iock_Screen);
+    refreshStyle(ui->Screen_Unlock);
+    refreshStyle(ui->Display_Freeze);
+    refreshStyle(ui->Unfreeze);
+    refreshStyle(ui->label_13);
+    refreshStyle(ui->label_21);
+    refreshStyle(ui->label_27);
+    ui->Catheter_Alarm_Activated->setProperty("mode", "Catheter_Alarm_Activated");
+    refreshStyle(ui->Catheter_Alarm_Activated);
+    ui->Air_Leak_Alarm_Activated_Sshut_Off->setProperty("mode", "Air_Leak_Alarm_Activated_Sshut_Off");
+    refreshStyle(ui->Air_Leak_Alarm_Activated_Sshut_Off);
+    ui->Pause_Catheter_Alarm->setProperty("mode", "Pause_Catheter_Alarm");
+    refreshStyle(ui->Pause_Catheter_Alarm);
+    ui->R_wave_Tracking_Turned_Off->setProperty("mode", "R_wave_Tracking_Turned_Off");
+    refreshStyle(ui->R_wave_Tracking_Turned_Off);
+    ui->R_wave_Tracking_Has_Been_Enabled->setProperty("mode", "R_wave_Tracking_Has_Been_Enabled");
+    refreshStyle(ui->R_wave_Tracking_Has_Been_Enabled);
+    ui->label_26->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    refreshStyle(ui->label_26);
+    ui->label_18->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    refreshStyle(ui->label_18);
 }
 
 Set::~Set() {

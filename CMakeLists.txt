@@ -1,5 +1,4 @@
-
-cmake_minimum_required(VERSION 4.1)
+cmake_minimum_required(VERSION 3.21)
 project(IABPUI)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -8,8 +7,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 #add_definitions(-DQCUSTOMPLOT_USE_OPENGL)
-
-set(CMAKE_PREFIX_PATH "D:/QT-wenjian/6.5.3/msvc2019_64")
+set(CMAKE_PREFIX_PATH "D:/qt/6.5.3/msvc2019_64")
 #add_definitions(-DQT_MESSAGELOGCONTEXT)
 add_definitions(-DQT_QML_DEBUG)
 set(CMAKE_BUILD_TYPE Debug)
@@ -18,9 +16,10 @@ find_package(Qt6 COMPONENTS
         Gui
         Widgets
         PrintSupport
+        Sql
         REQUIRED)
-include_directories(${PROJECT_SOURCE_DIR}/include)
 
+include_directories(${PROJECT_SOURCE_DIR}/include)
 set(RESOURCE_PARENT_FOLDER "${CMAKE_SOURCE_DIR}/resource")
 file(GLOB_RECURSE QRC_FILES "${RESOURCE_PARENT_FOLDER}/*.qrc")
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${PROJECT_SOURCE_DIR}/ui)
@@ -36,98 +35,80 @@ add_executable(IABPUI main.cpp
         ${UI_FILES}
         ${HEAD}
         ${HEADHPP}
-        src/topbar.cpp
-        include/topbar.h
-        src/topbar.cpp
-        include/topbar.h
-        ui/topbar.ui
-        src/statusbar.cpp
-        include/statusbar.h
-        ui/statusbar.ui
-        src/homepage.cpp
-        include/homepage.h
-        ui/homepage.ui
-        src/pressurezeroadjustment.cpp
-        include/pressurezeroadjustment.h
-        ui/pressurezeroadjustment.ui
-        src/horizontalreferenceline.cpp
-        include/horizontalreferenceline.h
-        ui/horizontalreferenceline.ui
-        src/logexport.cpp
-        include/logexport.h
-        ui/logexport.ui
-        src/datewidget.cpp
-        include/datewidget.h
-        ui/datewidget.ui
 
-
-        #
-#        #        src/Homepage.cpp
-##        include/Homepage.h
-##        ui/Homepage.ui
-##        src/topbar.cpp
-##        include/topbar.h
-##        ui/topbar.ui
-##        src/statusbar.cpp
-##        include/statusbar.h
-##        ui/statusbar.ui
-##        src/bottomnavigationbar.cpp
-##        include/bottomnavigationbar.h
-##        ui/bottomnavigationbar.ui
-##        src/waveformseparation.cpp
-##        include/waveformseparation.h
-##        ui/waveformseparation.ui
-##        src/modeselection.cpp
-##        include/modeselection.h
-##        ui/modeselection.ui
-##        src/inflation_deflation_timing.cpp
-##        include/inflation_deflation_timing.h
-##        ui/inflation_deflation_timing.ui
-##        src/balloonvolume.cpp
-##        include/balloonvolume.h
-##        ui/balloonvolume.ui
-##        src/inflationratio.cpp
-##        include/inflationratio.h
-##        ui/inflationratio.ui
-##        src/triggermode.cpp
-##        include/triggermode.h
-##        ui/triggermode.ui
-##        src/blank1.cpp
-##        include/blank1.h
-##        ui/blank1.ui
-##        src/set.cpp
-##        include/set.h
-##        ui/set.ui
-##        src/blank2.cpp
-##        include/blank2.h
-##        ui/blank2.ui
-##        src/alarmsystem.cpp
-##        include/alarmsystem.h
-##        ui/alarmsystem.ui
-##        src/messagemanagement.cpp
-##        include/messagemanagement.h
-##        ui/messagemanagement.ui
-##        src/level1alarm.cpp
-##        include/level1alarm.h
-##        ui/level1alarm.ui
-##        src/readfile.cpp
-##        include/readfile.h
-##        sendingthread.cpp
-##        sendingthread.h
-#
-#
 )
-target_link_libraries(IABPUI
+target_link_libraries(IABPUI PRIVATE
 
         Qt::Core
-        Qt::Gui
-        Qt::Widgets
+        Qt6::Gui
+        Qt6::Widgets
         Qt6::PrintSupport
+        Qt6::Sql
 )
 
 
+if(WIN32)
+    add_custom_command(TARGET IABPUI POST_BUILD
+            COMMAND
+            "D:/qt/6.5.3/msvc2019_64/bin/windeployqt.exe"
 
+            --debug
+            --compiler-runtime
+            --sql
+            "$<TARGET_FILE:IABPUI>"
+            COMMENT "Deploy Qt..."
+    )
 
+endif()
+#
+#
+## ---------------------------------------------------------------------------
+## 2. 以下为【新增部分】：集成 GoogleTest 单元测试
+## ---------------------------------------------------------------------------
+#include(FetchContent)
+#
+#FetchContent_Declare(
+#        googletest
+#        URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+#)
+#
+## 避免 MSVC 运行时库 (CRT) 冲突
+#set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+#
+#FetchContent_MakeAvailable(googletest)
+#
+#enable_testing()
+#
+## 自动扫描 test1 文件夹下的所有测试脚本
+#file(GLOB_RECURSE TEST_FILES "${PROJECT_SOURCE_DIR}/test1/*.cpp")
+#
+## 创建独立的测试程序目标 (IABPUI_Tests)
+#add_executable(IABPUI_Tests
+#        ${TEST_FILES}
+#        ${SOURCE_FILES}  # 引入业务源码，方便测试类调用
+#        ${HEAD}
+#        ${HEADHPP}
+#        ${UI_FILES}
+#)
+## 确保测试目标也能正确处理 Qt 的 MOC、UIC 和 RCC
+#set_target_properties(IABPUI_Tests PROPERTIES
+#        AUTOMOC ON
+#        AUTOUIC ON
+#        AUTORCC ON
+#)
+## 链接 GTest 库及测试可能用到的 Qt 库
+#target_link_libraries(IABPUI_Tests PRIVATE
+#        gtest
+#        Qt6::Core
+#        Qt6::Gui
+#        Qt6::Widgets
+#        Qt6::PrintSupport
+#)
+#
+## 让 CLion 能够自动识别该目标下的所有 TEST 用例
+#include(GoogleTest)
+#gtest_discover_tests(IABPUI_Tests)
+#
 
 
 
@@ -209,3 +190,4 @@ target_link_libraries(IABPUI
 #        list(APPEND ALL_RESOURCES ${QRC_FILE})
 #    endif()
 #endforeach()
+ 

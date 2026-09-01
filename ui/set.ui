@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1291</width>
+    <width>1249</width>
     <height>668</height>
    </rect>
   </property>
@@ -78,7 +78,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QStackedWidget" name="stackedWidget">
+  <widget class="QStackedWidget" name="SetstackedWidget">
    <property name="geometry">
     <rect>
      <x>242</x>
@@ -100,70 +100,241 @@
     </size>
    </property>
    <property name="currentIndex">
-    <number>13</number>
+    <number>4</number>
    </property>
    <widget class="QWidget" name="page_0">
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="Internal_Trigger">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>190</y>
-       <width>75</width>
-       <height>23</height>
+       <x>628</x>
+       <y>26</y>
+       <width>176</width>
+       <height>66</height>
       </rect>
      </property>
+     <property name="minimumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
      <property name="text">
-      <string>PushButton</string>
+      <string/>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="External_Trigger">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>180</y>
-       <width>75</width>
-       <height>23</height>
+       <x>274</x>
+       <y>26</y>
+       <width>176</width>
+       <height>66</height>
       </rect>
      </property>
+     <property name="minimumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
      <property name="text">
-      <string>PushButton</string>
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>34</y>
+       <width>217</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>217</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>217</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>触发方式</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>119</y>
+       <width>217</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>217</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>217</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>锁定屏幕</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>204</y>
+       <width>217</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>217</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>217</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>显示冻结</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Iock_Screen">
+     <property name="geometry">
+      <rect>
+       <x>274</x>
+       <y>111</y>
+       <width>176</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Screen_Unlock">
+     <property name="geometry">
+      <rect>
+       <x>628</x>
+       <y>111</y>
+       <width>176</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Unfreeze">
+     <property name="geometry">
+      <rect>
+       <x>628</x>
+       <y>196</y>
+       <width>176</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Display_Freeze">
+     <property name="geometry">
+      <rect>
+       <x>274</x>
+       <y>196</y>
+       <width>176</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>176</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
      </property>
     </widget>
    </widget>
    <widget class="QWidget" name="page_1">
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>210</y>
-       <width>141</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>内部触发</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_4">
-     <property name="geometry">
-      <rect>
-       <x>460</x>
-       <y>180</y>
-       <width>171</width>
-       <height>181</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>外部触发</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_2">
     <widget class="QPushButton" name="ECG_Off">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>170</y>
+       <x>274</x>
+       <y>201</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -187,8 +358,8 @@
     <widget class="QPushButton" name="Inflation_Interval_Off">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>260</y>
+       <x>274</x>
+       <y>286</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -212,8 +383,8 @@
     <widget class="QPushButton" name="ECG_On">
      <property name="geometry">
       <rect>
-       <x>420</x>
-       <y>170</y>
+       <x>455</x>
+       <y>201</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -237,8 +408,8 @@
     <widget class="QPushButton" name="ScanningSpeed_25">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>10</y>
+       <x>274</x>
+       <y>26</y>
        <width>191</width>
        <height>66</height>
       </rect>
@@ -263,7 +434,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>275</y>
+       <y>289</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -288,7 +459,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>190</y>
+       <y>204</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -312,8 +483,8 @@
     <widget class="QPushButton" name="Brightness_Medium">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>340</y>
+       <x>636</x>
+       <y>371</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -337,8 +508,8 @@
     <widget class="QPushButton" name="Brightness_Off">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>340</y>
+       <x>274</x>
+       <y>371</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -362,8 +533,8 @@
     <widget class="QPushButton" name="Inflation_Interval_On">
      <property name="geometry">
       <rect>
-       <x>420</x>
-       <y>260</y>
+       <x>455</x>
+       <y>286</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -387,8 +558,8 @@
     <widget class="QPushButton" name="ScanningSpeed_50">
      <property name="geometry">
       <rect>
-       <x>490</x>
-       <y>10</y>
+       <x>636</x>
+       <y>26</y>
        <width>191</width>
        <height>66</height>
       </rect>
@@ -413,7 +584,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>20</y>
+       <y>34</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -437,8 +608,8 @@
     <widget class="QPushButton" name="Brightness_Low">
      <property name="geometry">
       <rect>
-       <x>420</x>
-       <y>340</y>
+       <x>455</x>
+       <y>371</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -463,7 +634,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>360</y>
+       <y>374</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -488,7 +659,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>105</y>
+       <y>119</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -512,8 +683,8 @@
     <widget class="QPushButton" name="Brightness_High">
      <property name="geometry">
       <rect>
-       <x>820</x>
-       <y>340</y>
+       <x>817</x>
+       <y>371</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -550,12 +721,12 @@
     <zorder>Brightness_Medium</zorder>
     <zorder>Brightness_High</zorder>
    </widget>
-   <widget class="QWidget" name="page_3">
+   <widget class="QWidget" name="page_2">
     <widget class="QPushButton" name="Sound_Low">
      <property name="geometry">
       <rect>
-       <x>430</x>
-       <y>90</y>
+       <x>455</x>
+       <y>116</y>
        <width>146</width>
        <height>66</height>
       </rect>
@@ -579,8 +750,8 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>550</x>
-       <y>30</y>
+       <x>561</x>
+       <y>40</y>
        <width>71</width>
        <height>30</height>
       </rect>
@@ -604,8 +775,8 @@
     <widget class="QLabel" name="Trumpet_Label">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>30</y>
+       <x>277</x>
+       <y>41</y>
        <width>30</width>
        <height>30</height>
       </rect>
@@ -630,7 +801,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>20</y>
+       <y>34</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -655,7 +826,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>190</y>
+       <y>204</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -679,8 +850,8 @@
     <widget class="QPushButton" name="Standby_On">
      <property name="geometry">
       <rect>
-       <x>430</x>
-       <y>180</y>
+       <x>455</x>
+       <y>201</y>
        <width>146</width>
        <height>66</height>
       </rect>
@@ -704,8 +875,8 @@
     <widget class="QPushButton" name="Sound_High">
      <property name="geometry">
       <rect>
-       <x>770</x>
-       <y>90</y>
+       <x>817</x>
+       <y>116</y>
        <width>146</width>
        <height>66</height>
       </rect>
@@ -729,8 +900,8 @@
     <widget class="QPushButton" name="Standby_Off">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>180</y>
+       <x>273</x>
+       <y>201</y>
        <width>146</width>
        <height>66</height>
       </rect>
@@ -755,7 +926,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>105</y>
+       <y>119</y>
        <width>217</width>
        <height>45</height>
       </rect>
@@ -779,8 +950,8 @@
     <widget class="QPushButton" name="Sound_Off">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>90</y>
+       <x>274</x>
+       <y>116</y>
        <width>146</width>
        <height>66</height>
       </rect>
@@ -804,8 +975,8 @@
     <widget class="QPushButton" name="Sound_Medium">
      <property name="geometry">
       <rect>
-       <x>600</x>
-       <y>90</y>
+       <x>636</x>
+       <y>116</y>
        <width>146</width>
        <height>66</height>
       </rect>
@@ -830,7 +1001,7 @@
      <property name="geometry">
       <rect>
        <x>340</x>
-       <y>30</y>
+       <y>45</y>
        <width>160</width>
        <height>22</height>
       </rect>
@@ -852,12 +1023,12 @@
     <zorder>Standby_Off</zorder>
     <zorder>Standby_On</zorder>
    </widget>
-   <widget class="QWidget" name="page_4">
+   <widget class="QWidget" name="page_3">
     <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>180</y>
+       <y>204</y>
        <width>217</width>
        <height>60</height>
       </rect>
@@ -882,7 +1053,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>10</y>
+       <y>34</y>
        <width>217</width>
        <height>60</height>
       </rect>
@@ -907,7 +1078,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>95</y>
+       <y>119</y>
        <width>217</width>
        <height>60</height>
       </rect>
@@ -932,7 +1103,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>330</y>
+       <y>374</y>
        <width>217</width>
        <height>60</height>
       </rect>
@@ -956,8 +1127,8 @@
     <widget class="QPushButton" name="Timing_7S">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>100</y>
+       <x>274</x>
+       <y>116</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -981,8 +1152,8 @@
     <widget class="QPushButton" name="Call_The_Police_30Min">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>190</y>
+       <x>636</x>
+       <y>201</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1006,8 +1177,8 @@
     <widget class="QPushButton" name="Call_The_Police_15Min">
      <property name="geometry">
       <rect>
-       <x>450</x>
-       <y>190</y>
+       <x>455</x>
+       <y>201</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1031,8 +1202,8 @@
     <widget class="QPushButton" name="Call_The_Police_Off">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>190</y>
+       <x>274</x>
+       <y>201</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1056,8 +1227,8 @@
     <widget class="QPushButton" name="Timing_60S">
      <property name="geometry">
       <rect>
-       <x>790</x>
-       <y>100</y>
+       <x>817</x>
+       <y>116</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1081,8 +1252,8 @@
     <widget class="QPushButton" name="Timing_30S">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>100</y>
+       <x>636</x>
+       <y>116</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1106,8 +1277,8 @@
     <widget class="QPushButton" name="Timing_15S">
      <property name="geometry">
       <rect>
-       <x>450</x>
-       <y>100</y>
+       <x>455</x>
+       <y>116</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1131,8 +1302,8 @@
     <widget class="QPushButton" name="Call_The_Police_1Hour">
      <property name="geometry">
       <rect>
-       <x>790</x>
-       <y>190</y>
+       <x>817</x>
+       <y>201</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1156,8 +1327,8 @@
     <widget class="QPushButton" name="Call_The_Police_2Hour">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>260</y>
+       <x>274</x>
+       <y>286</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1181,8 +1352,8 @@
     <widget class="QPushButton" name="Call_The_Police_4Hour">
      <property name="geometry">
       <rect>
-       <x>450</x>
-       <y>260</y>
+       <x>455</x>
+       <y>286</y>
        <width>146</width>
        <height>56</height>
       </rect>
@@ -1206,8 +1377,8 @@
     <widget class="QPushButton" name="Log_Printing">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>350</y>
+       <x>274</x>
+       <y>371</y>
        <width>191</width>
        <height>66</height>
       </rect>
@@ -1222,6 +1393,183 @@
       <size>
        <width>191</width>
        <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QPushButton" name="Catheter_Alarm_Activated">
+     <property name="geometry">
+      <rect>
+       <x>274</x>
+       <y>26</y>
+       <width>258</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>204</y>
+       <width>217</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>217</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>217</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>R波跟踪</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="R_wave_Tracking_Turned_Off">
+     <property name="geometry">
+      <rect>
+       <x>274</x>
+       <y>201</y>
+       <width>146</width>
+       <height>56</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>34</y>
+       <width>217</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>217</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>217</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>导管报警</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Pause_Catheter_Alarm">
+     <property name="geometry">
+      <rect>
+       <x>274</x>
+       <y>111</y>
+       <width>258</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Air_Leak_Alarm_Activated_Sshut_Off">
+     <property name="geometry">
+      <rect>
+       <x>629</x>
+       <y>26</y>
+       <width>258</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="R_wave_Tracking_Has_Been_Enabled">
+     <property name="geometry">
+      <rect>
+       <x>455</x>
+       <y>201</y>
+       <width>146</width>
+       <height>56</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
       </size>
      </property>
      <property name="text">
@@ -1230,363 +1578,6 @@
     </widget>
    </widget>
    <widget class="QWidget" name="page_5">
-    <widget class="QLabel" name="label_18">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>200</y>
-       <width>217</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>217</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>217</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>反搏压标线</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_26">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>50</y>
-       <width>217</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>217</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>217</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>血压标线</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Blood_Pressure_Increase_Botton">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>50</y>
-       <width>60</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Blood_Pressure_Drops_Botton">
-     <property name="geometry">
-      <rect>
-       <x>660</x>
-       <y>50</y>
-       <width>60</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Increased_Counterpulsation_Pressure_Botton">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>200</y>
-       <width>60</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="Counterpulsation_Pressure_Reduction_Botton">
-     <property name="geometry">
-      <rect>
-       <x>660</x>
-       <y>200</y>
-       <width>60</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Label_13">
-     <property name="geometry">
-      <rect>
-       <x>370</x>
-       <y>50</y>
-       <width>225</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Label_14">
-     <property name="geometry">
-      <rect>
-       <x>380</x>
-       <y>200</y>
-       <width>225</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Blood_Pressure_Reading_Label">
-     <property name="geometry">
-      <rect>
-       <x>370</x>
-       <y>50</y>
-       <width>225</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Anti_embolism_Pressure_Reading_Label">
-     <property name="geometry">
-      <rect>
-       <x>370</x>
-       <y>200</y>
-       <width>225</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>225</width>
-       <height>60</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_6">
-    <widget class="QLabel" name="label_19">
-     <property name="geometry">
-      <rect>
-       <x>400</x>
-       <y>250</y>
-       <width>53</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>6</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_7">
-    <widget class="QLabel" name="label_20">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>210</y>
-       <width>53</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>7</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_8">
-    <widget class="QPushButton" name="pushButton_5">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>240</y>
-       <width>141</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>日志导出</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_9">
-    <widget class="QLabel" name="label_22">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>220</y>
-       <width>53</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>9</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_10">
-    <widget class="QLabel" name="label_23">
-     <property name="geometry">
-      <rect>
-       <x>420</x>
-       <y>190</y>
-       <width>53</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>10</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_11">
-    <widget class="QLabel" name="label_24">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>240</y>
-       <width>53</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>11</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_12">
-    <widget class="QLabel" name="label_25">
-     <property name="geometry">
-      <rect>
-       <x>270</x>
-       <y>260</y>
-       <width>53</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>12</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_13">
     <widget class="QWidget" name="Time_Widget" native="true">
      <property name="geometry">
       <rect>
@@ -1801,21 +1792,21 @@
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>50</y>
-       <width>350</width>
-       <height>350</height>
+       <y>20</y>
+       <width>400</width>
+       <height>400</height>
       </rect>
      </property>
      <property name="minimumSize">
       <size>
-       <width>350</width>
-       <height>350</height>
+       <width>400</width>
+       <height>400</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>350</width>
-       <height>350</height>
+       <width>400</width>
+       <height>400</height>
       </size>
      </property>
     </widget>
@@ -1890,7 +1881,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
       <x>0</x>
       <y>0</y>
       <width>226</width>
-      <height>1051</height>
+      <height>451</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -1933,7 +1924,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>压力</string>
+        <string>触发方式</string>
        </property>
       </widget>
      </item>
@@ -1961,7 +1952,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>触发方式</string>
+        <string>显示</string>
        </property>
       </widget>
      </item>
@@ -1989,7 +1980,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>显示</string>
+        <string>声音</string>
        </property>
       </widget>
      </item>
@@ -2017,7 +2008,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>声音</string>
+        <string>打印机</string>
        </property>
       </widget>
      </item>
@@ -2045,236 +2036,12 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>打印机</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_6">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>参考线</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_7">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>屏幕锁定</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_8">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>波形锁定</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_9">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
         <string>日志导出</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="Set_Button_10">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>导管报警</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_11">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>R波跟踪</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_12">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>IAB充气</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_13">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>222</width>
-         <height>70</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>状态</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="Set_Button_14">
+      <widget class="QPushButton" name="Set_Button_6">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
          <horstretch>0</horstretch>

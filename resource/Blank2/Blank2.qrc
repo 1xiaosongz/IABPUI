@@ -1,5 +1,27 @@
 <RCC>
     <qresource prefix="/Blank2">
         <file>Group 10402.png</file>
+        <file>Group 11030.png</file>
+        <file>Group 11031.png</file>
+        <file>Group 11032.png</file>
+        <file>Group 11033.png</file>
+        <file>Group 11034.png</file>
+        <file>Group 11042.png</file>
+        <file>Group 11043.png</file>
+        <file>Group 11046.png</file>
+        <file>Group 11047.png</file>
+        <file>Group 11050.png</file>
+        <file>Group 11058.png</file>
+        <file>Group 11060.png</file>
+        <file>Group 11062.png</file>
+        <file>Group 11064.png</file>
+        <file>Group 11065.png</file>
+        <file>Group 11067.png</file>
+        <file>Group 11069.png</file>
+        <file>Group 11070.png</file>
+        <file>Group 11071.png</file>
+        <file>Group 11072.png</file>
+        <file>Group 1169.png</file>
+        <file>Group 1170.png</file>
     </qresource>
 </RCC>

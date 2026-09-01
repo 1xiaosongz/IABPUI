@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>2033</width>
-    <height>1329</height>
+    <width>2027</width>
+    <height>1219</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -30,20 +30,20 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1920</width>
-     <height>1100</height>
+     <width>1820</width>
+     <height>980</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>1920</width>
-     <height>1100</height>
+     <width>1820</width>
+     <height>980</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>1920</width>
-     <height>1100</height>
+     <width>1820</width>
+     <height>980</height>
     </size>
    </property>
    <widget class="QLabel" name="label11">
@@ -51,20 +51,20 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1920</width>
-      <height>1080</height>
+      <width>1820</width>
+      <height>980</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>1920</width>
-      <height>1080</height>
+      <width>1820</width>
+      <height>980</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>1920</width>
-      <height>1080</height>
+      <width>1820</width>
+      <height>980</height>
      </size>
     </property>
     <property name="text">
@@ -76,8 +76,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1921</width>
-      <height>1082</height>
+      <width>1821</width>
+      <height>981</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -88,14 +88,14 @@
       <widget class="QWidget" name="TableListPanel" native="true">
        <property name="minimumSize">
         <size>
-         <width>280</width>
-         <height>1080</height>
+         <width>152</width>
+         <height>978</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>280</width>
-         <height>1080</height>
+         <width>152</width>
+         <height>978</height>
         </size>
        </property>
        <widget class="QScrollArea" name="TableScrollArea">
@@ -103,20 +103,20 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>280</width>
-          <height>1080</height>
+          <width>152</width>
+          <height>978</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>280</width>
-          <height>1080</height>
+          <width>152</width>
+          <height>978</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>280</width>
-          <height>1080</height>
+          <width>152</width>
+          <height>978</height>
          </size>
         </property>
         <property name="verticalScrollBarPolicy">
@@ -133,8 +133,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>278</width>
-           <height>1078</height>
+           <width>150</width>
+           <height>976</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -148,8 +148,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>281</width>
-            <height>1081</height>
+            <width>151</width>
+            <height>971</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout">
@@ -166,13 +166,13 @@
       <widget class="QWidget" name="dataPanel" native="true">
        <property name="minimumSize">
         <size>
-         <width>1639</width>
+         <width>1667</width>
          <height>1079</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>1639</width>
+         <width>1767</width>
          <height>1079</height>
         </size>
        </property>
@@ -181,20 +181,20 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1640</width>
-          <height>1080</height>
+          <width>1666</width>
+          <height>980</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>1640</width>
-          <height>1080</height>
+          <width>1666</width>
+          <height>980</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>1640</width>
-          <height>1080</height>
+          <width>1666</width>
+          <height>980</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -209,19 +209,19 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1640</width>
+          <width>1666</width>
           <height>100</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>1640</width>
+          <width>1666</width>
           <height>100</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>1640</width>
+          <width>1666</width>
           <height>100</height>
          </size>
         </property>
@@ -235,7 +235,7 @@
        <widget class="QPushButton" name="Refresh_Page_Button">
         <property name="geometry">
          <rect>
-          <x>13</x>
+          <x>7</x>
           <y>20</y>
           <width>118</width>
           <height>66</height>
@@ -260,7 +260,7 @@
        <widget class="QPushButton" name="Left_Button">
         <property name="geometry">
          <rect>
-          <x>133</x>
+          <x>129</x>
           <y>20</y>
           <width>66</width>
           <height>66</height>
@@ -285,7 +285,7 @@
        <widget class="QPushButton" name="Right_Button">
         <property name="geometry">
          <rect>
-          <x>201</x>
+          <x>199</x>
           <y>20</y>
           <width>66</width>
           <height>66</height>
@@ -301,31 +301,6 @@
          <size>
           <width>66</width>
           <height>66</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="pageLabel">
-        <property name="geometry">
-         <rect>
-          <x>272</x>
-          <y>20</y>
-          <width>165</width>
-          <height>60</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>165</width>
-          <height>60</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>165</width>
-          <height>60</height>
          </size>
         </property>
         <property name="text">
@@ -335,21 +310,21 @@
        <widget class="QLabel" name="label_13">
         <property name="geometry">
          <rect>
-          <x>445</x>
+          <x>496</x>
           <y>20</y>
-          <width>57</width>
+          <width>50</width>
           <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>57</width>
+          <width>50</width>
           <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>57</width>
+          <width>50</width>
           <height>60</height>
          </size>
         </property>
@@ -360,68 +335,43 @@
        <widget class="QComboBox" name="LineNumberComboBox">
         <property name="geometry">
          <rect>
-          <x>510</x>
+          <x>556</x>
           <y>20</y>
-          <width>93</width>
+          <width>80</width>
           <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>93</width>
+          <width>80</width>
           <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>93</width>
+          <width>80</width>
           <height>60</height>
          </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="Export_Button">
-        <property name="geometry">
-         <rect>
-          <x>1455</x>
-          <y>20</y>
-          <width>106</width>
-          <height>66</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>106</width>
-          <height>66</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>106</width>
-          <height>66</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
         </property>
        </widget>
        <widget class="QLabel" name="label_28">
         <property name="geometry">
          <rect>
-          <x>611</x>
+          <x>646</x>
           <y>20</y>
-          <width>105</width>
+          <width>100</width>
           <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>105</width>
+          <width>100</width>
           <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>105</width>
+          <width>100</width>
           <height>60</height>
          </size>
         </property>
@@ -432,21 +382,21 @@
        <widget class="QLabel" name="label_30">
         <property name="geometry">
          <rect>
-          <x>877</x>
+          <x>906</x>
           <y>20</y>
-          <width>105</width>
+          <width>100</width>
           <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>105</width>
+          <width>100</width>
           <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>105</width>
+          <width>100</width>
           <height>60</height>
          </size>
         </property>
@@ -457,21 +407,21 @@
        <widget class="QLabel" name="label_27">
         <property name="geometry">
          <rect>
-          <x>1143</x>
+          <x>1166</x>
           <y>20</y>
-          <width>82</width>
+          <width>75</width>
           <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>82</width>
+          <width>75</width>
           <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>82</width>
+          <width>75</width>
           <height>60</height>
          </size>
         </property>
@@ -482,21 +432,21 @@
        <widget class="QLineEdit" name="Patient_ID">
         <property name="geometry">
          <rect>
-          <x>1233</x>
+          <x>1251</x>
           <y>20</y>
-          <width>214</width>
+          <width>228</width>
           <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>214</width>
+          <width>228</width>
           <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>214</width>
+          <width>228</width>
           <height>60</height>
          </size>
         </property>
@@ -507,72 +457,47 @@
          <string/>
         </property>
        </widget>
-       <widget class="QLabel" name="Number_Pages">
-        <property name="geometry">
-         <rect>
-          <x>272</x>
-          <y>20</y>
-          <width>165</width>
-          <height>60</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>165</width>
-          <height>60</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>165</width>
-          <height>60</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>100</string>
-        </property>
-       </widget>
        <widget class="QTableView" name="TableView">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>100</y>
-          <width>1639</width>
-          <height>980</height>
+          <width>1668</width>
+          <height>878</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>1639</width>
-          <height>980</height>
+          <width>1668</width>
+          <height>878</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>1639</width>
-          <height>980</height>
+          <width>1668</width>
+          <height>878</height>
          </size>
         </property>
        </widget>
        <widget class="QLabel" name="Starting_Time_Background">
         <property name="geometry">
          <rect>
-          <x>724</x>
+          <x>756</x>
           <y>20</y>
-          <width>145</width>
-          <height>61</height>
+          <width>140</width>
+          <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>145</width>
-          <height>61</height>
+          <width>140</width>
+          <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>145</width>
-          <height>61</height>
+          <width>140</width>
+          <height>60</height>
          </size>
         </property>
         <property name="text">
@@ -582,121 +507,21 @@
        <widget class="QLabel" name="End_Time_Background">
         <property name="geometry">
          <rect>
-          <x>990</x>
+          <x>1016</x>
           <y>20</y>
-          <width>145</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>145</width>
-          <height>61</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>145</width>
-          <height>61</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="Start_Time_Number">
-        <property name="geometry">
-         <rect>
-          <x>724</x>
-          <y>20</y>
-          <width>145</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>145</width>
-          <height>61</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>145</width>
-          <height>61</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="End_Time_Number">
-        <property name="geometry">
-         <rect>
-          <x>990</x>
-          <y>20</y>
-          <width>145</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>145</width>
-          <height>61</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>145</width>
-          <height>61</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="Start_Time_Button">
-        <property name="geometry">
-         <rect>
-          <x>724</x>
-          <y>20</y>
-          <width>145</width>
+          <width>140</width>
           <height>60</height>
          </rect>
         </property>
         <property name="minimumSize">
          <size>
-          <width>145</width>
+          <width>140</width>
           <height>60</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>145</width>
-          <height>60</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="End_Time_Button">
-        <property name="geometry">
-         <rect>
-          <x>990</x>
-          <y>20</y>
-          <width>145</width>
-          <height>60</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>145</width>
-          <height>60</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>145</width>
+          <width>140</width>
           <height>60</height>
          </size>
         </property>
@@ -707,7 +532,7 @@
        <widget class="QPushButton" name="Close_Button">
         <property name="geometry">
          <rect>
-          <x>1563</x>
+          <x>1596</x>
           <y>20</y>
           <width>66</width>
           <height>66</height>
@@ -727,6 +552,281 @@
         </property>
         <property name="text">
          <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Export_Cancel_Background">
+        <property name="geometry">
+         <rect>
+          <x>1486</x>
+          <y>20</y>
+          <width>106</width>
+          <height>66</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>106</width>
+          <height>66</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>106</width>
+          <height>66</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Start_Time_Number">
+        <property name="geometry">
+         <rect>
+          <x>756</x>
+          <y>20</y>
+          <width>140</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Start_Time_Button">
+        <property name="geometry">
+         <rect>
+          <x>756</x>
+          <y>20</y>
+          <width>140</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="End_Time_Number">
+        <property name="geometry">
+         <rect>
+          <x>1016</x>
+          <y>20</y>
+          <width>140</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="End_Time_Button">
+        <property name="geometry">
+         <rect>
+          <x>1016</x>
+          <y>20</y>
+          <width>140</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>140</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Export_Cancel_Label">
+        <property name="geometry">
+         <rect>
+          <x>1489</x>
+          <y>20</y>
+          <width>100</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Export_Cancel_Button">
+        <property name="geometry">
+         <rect>
+          <x>1486</x>
+          <y>20</y>
+          <width>106</width>
+          <height>66</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>106</width>
+          <height>66</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>106</width>
+          <height>66</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>269</x>
+          <y>20</y>
+          <width>50</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>页数</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pageLabel">
+        <property name="geometry">
+         <rect>
+          <x>332</x>
+          <y>20</y>
+          <width>154</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>154</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>154</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Number_Pages">
+        <property name="geometry">
+         <rect>
+          <x>342</x>
+          <y>20</y>
+          <width>58</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>58</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>58</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>100</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Number_Total_Pages">
+        <property name="geometry">
+         <rect>
+          <x>419</x>
+          <y>20</y>
+          <width>58</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>58</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>58</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>100</string>
         </property>
        </widget>
       </widget>

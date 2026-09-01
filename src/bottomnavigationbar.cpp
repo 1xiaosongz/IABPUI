@@ -19,13 +19,13 @@ BottomNavigationBar::BottomNavigationBar(QWidget *parent) : QWidget(parent), ui(
     ui->setupUi(this);
     ui->CounterpulsationPump_Button->setProperty("mode","CounterpulsationPump_Button_False");
     ui->Mode_Button->setProperty("mode","Automatic_Mode_False");
-    ui->TriggerMode_Button->setProperty("mode","ECG_False");
+    ui->TriggerMode_Button->setProperty("mode","Pressure_Stop");
     ui->InflationRatio_Button->setProperty("mode","1_1_False");
     ui->Inflation_Deflation_Timing_Label->setProperty("mode","Inflation_Deflation_Timing_False");
     ui->BalloonVolume_Label->setProperty("mode","BalloonVolume_False");
-    ui->Inflatable_Numbers_label->setText("70");
+    ui->Inflatable_Numbers_label->setText("100");
     ui->Inflatable_Numbers_label->setProperty("mode","38px,colour4,255,255");
-    ui->Deflating_Number_label->setText("70");
+    ui->Deflating_Number_label->setText("100");
     ui->Deflating_Number_label->setProperty("mode","38px,colour4,255,255");
     ui->BalloonVolume_Number_label->setText("50");
     ui->BalloonVolume_Number_label->setProperty("mode","40px,colour255,255,255");
@@ -70,11 +70,7 @@ BottomNavigationBar::BottomNavigationBar(QWidget *parent) : QWidget(parent), ui(
     ui->BalloonPercentage->setGraphicsEffect(balloonVolumeShadow2);
 
 
-    // ui->BalloonVolume_Button->setStyleSheet("QPushButton {"
-    // "    background-color: black;"
-    // "    color: white;"
-    // "}"
-    // );
+
 
 }
 

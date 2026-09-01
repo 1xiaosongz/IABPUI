@@ -7,13 +7,16 @@
 #include "../include/statusbar.h"
 #include "ui_StatusBar.h"
 #include <QMovie>
-
+#include <qstyle.h>
 StatusBar::StatusBar(QWidget *parent) : QWidget(parent), ui(new Ui::StatusBar) {
     ui->setupUi(this);
     move(1570, 80);
     ui->Heart_Rate_Label->setText("999");
     ui->Heart_Rate_Label->setProperty("mode","160px,colour22,226,58");
     ui->Label->setProperty("mode","Label_StatusBar");
+    ui->Label->style()->unpolish(ui->Label);
+    ui->Label->style()->polish(ui->Label);
+    ui->Label->update();
     ui->HighBloodPressure_Label->setText("999");
     ui->HighBloodPressure_Label->setProperty("mode","100px,colour252,86,78");
     ui->LowBloodPressure_Label->setText("999");
@@ -35,21 +38,47 @@ StatusBar::StatusBar(QWidget *parent) : QWidget(parent), ui(new Ui::StatusBar) {
     ui->TriggerSource_Label->setText("心房/心室起搏器");
     ui->TriggerSource_Label->setProperty("mode","20px,colour172,181,197,AlignLeft");
 
-    ui->High_Pressure_Auxiliary->setText("未辅助");
-    ui->High_Pressure_Auxiliary_Value->setText("999");
+    ui->Systolic_Blood_Pressure_Without_Additional_Text->setText("未辅助");
+    ui->Systolic_Blood_Pressure_Without_Additional_Value->setText("999");
     ui->Low_Pressure_Without_Auxiliary->setText("未辅助");
     ui->Low_Pressure_Without_Auxiliary_Value->setText("999");
-
-    ui->High_Pressure_Auxiliary->setProperty("mode","20px,colour252,86,78");
-    ui->High_Pressure_Auxiliary_Value->setProperty("mode","40px,colour252,86,78");
+    ui->Systolic_Blood_Pressure_Value_During_Assistance->setText("999");
+    ui->Low_Pressure_Auxiliary_Value->setText("999");
+    ui->Systolic_Blood_Pressure_Without_Additional_Text->setProperty("mode","20px,colour252,86,78");
+    ui->Systolic_Blood_Pressure_Without_Additional_Value->setProperty("mode","40px,colour252,86,78");
     ui->Low_Pressure_Without_Auxiliary->setProperty("mode","20px,colour252,86,78");
     ui->Low_Pressure_Without_Auxiliary_Value->setProperty("mode","40px,colour252,86,78");
+    ui->Systolic_Blood_Pressure_Value_During_Assistance->setProperty("mode","100px,colour252,86,78");
+    ui->Low_Pressure_Auxiliary_Value->setProperty("mode","80px,colour252,86,78");
+    ui->Average_Pressure_Value_During_Assistance->setText("999");
+    ui->Average_Pressure_Value_During_Assistance->setProperty("mode","60px,colour172,181,197");
+
+
+
 
     QMovie *movie1 = new QMovie("../resource/StatusBar/100.gif");
     ui->HeartbeatImage->setMovie(movie1);
     ui->HeartbeatImage->setScaledContents(true);
     movie1->setScaledSize(ui->HeartbeatImage->size());
     movie1->start();          // 开始播放动画
+
+            connect(ui->pushButton, &QPushButton::clicked, this, [=]() {
+                ui->StatusBarstackedWidget->setCurrentIndex(0);
+            });
+    connect(ui->pushButton_2, &QPushButton::clicked, this, [=]() {
+               ui->StatusBarstackedWidget->setCurrentIndex(1);
+           });
+
+    // 页面 1
+    ui->StatusBar_Page1->setProperty("mode", "StatusBar_Page1");
+    ui->StatusBar_Page1->setAttribute(Qt::WA_StyledBackground, true);
+
+    // 页面 2
+    ui->StatusBar_Page2->setProperty("mode", "StatusBar_Page2");
+    ui->StatusBar_Page2->setAttribute(Qt::WA_StyledBackground, true);
+
+
+
 }
 
 StatusBar::~StatusBar() {

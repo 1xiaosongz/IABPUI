@@ -4,6 +4,9 @@
 #include <QApplication>
 #include <QFile>
 #include <QFontDatabase>
+#include <QSqlDatabase>
+#include <QLibraryInfo>
+#include <QDebug>
 QString loadQss(const QString& path)
 {
     QFile file(path);
@@ -22,7 +25,7 @@ int main(int argc, char *argv[]) {
     int fontId = QFontDatabase::addApplicationFont(
         ":/Typeface/SourceHanSansCN-Bold.otf");
     QString style;
-
+  
     style += loadQss(":/QSS/CSS.qss");
 
 
@@ -30,8 +33,17 @@ int main(int argc, char *argv[]) {
 
     HomePage w;
 
-    w.setWindowState(w.windowState() | Qt::WindowFullScreen);
-
-    w.show();
+    w.setWindowFlags(Qt::FramelessWindowHint);
+    // w.setWindowState(w.windowState() | Qt::WindowFullScreen);
+    w.setFixedSize(1920,1080);
+    // 查看Qt数据库驱动
+   //  qDebug()
+   //      << "Qt SQL Drivers:"
+   //      << QSqlDatabase::drivers();
+   //  qDebug()
+   //      << QLibraryInfo::path(
+   //     QLibraryInfo::PluginsPath
+   // );
+    w.showFullScreen();
     return a.exec();
 }

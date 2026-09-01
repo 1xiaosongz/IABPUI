@@ -28,7 +28,7 @@ HorizontalReferenceLine::HorizontalReferenceLine(QWidget *parent) : QDial(parent
     this->setFixedSize(110, 110); // 固定宽高为 50x50
     // 如果它不在布局中，而是绝对定位，你可以同时设置坐标：
     move(1384, 80);     // 只控制它出现的位置
-    setVisible(false);
+    // setVisible(false);
 }
 
 HorizontalReferenceLine::~HorizontalReferenceLine() {

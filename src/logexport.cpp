@@ -33,8 +33,11 @@ LogExport::LogExport(QWidget *parent) : QWidget(parent), ui(new Ui::LogExport) {
     ui->Left_Button->setProperty("mode", "Left_Button");
     ui->Right_Button->setProperty("mode", "Right_Button");
     ui->pageLabel->setProperty("mode", "PageLabel");
-    ui->Export_Button->setProperty("mode", "Export_Button");
+    ui->Export_Cancel_Background->setProperty("mode", "Export_Cancel_Background");
+    ui->Export_Cancel_Label->setText("导出");
+    ui->Export_Cancel_Label->setProperty("mode", "25px,colour255,255,255");
     ui->Number_Pages->setProperty("mode", "25px,colour4,255,255");
+    ui->Number_Total_Pages->setProperty("mode", "25px,colour4,255,255");
     ui->Patient_ID->setProperty("mode", "Patient_ID");
     ui->Starting_Time_Background->setProperty("mode", "Label_Time");
     ui->End_Time_Background->setProperty("mode", "Label_Time");
@@ -43,12 +46,14 @@ LogExport::LogExport(QWidget *parent) : QWidget(parent), ui(new Ui::LogExport) {
     ui->label_2->setProperty("mode", "Label_dataPanel_background");
     ui->label->setProperty("mode", "Label_Top_Background");
     ui->Close_Button->setProperty("mode", "LogExport_Close_Button");
+    ui->label_3->setProperty("mode", "25px,colour255,255,255");
     // 2. 调用美化表格函数与加载数据函数
     initTableViewStyle();
     loadDataFromMySQL();
     // ui->LineNumberComboBox->setObjectName("LineNumberComboBox");
     // 2. 开启 QListView 渲染
     QAbstractItemView *view = ui->LineNumberComboBox->view();
+    // view->setFixedWidth(80);
     view->window()->setWindowFlags(
         Qt::Popup |
         Qt::FramelessWindowHint |
@@ -96,7 +101,7 @@ LogExport::LogExport(QWidget *parent) : QWidget(parent), ui(new Ui::LogExport) {
     }
     popupView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     popupView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    popupView->setFixedSize(214, 227);
+    popupView->setFixedSize(228, 227);
     popupView->setAttribute(Qt::WA_StyledBackground, true);
     popupView->viewport()->setObjectName("PatientCompleterViewport");
     popupView->viewport()->setAttribute(Qt::WA_StyledBackground, true);
@@ -127,7 +132,7 @@ void LogExport::createTableButtons()
         button->setText(tableName);
         button->setObjectName("BtnTable_" + tableName);
         button->setFixedHeight(50); // 固定高度
-        button->setMinimumWidth(160);
+        button->setFixedWidth(140);
         button->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         // --- 开启单选高亮模式 ---
         button->setCheckable(true);
@@ -264,7 +269,7 @@ void LogExport::loadDataFromMySQL() {
     // 3. 计算 30 行单元格的精准平分行高
     // 提示：-2 像素是为了扣除系统上下边框线条占用的空间，防止精度四舍五入触发垂直滚动条
     int availableHeight = totalHeight - headerHeight - 2;
-    int rowHeight = availableHeight / 30;
+    int rowHeight = availableHeight / 26;
     // 应用行高
     ui->TableView->verticalHeader()->setDefaultSectionSize(rowHeight);
     ui->TableView->verticalHeader()->setVisible(false); // 确保左侧行号隐藏
@@ -280,7 +285,7 @@ void LogExport::loadDataFromMySQL() {
     // 如果某些单元格内容特别长，这一步可以帮你在初始状态下微调超长列，其余列保持均分
     // ui->tableView->resizeColumnsToContents(); // 如果需要严格的机械平分，可以注释掉这行
     // 6. 滚动条策略配置
-    ui->TableView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);   // 30行完美占满，关闭垂直滚动条
+    ui->TableView->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);   // 30行完美占满，关闭垂直滚动条
     ui->TableView->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded); // 超长文字列若被拖大，允许横向滚动
     // 4. 确保水平滚动条在需要时自动出现
     ui->TableView->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
@@ -319,7 +324,7 @@ void LogExport::Time_Button()
     layout->addWidget(dateWidget);
     layout->setContentsMargins(0, 0, 0, 0); // 留一点点边距，你可以根据喜好调整为 0
     dialog->setLayout(layout);
-    dialog->setMinimumSize(350, 350);
+    dialog->setMinimumSize(500, 500);
     // 4. 【核心连接】监听日历的日期选择信号
     connect(dateWidget, &DateWidget::dateChanged, this, [this,targetLabel, dialog](const QDate &date) {
         // --- 拿到日期后，在这里写你的业务逻辑 ---
