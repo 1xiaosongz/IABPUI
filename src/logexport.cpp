@@ -5,7 +5,7 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_LogExport.h" resolved
 
 #include "logexport.h"
-#include "ui_LogExport.h"
+#include "ui_logexport.h"
 #include <QSortFilterProxyModel>
 #include <QCompleter>
 #include "datewidget.h"
@@ -23,8 +23,8 @@ LogExport::LogExport(QWidget *parent) : QWidget(parent), ui(new Ui::LogExport) {
     // ui->TableScrollArea->setObjectName("TableScrollArea");
     ui->TableScrollArea->setAttribute(Qt::WA_StyledBackground, true);
     ui->TableScrollArea->widget()->setAttribute(Qt::WA_StyledBackground, true);
-    ui->label11->setProperty("mode", "Label11");
-    refreshStyle(ui->label11);
+    ui->LogExport_Background->setProperty("mode", "LogExport_Background");
+    refreshStyle(ui->LogExport_Background);
     ui->label_13->setProperty("mode", "25px,colour255,255,255");
     ui->label_28->setProperty("mode", "25px,colour255,255,255");
     ui->label_30->setProperty("mode", "25px,colour255,255,255");

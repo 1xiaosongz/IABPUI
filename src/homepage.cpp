@@ -4,8 +4,8 @@
 
 // You may need to build the project (run Qt uic code generator) to get "ui_HomePage.h" resolved
 
-#include "../include/homepage.h"
-#include "ui_HomePage.h"
+#include "homepage.h"
+#include "ui_homepage.h"
 
 
 HomePage::HomePage(QWidget *parent) : QWidget(parent), ui(new Ui::HomePage) {
@@ -19,15 +19,19 @@ HomePage::HomePage(QWidget *parent) : QWidget(parent), ui(new Ui::HomePage) {
     triggermode = new TriggerMode(this);
     inflation_Deflation_Timing = new Inflation_Deflation_Timing(this);
     inflationRatio = new InflationRatio(this);
-    balloonvolume = new BalloonVolume(this);
+    counterpulsationPressure = new CounterpulsationPressure(this);
     set = new Set(this);
-    // helpinterface = new HelpInterface(this);
+    helpinterface = new HelpInterface(this);
     alarmsystem = new AlarmSystem(this);
     messageManagement = new MessageManagement(this);
     level1alarm = new Level1Alarm(this);
     horizontalReferenceLine = new HorizontalReferenceLine(this);
     pressurezeroadjustment = new PressureZeroAdjustment(this);
     logexport = new LogExport(this);
+    prompt = new Prompt(this);
+operatorinputoverlay = new OperatorInputOverlay(this);
+
+
 
     // horizontalReferenceLine = new HorizontalReferenceLine();
     // horizontalReferenceLine = new HorizontalReferenceLine(this);

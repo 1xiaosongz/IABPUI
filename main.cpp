@@ -17,6 +17,7 @@ QString loadQss(const QString& path)
     }
 
     return "";
+
 }
 
 int main(int argc, char *argv[]) {
@@ -25,8 +26,11 @@ int main(int argc, char *argv[]) {
     int fontId = QFontDatabase::addApplicationFont(
         ":/Typeface/SourceHanSansCN-Bold.otf");
     QString style;
-  
+
     style += loadQss(":/QSS/CSS.qss");
+
+
+    a.setStyleSheet(style);
 
 
     a.setStyleSheet(style);
@@ -34,16 +38,9 @@ int main(int argc, char *argv[]) {
     HomePage w;
 
     w.setWindowFlags(Qt::FramelessWindowHint);
-    // w.setWindowState(w.windowState() | Qt::WindowFullScreen);
+
     w.setFixedSize(1920,1080);
-    // 查看Qt数据库驱动
-   //  qDebug()
-   //      << "Qt SQL Drivers:"
-   //      << QSqlDatabase::drivers();
-   //  qDebug()
-   //      << QLibraryInfo::path(
-   //     QLibraryInfo::PluginsPath
-   // );
+
     w.showFullScreen();
     return a.exec();
 }

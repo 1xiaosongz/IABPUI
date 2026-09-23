@@ -47,7 +47,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/MessageManagement/Group 10568.png);</string>
+    <string notr="true">/*background-image: url(:/MessageManagement/Group 10568.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -113,8 +113,8 @@ background: transparent;</string>
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1110</width>
-          <height>676</height>
+          <width>1125</width>
+          <height>399</height>
          </rect>
         </property>
         <property name="minimumSize">
@@ -139,181 +139,6 @@ background: transparent;</string>
            <property name="spacing">
             <number>30</number>
            </property>
-           <item>
-            <widget class="QFrame" name="frame">
-             <property name="minimumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QFrame" name="frame_6">
-             <property name="minimumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QFrame" name="frame_5">
-             <property name="minimumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QFrame" name="frame_7">
-             <property name="minimumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QFrame" name="frame_3">
-             <property name="minimumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QFrame" name="frame_4">
-             <property name="minimumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QFrame" name="frame_2">
-             <property name="minimumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>1090</width>
-               <height>68</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-image: url(:/MessageManagement/Group 10568X.png);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
-           </item>
           </layout>
          </item>
         </layout>

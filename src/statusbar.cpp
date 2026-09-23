@@ -5,7 +5,7 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_StatusBar.h" resolved
 
 #include "../include/statusbar.h"
-#include "ui_StatusBar.h"
+#include "ui_statusbar.h"
 #include <QMovie>
 #include <qstyle.h>
 StatusBar::StatusBar(QWidget *parent) : QWidget(parent), ui(new Ui::StatusBar) {
@@ -29,9 +29,9 @@ StatusBar::StatusBar(QWidget *parent) : QWidget(parent), ui(new Ui::StatusBar) {
     ui->Anti_embolismPressureAlarm_Label->setProperty("mode","20px,colour255,255,255");
     ui->QuenchingFrequency_Label->setText("1:1");
     ui->QuenchingFrequency_Label->setProperty("mode","20px,colour255,255,255");
-    ui->TriggerSource->setText("触 发 源  :");
+    ui->TriggerSource->setText("触发源:");
     ui->TriggerSource->setProperty("mode","20px,colour172,181,197,AlignLeft");
-    ui->ThresholdValue->setText("自动阈值:");
+    ui->ThresholdValue->setText("阈    值:");
     ui->ThresholdValue->setProperty("mode","20px,colour172,181,197,AlignLeft");
     ui->Mmhg->setText("20mmHg");
     ui->Mmhg->setProperty("mode","20px,colour172,181,197,AlignLeft");
@@ -62,12 +62,12 @@ StatusBar::StatusBar(QWidget *parent) : QWidget(parent), ui(new Ui::StatusBar) {
     movie1->setScaledSize(ui->HeartbeatImage->size());
     movie1->start();          // 开始播放动画
 
-            connect(ui->pushButton, &QPushButton::clicked, this, [=]() {
-                ui->StatusBarstackedWidget->setCurrentIndex(0);
-            });
-    connect(ui->pushButton_2, &QPushButton::clicked, this, [=]() {
-               ui->StatusBarstackedWidget->setCurrentIndex(1);
-           });
+    //         connect(ui->pushButton, &QPushButton::clicked, this, [=]() {
+    //             ui->StatusBarstackedWidget->setCurrentIndex(0);
+    //         });
+    // connect(ui->pushButton_2, &QPushButton::clicked, this, [=]() {
+    //            ui->StatusBarstackedWidget->setCurrentIndex(1);
+    //        });
 
     // 页面 1
     ui->StatusBar_Page1->setProperty("mode", "StatusBar_Page1");

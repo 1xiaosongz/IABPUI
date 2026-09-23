@@ -4,8 +4,8 @@
 
 // You may need to build the project (run Qt uic code generator) to get "ui_Inflation_Deflation_Timing.h" resolved
 
-#include "../include/inflation_deflation_timing.h"
-#include "ui_Inflation_Deflation_Timing.h"
+#include "inflation_deflation_timing.h"
+#include "ui_inflation_deflation_timing.h"
 #include <QFontDatabase>
 #include <qstyle.h>
 /*
@@ -15,7 +15,7 @@
 Inflation_Deflation_Timing::Inflation_Deflation_Timing(QWidget *parent) : QWidget(parent),
 ui(new Ui::Inflation_Deflation_Timing) {
     ui->setupUi(this);
-    move(201, 594);
+    move(170, 580);
     setVisible(false);
     ui->Label->setProperty("mode","Label_Inflation_Deflation_Timing");
     ui->Finish_Button->setProperty("mode","Finish_Button_False");

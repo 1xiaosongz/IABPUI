@@ -5,7 +5,7 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_HorizontalReferenceLine.h" resolved
 
 #include "horizontalreferenceline.h"
-#include "ui_HorizontalReferenceLine.h"
+#include "ui_horizontalreferenceline.h"
 #include <QPainter>
 #include <QConicalGradient>
 #include <QtMath>

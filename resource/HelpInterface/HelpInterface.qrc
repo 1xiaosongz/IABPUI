@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/HelpInterface">
         <file>Union.png</file>
+        <file>Group 11341.png</file>
     </qresource>
 </RCC>

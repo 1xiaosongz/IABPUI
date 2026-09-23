@@ -78,7 +78,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QStackedWidget" name="SetstackedWidget">
+  <widget class="QStackedWidget" name="SetStackedWidget">
    <property name="geometry">
     <rect>
      <x>242</x>
@@ -100,7 +100,7 @@
     </size>
    </property>
    <property name="currentIndex">
-    <number>4</number>
+    <number>6</number>
    </property>
    <widget class="QWidget" name="page_0">
     <widget class="QPushButton" name="Internal_Trigger">
@@ -228,7 +228,7 @@
       <string>显示冻结</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="Iock_Screen">
+    <widget class="QPushButton" name="Lock_Screen">
      <property name="geometry">
       <rect>
        <x>274</x>
@@ -1526,7 +1526,7 @@
       <string/>
      </property>
     </widget>
-    <widget class="QPushButton" name="Air_Leak_Alarm_Activated_Sshut_Off">
+    <widget class="QPushButton" name="Air_Leak_Alarm_Activated_Shut_Off">
      <property name="geometry">
       <rect>
        <x>629</x>
@@ -1574,6 +1574,231 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NetworkConnections">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>289</y>
+       <width>217</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>217</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>217</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>网络连接</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="NetworkConnections_Off">
+     <property name="geometry">
+      <rect>
+       <x>274</x>
+       <y>286</y>
+       <width>146</width>
+       <height>56</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="HIS_CIS">
+     <property name="geometry">
+      <rect>
+       <x>455</x>
+       <y>286</y>
+       <width>146</width>
+       <height>56</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>146</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Win_IABP">
+     <property name="geometry">
+      <rect>
+       <x>629</x>
+       <y>281</y>
+       <width>258</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>258</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>285</x>
+       <y>371</y>
+       <width>114</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>114</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>114</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>网络状态</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>285</x>
+       <y>414</y>
+       <width>114</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>114</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>114</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>连接状态</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NetworkState">
+     <property name="geometry">
+      <rect>
+       <x>415</x>
+       <y>371</y>
+       <width>63</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>63</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>63</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>可用</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ConnectionStatus">
+     <property name="geometry">
+      <rect>
+       <x>415</x>
+       <y>414</y>
+       <width>63</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>63</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>63</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>正常</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>371</y>
+       <width>122</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>122</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>122</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>IABPID</string>
      </property>
     </widget>
    </widget>
@@ -1811,6 +2036,47 @@
      </property>
     </widget>
    </widget>
+   <widget class="QWidget" name="page_6">
+    <widget class="QLabel" name="UI">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>140</y>
+       <width>751</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="UpperComputer">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>210</y>
+       <width>781</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LowerComputer">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>300</y>
+       <width>741</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QPushButton" name="Set_Confirm_Button">
    <property name="geometry">
@@ -1881,7 +2147,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
       <x>0</x>
       <y>0</y>
       <width>226</width>
-      <height>451</height>
+      <height>601</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -2037,6 +2303,62 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        </property>
        <property name="text">
         <string>日志导出</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Set_Button_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>222</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>222</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>工程师模式</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Set_Button_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>222</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>222</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>版本号</string>
        </property>
       </widget>
      </item>

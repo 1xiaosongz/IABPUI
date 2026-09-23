@@ -5,7 +5,7 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_DateWidget.h" resolved
 
 #include "datewidget.h"
-#include "ui_DateWidget.h"
+#include "ui_datewidget.h"
 #include <QTextCharFormat>
 #include <QLocale>
 #include <QStyle>

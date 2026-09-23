@@ -8,7 +8,7 @@
 
 #include <qstyle.h>
 #include <QTabBar>
-#include "ui_Set.h"
+#include "ui_set.h"
 #include <QFile>
 #include <QListWidget>
 #include <qtextformat.h>
@@ -22,7 +22,7 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     move(345, 310);
     setVisible(false);
     ui->Label->setProperty("mode", "Label_SET");
-    ui->Help_Button->setProperty("mode", "Help_Button");
+    // ui->Help_Button->setProperty("mode", "Help_Button");
     ui->Set_Confirm_Button->setProperty("mode", "Set_Confirm_Button");
     ui->Sound_Off->setProperty("mode", "Sound_Off_True");
     ui->Sound_Low->setProperty("mode", "Sound_Low_True");
@@ -78,21 +78,33 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     // 第一步：把你的 13 个按钮按照顺序放进一个 QVector 容器中
     QVector<QPushButton *> setButtons = {
         ui->Set_Button_1, ui->Set_Button_2, ui->Set_Button_3, ui->Set_Button_4,
-        ui->Set_Button_5, ui->Set_Button_6
+        ui->Set_Button_5, ui->Set_Button_6,ui->Set_Button_8
     };
 
-    // 第二步：用一个 for 循环，一次性搞定 13 个按钮的绑定
+
+    // 默认让第一个按钮处于选中背景（如不需要可移除此行）
+    ui->Set_Button_1->setProperty("mode", "Set_Button_Back");
+    refreshStyle(ui->Set_Button_1);
+
     for (int i = 0; i < setButtons.size(); ++i) {
-        // 检查指针是否为空，防止在 UI 界面少画了按钮导致程序崩溃
         if (setButtons[i] != nullptr) {
-            // 关键点：将当前的循环次数 i 传给 Lambda 表达式 [i]
-            connect(setButtons[i], &QPushButton::clicked, this, [=]() {
-                // 点击第 i 个按钮，右侧的 stackedWidget 就切到第 i 页
-                ui->SetstackedWidget->setCurrentIndex(i);
+            connect(setButtons[i], &QPushButton::clicked, this, [=, this]() {
+                // 1. 切换右侧 stackedWidget 页面
+                ui->SetStackedWidget->setCurrentIndex(i);
+
+                // 2. 遍历清除所有按钮的高亮，仅给当前点击的按钮添加背景
+                for (auto *btn : setButtons) {
+                    if (btn == setButtons[i]) {
+                        btn->setProperty("mode", "Set_Button_Back");
+                    } else {
+                        btn->setProperty("mode", ""); // 恢复普通状态
+                    }
+                    refreshStyle(btn); // 强制让 QSS 动态生效
+                }
             });
         }
     }
-    ui->Trumpet_Label->setProperty("mode1", "Trumpet_Label");
+    ui->Trumpet_Label->setProperty("mode", "Trumpet_Label");
     ui->label->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     ui->label_2->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     ui->label_3->setProperty("mode", "30px,colour255,255,255,AlignCenter");
@@ -131,7 +143,7 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
     ui->label_5->setText(QString("%1%").arg(ui->horizontalSlider->value()));
 
     // 3. 信号与槽联动：当滑动条数值改变时，同步更新 Label
-    connect(ui->horizontalSlider, &QSlider::valueChanged, this, [=](int value) {
+    connect(ui->horizontalSlider, &QSlider::valueChanged, this, [=,this](int value) {
         ui->label_5->setText(QString::number(value) + "%");
     });
     ui->horizontalSlider->setRange(0, 100); // 设置范围 0 ~ 100
@@ -140,7 +152,7 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
 
 
     //=========时间================//
-    ui->SetTime_Label->setProperty("mode", "20px,colour255,255,255,font-weight: normal");
+    ui->SetTime_Label->setProperty("mode", "20px,colour255,255,255,LeftVCenter");
     refreshStyle(ui->SetTime_Label);
     for (int i = 0; i < 1; i++) {
         QListWidgetItem *item;
@@ -229,38 +241,49 @@ Set::Set(QWidget *parent) : QWidget(parent), ui(new Ui::Set) {
         amPmRow = 2; // 如果小于 12 点，则选中 AM
     }
     ui->AmPm_List->setCurrentRow(amPmRow);
-    ui->External_Trigger->setProperty("mode", "External_Trigger");
-    ui->Internal_Trigger->setProperty("mode", "Internal_Trigger");
-    ui->Iock_Screen->setProperty("mode", "Iock_Screen");
-    ui->Screen_Unlock->setProperty("mode", "Screen_Unlock");
-    ui->Display_Freeze->setProperty("mode", "Display_Freeze");
-    ui->Unfreeze->setProperty("mode", "Unfreeze");
+    ui->External_Trigger->setProperty("mode", "External_Trigger_True");
+    ui->Internal_Trigger->setProperty("mode", "Internal_Trigger_True");
+    ui->Lock_Screen->setProperty("mode", "Lock_Screen_True");
+    ui->Screen_Unlock->setProperty("mode", "Screen_Unlock_True");
+    ui->Display_Freeze->setProperty("mode", "Display_Freeze_True");
+    ui->Unfreeze->setProperty("mode", "Unfreeze_True");
     ui->label_13->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     ui->label_21->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     ui->label_27->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     refreshStyle(ui->External_Trigger);
     refreshStyle(ui->Internal_Trigger);
-    refreshStyle(ui->Iock_Screen);
+    refreshStyle(ui->Lock_Screen);
     refreshStyle(ui->Screen_Unlock);
     refreshStyle(ui->Display_Freeze);
     refreshStyle(ui->Unfreeze);
     refreshStyle(ui->label_13);
     refreshStyle(ui->label_21);
     refreshStyle(ui->label_27);
-    ui->Catheter_Alarm_Activated->setProperty("mode", "Catheter_Alarm_Activated");
+    ui->Catheter_Alarm_Activated->setProperty("mode", "Catheter_Alarm_Activated_True");
     refreshStyle(ui->Catheter_Alarm_Activated);
-    ui->Air_Leak_Alarm_Activated_Sshut_Off->setProperty("mode", "Air_Leak_Alarm_Activated_Sshut_Off");
-    refreshStyle(ui->Air_Leak_Alarm_Activated_Sshut_Off);
-    ui->Pause_Catheter_Alarm->setProperty("mode", "Pause_Catheter_Alarm");
+    ui->Air_Leak_Alarm_Activated_Shut_Off->setProperty("mode", "Air_Leak_Alarm_Activated_Shut_Off_True");
+    refreshStyle(ui->Air_Leak_Alarm_Activated_Shut_Off);
+    ui->Pause_Catheter_Alarm->setProperty("mode", "Pause_Catheter_Alarm_True");
     refreshStyle(ui->Pause_Catheter_Alarm);
-    ui->R_wave_Tracking_Turned_Off->setProperty("mode", "R_wave_Tracking_Turned_Off");
+    ui->R_wave_Tracking_Turned_Off->setProperty("mode", "R_wave_Tracking_Turned_Off_True");
     refreshStyle(ui->R_wave_Tracking_Turned_Off);
-    ui->R_wave_Tracking_Has_Been_Enabled->setProperty("mode", "R_wave_Tracking_Has_Been_Enabled");
+    ui->R_wave_Tracking_Has_Been_Enabled->setProperty("mode", "R_wave_Tracking_Has_Been_Enabled_True");
     refreshStyle(ui->R_wave_Tracking_Has_Been_Enabled);
     ui->label_26->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     refreshStyle(ui->label_26);
     ui->label_18->setProperty("mode", "30px,colour255,255,255,AlignCenter");
     refreshStyle(ui->label_18);
+
+
+    ui->LowerComputer->setText("下位机版本号");
+    ui->LowerComputer->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    refreshStyle(ui->LowerComputer);
+    ui->UI->setText("UI版本号");
+    ui->UI->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    refreshStyle(ui->UI);
+    ui->UpperComputer->setText("上位机版本号");
+    ui->UpperComputer->setProperty("mode", "30px,colour255,255,255,AlignCenter");
+    refreshStyle(ui->UpperComputer);
 }
 
 Set::~Set() {

@@ -8,6 +8,8 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 #add_definitions(-DQCUSTOMPLOT_USE_OPENGL)
 set(CMAKE_PREFIX_PATH "D:/qt/6.5.3/msvc2019_64")
+
+#"/home/ubuntu/Qt/6.7.3/gcc_arm64"
 #add_definitions(-DQT_MESSAGELOGCONTEXT)
 add_definitions(-DQT_QML_DEBUG)
 set(CMAKE_BUILD_TYPE Debug)
@@ -35,6 +37,7 @@ add_executable(IABPUI main.cpp
         ${UI_FILES}
         ${HEAD}
         ${HEADHPP}
+
 
 )
 target_link_libraries(IABPUI PRIVATE

@@ -82,21 +82,21 @@
    <property name="geometry">
     <rect>
      <x>95</x>
-     <y>12</y>
+     <y>0</y>
      <width>811</width>
-     <height>45</height>
+     <height>68</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>0</width>
-     <height>45</height>
+     <width>811</width>
+     <height>68</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>16777215</width>
-     <height>45</height>
+     <width>811</width>
+     <height>68</height>
     </size>
    </property>
    <property name="styleSheet">

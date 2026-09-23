@@ -5,7 +5,7 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_TopBar.h" resolved
 
 #include "../include/topbar.h"
-#include "ui_TopBar.h"
+#include "ui_topbar.h"
 
 #include <QStyle>
 TopBar::TopBar(QWidget *parent) : QWidget(parent), ui(new Ui::TopBar) {
@@ -25,7 +25,7 @@ TopBar::TopBar(QWidget *parent) : QWidget(parent), ui(new Ui::TopBar) {
     ui->Pattern_Label->setText("转运");
     ui->Pattern_Label->setProperty("mode","20px,colour172,181,197");
     ui->Label_4->setProperty("mode","20px,colour172,181,197");
-    ui->PatternIcon->setProperty("mode","PatternIcon_Hybrid");
+    ui->PatternIcon->setProperty("mode","PatternIcon_Hybrid1");
 
     this->style()->unpolish(this);
     this->style()->polish(this);

@@ -14,7 +14,7 @@
 #include "triggermode.h"
 #include "inflation_deflation_timing.h"
 #include "inflationratio.h"
-#include "balloonvolume.h"
+#include "counterpulsationpressure.h"
 #include "set.h"
 #include "alarmsystem.h"
 #include "messagemanagement.h"
@@ -22,9 +22,10 @@
 #include "pressurezeroadjustment.h"
 #include "horizontalreferenceline.h"
 #include "logexport.h"
-#include <QObject>
-#include "helpinterface.h"
 
+#include "helpinterface.h"
+#include "prompt.h"
+#include "operatorinputoverlay.h"
 QT_BEGIN_NAMESPACE
 
 namespace Ui {
@@ -49,16 +50,17 @@ private:
     TriggerMode * triggermode;
     Inflation_Deflation_Timing * inflation_Deflation_Timing;
     InflationRatio * inflationRatio;
-    BalloonVolume * balloonvolume;
+    CounterpulsationPressure * counterpulsationPressure;
     Set * set;
     PressureZeroAdjustment * pressurezeroadjustment;
     AlarmSystem * alarmsystem;
     MessageManagement * messageManagement;
     Level1Alarm * level1alarm;
     HorizontalReferenceLine * horizontalReferenceLine;
-    // HelpInterface * helpinterface;
-
+    Prompt * prompt;
+    HelpInterface * helpinterface;
     LogExport * logexport;
+    OperatorInputOverlay * operatorinputoverlay;
 
 private:
     Ui::HomePage *ui;

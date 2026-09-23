@@ -1,4 +1,10 @@
+
+
 /* ======================== 基础样式 ======================== */
+QWidget {
+    font-family: "Source Han Sans CN";
+    font-weight: bold;
+}
 QPushButton {
     outline: none;
     border: none;
@@ -50,11 +56,13 @@ QLabel[mode="40px,colour252,86,78"],
 QLabel[mode="40px,colour255,255,255,AlignCenter"]                                                    { font-size: 40px; }
 
 QLabel[mode="38px,colour4,255,255"],
+QLabel[mode="38px,colour138,147,160"],
 QLabel[mode="38px,colour255,255,255"],
 QLabel[mode="38px,colour4,255,255,AlignCenter"],
 QLabel[mode="38px,colour255,255,255,AlignCenter"]                                                    { font-size: 38px; }
 
 QLabel[mode="30px,colour4,255,255"],
+QLabel[mode="30px,colour4,255,255,AlignCenter"],
 QLabel[mode="30px,colour255,255,255"],
 QLabel[mode="30px,colour255,255,255,AlignCenter"],
 QLabel[mode="30px,colour255,255,255,font-weight: normal"],
@@ -75,8 +83,9 @@ QLabel[mode="20px,colour172,181,197,AlignLeft"],
 QLabel[mode="20px,colour172,181,197,AlignTop"],
 QLabel[mode="20px,colour255,255,255"],
 QLabel[mode="20px,colour216,225,234"],
-QLabel[mode="20px,colour255,255,255,font-weight: normal"],
+QLabel[mode="20px,colour255,255,255,LeftVCenter"],
 QLabel[mode="20px,colour252,86,78"],
+QLabel[mode="20px,colour4,255,255"],
 QLabel[mode="20px,colour255,255,255,114"]                                                        { font-size: 20px; }
 
 /* ======================== 字体颜色 ======================== */
@@ -89,6 +98,8 @@ QLabel[mode="14px,colour4,255,255"],
 QLabel[mode="25px,colour4,255,255"],
 QLabel[mode="24px,colour4,255,255"],
 QLabel[mode="22px,colour4,255,255"],
+QLabel[mode="20px,colour4,255,255"],
+QLabel[mode="30px,colour4,255,255,AlignCenter"],
 QLabel[mode="30px,colour4,255,255"]                                                   { color: rgb(4, 255, 255); }
 
 /* 白色 rgb(255,255,255) */
@@ -101,7 +112,7 @@ QLabel[mode="30px,colour255,255,255,AlignCenter"],
 QLabel[mode="30px,colour255,255,255,font-weight: normal"],
 QLabel[mode="25px,colour255,255,255"],
 QLabel[mode="24px,colour255,255,255"],
-QLabel[mode="20px,colour255,255,255,font-weight: normal"],
+QLabel[mode="20px,colour255,255,255,LeftVCenter"],
 QLabel[mode="20px,colour255,255,255"]                                                    { color: rgb(255, 255, 255); }
 
 /* 红色 rgb(252,86,78) */
@@ -133,6 +144,9 @@ QLabel[mode="20px,colour216,225,234"]                                           
 /* 半透明白 rgba(255,255,255,114) */
 QLabel[mode="20px,colour255,255,255,114"]                                                 { color: rgba(255, 255, 255, 114); }
 QLabel[mode="30px,colour138,223,240"]                                                        { color: rgba(138,223,240); }
+
+
+QLabel[mode="38px,colour138,147,160"]                                                  { color: rgb(138,147,160); }
 /* ======================== 对齐与字重 ======================== */
 /* 居中对齐 */
 QLabel[mode="160px,colour22,226,58"], QLabel[mode="100px,colour252,86,78"],
@@ -143,21 +157,21 @@ QLabel[mode="38px,colour4,255,255,AlignCenter"], QLabel[mode="38px,colour255,255
 QLabel[mode="30px,colour255,255,255,AlignCenter"], QLabel[mode="25px,colour4,255,255"],QLabel[mode="24px,colour4,255,255"],
 QLabel[mode="25px,colour210,215,224"], QLabel[mode="25px,colour255,255,255"],QLabel[mode="24px,colour255,255,255"],QLabel[mode="30px,colour138,223,240"],
 QLabel[mode="24px,colour252,86,78"], QLabel[mode="22px,colour210,215,224"],
-QLabel[mode="22px,colour4,255,255"], QLabel[mode="20px,colour172,181,197"],
-QLabel[mode="20px,colour252,86,78"], QLabel[mode="20px,colour255,255,255"],
+QLabel[mode="22px,colour4,255,255"], QLabel[mode="20px,colour172,181,197"],QLabel[mode="20px,colour4,255,255"],
+QLabel[mode="20px,colour252,86,78"], QLabel[mode="20px,colour255,255,255"],QLabel[mode="30px,colour4,255,255,AlignCenter"],
 QLabel[mode="20px,colour216,225,234"], QLabel[mode="14px,colour4,255,255"],
 QLabel[mode="18px,colour172,181,197"]                                                    { qproperty-alignment: AlignCenter; }
 
 /* 右对齐 + 垂直居中 */
 QLabel[mode="40px,colour4,255,255"], QLabel[mode="40px,colour255,255,255"],
 QLabel[mode="38px,colour4,255,255"], QLabel[mode="38px,colour255,255,255"],
-QLabel[mode="30px,colour172,181,197,AlignRight"],
+QLabel[mode="30px,colour172,181,197,AlignRight"],QLabel[mode="38px,colour138,147,160"],
 QLabel[mode="20px,colour255,255,255,114"]                                                    { qproperty-alignment: 'AlignRight | AlignVCenter'; }
 
 /* 左对齐 + 垂直居中 */
 QLabel[mode="30px,colour4,255,255"], QLabel[mode="20px,colour172,181,197,AlignLeft"],
 QLabel[mode="30px,colour255,255,255,font-weight: normal"],
-QLabel[mode="20px,colour255,255,255,font-weight: normal"],
+QLabel[mode="20px,colour255,255,255,LeftVCenter"],
 QLabel[mode="30px,colour255,255,255"]                                                    { qproperty-alignment: 'AlignLeft | AlignVCenter'; }
 
 /* 左对齐 + 垂直靠上 */
@@ -178,6 +192,32 @@ QPushButton#Mode_Button[mode="Manual_Mode_False"]
     { background-image: url(:/BottomNavigationBar/Group 103991.png); }
 QPushButton#Mode_Button[mode="Manual_Mode_True"]
     { background-image: url(:/BottomNavigationBar/Group 10573.png); }
+QPushButton#Mode_Button[mode="Mode_Unknown_False"]
+   { background-image: url(:/BottomNavigationBar/Group 10399x.png); }
+QPushButton#Mode_Button[mode="Mode_Unknown_True"]
+    { background-image: url(:/BottomNavigationBar/Group 10407x.png); }
+QPushButton#TriggerMode_Button[mode="Trigger_Unknown_True"]
+      { background-image: url(:/BottomNavigationBar/Group 11167.png); }
+QPushButton#TriggerMode_Button[mode="Trigger_Unknown_False"]
+{ background-image: url(:/BottomNavigationBar/Group 11166.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Unknown_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11390.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Unknown_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11394.png); }
+QPushButton#InflationRatio_Button[mode="InflationRatio_Unknown_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11391.png); }
+QPushButton#InflationRatio_Button[mode="InflationRatio_Unknown_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11395.png); }
+QLabel#Inflation_Deflation_Timing_Label[mode="Inflation_Deflation_Timing_Unknown_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11392.png); }
+QLabel#Inflation_Deflation_Timing_Label[mode="Inflation_Deflation_Timing_Unknown_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11396.png); }
+QPushButton#CounterpulsationPump_Button[mode="CounterpulsationPump_Unknown_True"]
+    { background-image: url(:/BottomNavigationBar/Group 11388.png); }
+
+
+
+
 QPushButton#Mode_Button[mode="Automatic_Mode_False"]
      { background-image: url(:/BottomNavigationBar/Group 10399.png); }
 QPushButton#Mode_Button[mode="Automatic_Mode_True"]
@@ -212,9 +252,6 @@ QPushButton#TriggerMode_Button[mode="Atrial_Pacemaker_Stop"]
     { background-image: url(:/BottomNavigationBar/Group 11088.png); }
 QPushButton#TriggerMode_Button[mode="Interior_Stop"]
     { background-image: url(:/BottomNavigationBar/Group 11085.png); }
-
-
-
 QPushButton#InflationRatio_Button[mode="1_1_False"]
      { background-image: url(:/BottomNavigationBar/Group 10401.png); }
 QPushButton#InflationRatio_Button[mode="1_2_False"]
@@ -227,16 +264,52 @@ QPushButton#InflationRatio_Button[mode="1_2_True"]
     { background-image: url(:/BottomNavigationBar/Group 10451.png); }
 QPushButton#InflationRatio_Button[mode="1_3_True"]
     { background-image: url(:/BottomNavigationBar/Group 10452.png); }
+QLabel#Inflation_Deflation_Timing_Label[mode="Inflation_Deflation_Timing_Stop"]
+     { background-image: url(:/BottomNavigationBar/Group 11192.png); }
 QLabel#Inflation_Deflation_Timing_Label[mode="Inflation_Deflation_Timing_False"]
      { background-image: url(:/BottomNavigationBar/Group 10400.png); }
 QLabel#Inflation_Deflation_Timing_Label[mode="Inflation_Deflation_Timing_True"]
     { background-image: url(:/BottomNavigationBar/Group 10600.png); }
-QLabel#BalloonVolume_Label[mode="BalloonVolume_False"]
-     { background-image: url(:/BottomNavigationBar/Group 10341.png); }
-QLabel#BalloonVolume_Label[mode="BalloonVolume_True"]
-    { background-image: url(:/BottomNavigationBar/Group 10585.png); }
-QLabel#Blank_1_Button_Label
-    { background-image: url(:/BottomNavigationBar/Frame 10102.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_First_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11296.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_First_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11318.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Second_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11297.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Second_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11319.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Third_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11298.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Third_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11320.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Fourth_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11299.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Fourth_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11321.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Five_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11300.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Five_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11322.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Sixth_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11301.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Sixth_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11323.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Seventh_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11302.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Seventh_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11324.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Eighth_Gear_False"]
+     { background-image: url(:/BottomNavigationBar/Group 11303.png); }
+QPushButton#Counterpulsation_Pressure_Button[mode="Counterpulsation_Pressure_Eighth_Gear_True"]
+     { background-image: url(:/BottomNavigationBar/Group 11325.png); }
+QLabel#Replenish_Again_He_Label[mode="Replenish_Again_He_Label_True"]
+    { background-image: url(:/BottomNavigationBar/Group 11401.png); }
+QLabel#Replenish_Again_He_Label[mode="Replenish_Again_He_Label_False"]
+    { background-image: url(:/BottomNavigationBar/Group 11400.png); }
+QLabel#Replenish_Again_He_Label[mode="Replenish_Again_He_Label_Stop"]
+    { background-image: url(:/BottomNavigationBar/Group 11405.png); }
+
+
 QLabel#FreezeWindow_Label[mode="FreezeWindow_Label_False"]
     { background-image: url(:/BottomNavigationBar/Frame 10155.png); }
 QLabel#FreezeWindow_Label[mode="FreezeWindow_Label_True"]
@@ -245,9 +318,12 @@ QLabel#PressureZeroing_Label[mode="PressureZeroing_Label_False"]
     { background-image: url(:/BottomNavigationBar/Frame 10151.png); }
 QLabel#PressureZeroing_Label[mode="PressureZeroing_Label_True"]
     { background-image: url(:/BottomNavigationBar/Group 10626.png); }
-QLabel#Help_Button_Label[mode="Help_Button_Label_False"]
+QLabel#PressureZeroing_Label[mode="PressureZeroing_Label_Stop"]
+    { background-image: url(:/BottomNavigationBar/Group 11348.png); }
+
+QLabel#BottomNavigationBar_Help_Button_Label[mode="BottomNavigationBar_Help_Button_Label_False"]
      { background-image: url(:/BottomNavigationBar/Frame 10103.png); }
-QLabel#Help_Button_Label[mode="Help_Button_Label_True"]
+QLabel#BottomNavigationBar_Help_Button_Label[mode="BottomNavigationBar_Help_Button_Label_True"]
      { background-image: url(:/BottomNavigationBar/Group 10285.png); }
 QLabel#Set_Button_Label[mode="Set_Button_Label_False"]
      { background-image: url(:/BottomNavigationBar/Frame 10104.png); }
@@ -256,20 +332,24 @@ QLabel#Set_Button_Label[mode="Set_Button_Label_True"]
 QLabel#Switch_Button_Label[mode="Switch_Button_Label_False"]
      { background-image: url(:/BottomNavigationBar/Frame 10105.png); }
 QLabel#Switch_Button_Label[mode="Switch_Button_Label_True"]
-    { background-image: url(:/BottomNavigationBar/Group 10021.png); }
+    { background-image: url(:/BottomNavigationBar/Group 10021z.png); }
 QLabel[mode="Label_BottomNavigationBar"]
       { background-image: url(:/BottomNavigationBar/Mask group.png); }
-
 /*  Inflation_Deflation_Timing  */
-QPushButton#Finish_Button {
-    background-image: url(:/Inflation_Deflation_Timing/Group 10257.png);
-}
-QPushButton#Finish_Button:pressed
-    { background-image: url(:/Inflation_Deflation_Timing/Group 10286.png); }
+
+QPushButton#Reduce_Button
+    { background-image: url(:/CounterpulsationPressure/Group 10533.png); }
+QPushButton#Reduce_Button:pressed
+    { background-image: url(:/CounterpulsationPressure/Group 10445.png); }
+QPushButton#Add_Button
+    { background-image: url(:/CounterpulsationPressure/Group 10534.png); }
+QPushButton#Add_Button:pressed
+     {background-image:url(:/CounterpulsationPressure/Group 10446.png); }
+
+
 QLabel[mode="Label_Inflation_Deflation_Timing"]
     { background-image: url(:/Inflation_Deflation_Timing/Group 10532.png); }
-QPushButton#Help_Button[mode="Help_Button"]
-    { background-image: url(:/Inflation_Deflation_Timing/Group 10259.png); }
+
 QPushButton[mode="Reduce"]
     { background-image: url(:/Inflation_Deflation_Timing/Group 10533.png); }
 QPushButton[mode="Reduce"]:pressed
@@ -303,26 +383,37 @@ QLabel#AlarmLevelIcon_Label[mode="AlarmLevelIcon_Middle_Rank"]
      { background-image: url(:/AlarmSystem/Group 10026.png); }
 QLabel#AlarmLevelIcon_Label[mode="AlarmLevelIcon_Low_Level"]
     { background-image: url(:/AlarmSystem/Group 10022.png); }
+QPushButton[mode="AlarmSystem_Help_Button"]
+    { background-image: url(:/AlarmSystem/Frame 10090.png); }
+/*  ---- CounterpulsationPressure-------   */
+QLabel[mode="CounterpulsationPressure"]
+    { background-image: url(:/CounterpulsationPressure/Group 10558.png); }
+QLabel#Gears_Label[mode="First_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11128.png); }
+QLabel#Gears_Label[mode="Second_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11129.png);}
+QLabel#Gears_Label[mode="Third_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11130.png); }
+QLabel#Gears_Label[mode="Fourth_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11131.png);}
+QLabel#Gears_Label[mode="Five_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11132.png);}
+QLabel#Gears_Label[mode="Sixth_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11133.png); }
+QLabel#Gears_Label[mode="Seventh_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11134.png);}
+QLabel#Gears_Label[mode="Eighth_Gear"]
+    { background-image: url(:/CounterpulsationPressure/Group 11135.png);}
 
-/*  ---- BalloonVolume-------   */
-QLabel[mode="Label_BalloonVolume"]
-    { background-image: url(:/BalloonVolume/Group 10558.png); }
-QPushButton#Add_Button
-    { background-image: url(:/BalloonVolume/Group 10554.png); }
-QPushButton#Add_Button:pressed
-     { background-image: url(:/BalloonVolume/add_tap.png); }
-QPushButton#Reduce_Button
-    { background-image: url(:/BalloonVolume/Group 10555.png); }
-QPushButton#Reduce_Button:pressed
-    { background-image: url(:/BalloonVolume/Reduction_tap.png); }
 
 /*  ---- Level1Alarm-------   */
 QLabel[mode="Level1_Advanced"]
-    { background-image: url(:/MessageManagement/Group 10568X.png); }
+    { border-image: url(:/level1alarm/Group 10568X.png); }
 QLabel[mode="Level1_Middle_Rank"]
-    { background-image: url(:/MessageManagement/Group 10569.png); }
+    { border-image: url(:/level1alarm/Group 10569.png); }
 QLabel[mode="Level1_Low_Level"]
-     { background-image: url(:/MessageManagement/Group 10570.png); }
+    { border-image: url(:/level1alarm/Group 10570.png); }
+
 
 /*  ---- MessageManagement-------   */
 QLabel[mode="MessageManagement_Label"]
@@ -354,11 +445,26 @@ QLabel[mode="PressureZeroAdjustment_Label"]
 /*  ---- SET-------   */
 QLabel[mode="Label_SET"]
     { background-image: url(:/Set/Group 10402.png); }
-
 QTabWidget, QTabWidget::pane {
     background: transparent;
     border: none;
 }
+/*--------Public-------*/
+
+QPushButton#Help_Button
+    { background-image: url(:/Public/Group 4638.png); }
+QPushButton#Finish_Button {
+    background-image: url(:/Public/Group 10546.png);}
+QPushButton#Finish_Button:pressed
+    { background-image: url(:/Public/Group 10286.png); }
+
+
+
+
+
+
+
+
 
 QTabBar::tab {
     width: 176px;
@@ -384,7 +490,7 @@ QTabWidget::pane {
     background-repeat: no-repeat;
     background-position: center;
 }
-QLabel[mode1="Trumpet_Label"]
+QLabel[mode="Trumpet_Label"]
     { border-image: url(:/Sound/Group 10815.png); }
 
 /*----------- 声音------------*/
@@ -497,7 +603,7 @@ QPushButton[objectName^="Set_Button_"] {
 QPushButton[mode="Set_Button_Back"]
  { background-image: url(:/Set/Group 10795.png); }
 
-QStackedWidget#SetstackedWidget> QWidget {
+QStackedWidget#SetStackedWidget> QWidget {
     background-image: url(":/Set/Group 10782.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -555,6 +661,7 @@ QLabel[mode="BatteryIcon_0"]       { background-image: url(:/TopBar/Group 10296.
 QLabel[mode="BatteryIcon_Recharge"] { background-image: url(:/TopBar/Group 10305.png); }
 
 QLabel[mode="PatternIcon_Hybrid"]  { background-image: url(:/TopBar/Group 10648.png); }
+QLabel[mode="PatternIcon_Hybrid1"]  { background-image: url(:/TopBar/Group 11346z.png); }
 QLabel[mode="PatternIcon_Rescue"]  { background-image: url(:/TopBar/Group 10645.png); }
 
 /*  ---- TriggerMode-------   */
@@ -562,16 +669,11 @@ QLabel[mode="Label_TriggerMode"] { background-image: url(:/TriggerMode/Group 105
 QLabel[mode="Background_True"]    { background-image: url(:/TriggerMode/Rectangle 4581.png); }
 QLabel[mode="Background_False"]   { background-image: none; }
 
-
-
-
-
-
-
-
 /*-----------HelpInterface---------*/
 QLabel#HelpInterfaceLabel[mode="HelpInterfaceLabel"]
 { background-image: url(:/HelpInterface/Union.png); }
+QLabel#HelpInterfaceLabel[mode="HelpInterfaceLabel1"]
+{ background-image: url(:/HelpInterface/Group 11341.png); }
 
 /* 垂直滚动条 */
 QScrollArea#scrollArea QScrollBar:vertical {
@@ -600,7 +702,7 @@ QScrollArea#scrollArea QScrollBar::sub-page:vertical {
 }
 
 /*-----------数据导出日志相关---------*/
-QLabel[mode="Label11"]                   { background-image: url(:/LogExport/Group 10944.png); }
+QLabel[mode="LogExport_Background"]                   { background-image: url(:/LogExport/Group 10944.png); }
 QLabel[mode="Label_DataPanel_Background"] { background-image: url(:/LogExport/Group 109471.png); }
 QLabel[mode="Label_Top_Background"]      { background-image: url(:/LogExport/Group 10947.png); }
 QLabel[mode="PageLabel"]                  { background-image: url(:/LogExport/Group 10981.png); }
@@ -952,69 +1054,83 @@ QPushButton[type="Cancel_Button"]:pressed{
     background-image: url(:/LogExport/Group 11049.png);
 }
 
-QPushButton[mode="External_Trigger"]{
-    background-image: url(:/Blank2/Group 11064.png);
+
+
+
+
+
+
+
+QPushButton[mode="External_Trigger_True"]{
+    background-image: url(:/TriggerSET/Group 11064.png);
 }
-QPushButton[mode="External_Trigger"]:pressed{
-    background-image: url(:/Blank2/Group 11050.png);
+QPushButton[mode="External_Trigger_False"]{
+    background-image: url(:/TriggerSET/Group 11050.png);
 }
-QPushButton[mode="Internal_Trigger"]{
-    background-image: url(:/Blank2/Group 11058.png);
+QPushButton[mode="Internal_Trigger_True"]{
+    background-image: url(:/TriggerSET/Group 11058.png);
 }
-QPushButton[mode="Internal_Trigger"]:pressed{
-    background-image: url(:/Blank2/Group 11069.png);
+QPushButton[mode="Internal_Trigger_False"]{
+    background-image: url(:/TriggerSET/Group 11069.png);
 }
-QPushButton[mode="Iock_Screen"]{
-    background-image: url(:/Blank2/Group 11060.png);
+QPushButton[mode="Lock_Screen_True"]{
+    background-image: url(:/TriggerSET/Group 11060.png);
 }
-QPushButton[mode="Iock_Screen"]:pressed{
-    background-image: url(:/Blank2/Group 11042.png);
+QPushButton[mode="Lock_Screen_False"]{
+    background-image: url(:/TriggerSET/Group 11042.png);
 }
-QPushButton[mode="Screen_Unlock"]{
-    background-image: url(:/Blank2/Group 11043.png);
+QPushButton[mode="Screen_Unlock_True"]{
+    background-image: url(:/TriggerSET/Group 11043.png);
 }
-QPushButton[mode="Screen_Unlock"]:pressed{
-    background-image: url(:/Blank2/Group 11065.png);
+QPushButton[mode="Screen_Unlock_False"]{
+    background-image: url(:/TriggerSET/Group 11065.png);
 }
-QPushButton[mode="Display_Freeze"]{
-    background-image: url(:/Blank2/Group 11062.png);
+QPushButton[mode="Display_Freeze_True"]{
+    background-image: url(:/TriggerSET/Group 11062.png);
 }
-QPushButton[mode="Display_Freeze"]:pressed{
-    background-image: url(:/Blank2/Group 11046.png);
+QPushButton[mode="Display_Freeze_False"]{
+    background-image: url(:/TriggerSET/Group 11046.png);
 }
-QPushButton[mode="Unfreeze"]{
-    background-image: url(:/Blank2/Group 11047.png);
+QPushButton[mode="Unfreeze_True"]{
+    background-image: url(:/TriggerSET/Group 11047.png);
 }
-QPushButton[mode="Unfreeze"]:pressed{
-    background-image: url(:/Blank2/Group 11067.png);
+QPushButton[mode="Unfreeze_False"]{
+    background-image: url(:/TriggerSET/Group 11067.png);
 }
-QPushButton[mode="Catheter_Alarm_Activated"]{
-    background-image: url(:/Blank2/Group 11030.png);
+QPushButton[mode="Catheter_Alarm_Activated_True"]{
+    background-image: url(:/TriggerSET/Group 11030.png);
 }
-QPushButton[mode="Catheter_Alarm_Activated"]:pressed{
-    background-image: url(:/Blank2/Group 11070.png);
+QPushButton[mode="Catheter_Alarm_Activated_False"]{
+    background-image: url(:/TriggerSET/Group 11070.png);
 }
-QPushButton[mode="Air_Leak_Alarm_Activated_Sshut_Off"]{
-    background-image: url(:/Blank2/Group 11031.png);
+QPushButton[mode="Air_Leak_Alarm_Activated_Shut_Off_True"]{
+    background-image: url(:/TriggerSET/Group 11031.png);
 }
-QPushButton[mode="Air_Leak_Alarm_Activated_Sshut_Off"]:pressed{
-    background-image: url(:/Blank2/Group 11071.png);
+QPushButton[mode="Air_Leak_Alarm_Activated_Shut_Off_False"]{
+    background-image: url(:/TriggerSET/Group 11071.png);
 }
-QPushButton[mode="Pause_Catheter_Alarm"]{
-    background-image: url(:/Blank2/Group 11032.png);
+QPushButton[mode="Pause_Catheter_Alarm_True"]{
+    background-image: url(:/TriggerSET/Group 11032.png);
 }
-QPushButton[mode="Pause_Catheter_Alarm"]:pressed{
-    background-image: url(:/Blank2/Group 1170.png);
+QPushButton[mode="Pause_Catheter_Alarm_False"]{
+    background-image: url(:/TriggerSET/Group 1170.png);
 }
-QPushButton[mode="R_wave_Tracking_Turned_Off"]{
-    background-image: url(:/Blank2/Group 11033.png);
+QPushButton[mode="R_wave_Tracking_Turned_Off_True"]{
+    background-image: url(:/TriggerSET/Group 11033.png);
 }
-QPushButton[mode="R_wave_Tracking_Turned_Off"]:pressed{
-    background-image: url(:/Blank2/Group 11072.png);
+QPushButton[mode="R_wave_Tracking_Turned_Off_False"]{
+    background-image: url(:/TriggerSET/Group 11072.png);
 }
-QPushButton[mode="R_wave_Tracking_Has_Been_Enabled"]{
-    background-image: url(:/Blank2/Group 11034.png);
+QPushButton[mode="R_wave_Tracking_Has_Been_Enabled_True"]{
+    background-image: url(:/TriggerSET/Group 11034.png);
 }
-QPushButton[mode="R_wave_Tracking_Has_Been_Enabled"]:pressed{
-    background-image: url(:/Blank2/Group 1169.png);
+QPushButton[mode="R_wave_Tracking_Has_Been_Enabled_False"]{
+    background-image: url(:/TriggerSET/Group 1169.png);
 }
+/*---------Prompt--------*/
+QLabel[mode="Prompt_label"] { background-image: url(:/Prompt/Group 11342.png); }
+QLabel[mode="Lock_Label"] { background-image: url(:/operatorinputoverlay/Frame 40723.png); }
+
+QLabel[mode="Lock_lock_Label"] { background-image: url(:/operatorinputoverlay/Vector.png);}
+QLabel[mode="Lock_Half_unlocked_Label"] { background-image: url(:/operatorinputoverlay/Frame 40723.png);}
+QLabel[mode="Lock_unlocked_Label"] { background-image: url(:/operatorinputoverlay/Frame 40724.png);}

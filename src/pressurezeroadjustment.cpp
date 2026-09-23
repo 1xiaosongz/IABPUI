@@ -9,14 +9,25 @@ PressureZeroAdjustment::PressureZeroAdjustment(QWidget* parent)
       ui(new Ui::PressureZeroAdjustment)
 {
     ui->setupUi(this);
-    move(900, 714);
-    setVisible(false);
+    move(900, 655);
+    // setVisible(false);
     ui->Label->setProperty("mode", "PressureZeroAdjustment_Label");
     ui->Help_Button->setProperty("mode", "Help_Button");
     ui->Finish_Button->setProperty("mode", "PressureZeroAdjustment_Finish_Button");
+
+
+    ui->Affirm_Label->setProperty("mode", "40px,colour255,255,255");
+    ui->Cancel_Label->setProperty("mode", "40px,colour4,255,255");
     ui->Affirm_Label->setText(QStringLiteral("确认调零"));
     ui->Cancel_Label->setText(QStringLiteral("取消调零"));
-
+    QFont font = ui->Affirm_Label->font();
+    font.setLetterSpacing(QFont::AbsoluteSpacing, 5.0); // 绝对间距，单位像素
+    // 或使用相对间距：font.setLetterSpacing(QFont::PercentageSpacing, 110.0);
+    ui->Affirm_Label->setFont(font);
+    QFont font1 = ui->Cancel_Label->font();
+    font1.setLetterSpacing(QFont::AbsoluteSpacing, 5.0); // 绝对间距，单位像素
+    // 或使用相对间距：font.setLetterSpacing(QFont::PercentageSpacing, 110.0);
+    ui->Cancel_Label->setFont(font1);
     resetSelection();
     refreshStyle(ui->Label);
     refreshStyle(ui->Help_Button);

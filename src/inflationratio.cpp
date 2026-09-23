@@ -5,7 +5,7 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_InflationRatio.h" resolved
 
 #include "../include/inflationratio.h"
-#include "ui_InflationRatio.h"
+#include "ui_inflationratio.h"
 #include <QFontDatabase>
 /*
  * 充气比例
@@ -13,7 +13,7 @@
 
 InflationRatio::InflationRatio(QWidget *parent) : QWidget(parent), ui(new Ui::InflationRatio) {
     ui->setupUi(this);
-    move(488, 704);
+    move(450, 690 );
     setVisible(false);
     ui->Label->setProperty("mode","InflationRatio_Label");
     ui->Ratio1_1_Backdrop->setProperty("mode","Ratio_True");

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/level1alarm">
+        <file>Group 10568X.png</file>
+        <file>Group 10569.png</file>
+        <file>Group 10570.png</file>
+    </qresource>
+</RCC>

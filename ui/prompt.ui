@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Prompt</class>
+ <widget class="QWidget" name="Prompt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>284</width>
+    <height>67</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>284</width>
+    <height>67</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>284</width>
+    <height>67</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Prompt</string>
+  </property>
+  <widget class="QStackedWidget" name="PromptStackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>284</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>284</width>
+     <height>67</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>284</width>
+     <height>67</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="page_0">
+    <widget class="QLabel" name="Prompt_Label_1">
+     <property name="geometry">
+      <rect>
+       <x>73</x>
+       <y>15</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>自检完成</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_1">
+    <widget class="QLabel" name="Prompt_Label_2">
+     <property name="geometry">
+      <rect>
+       <x>73</x>
+       <y>15</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>自动充气</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="Prompt_Label_3">
+     <property name="geometry">
+      <rect>
+       <x>73</x>
+       <y>15</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>电池正在使用</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>284</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>284</width>
+     <height>67</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>284</width>
+     <height>67</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Prompt/Group 11342.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>PromptStackedWidget</zorder>
+ </widget>
+ <resources>
+  <include location="../resource/Prompt/Prompt.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -24,11 +24,20 @@ public:
 
     ~BottomNavigationBar() override;
     void refreshStyle(QWidget* w);
-
-
-private slots:
-
-
+    void refreshStyle1(QWidget *widget);
+    void testModeButtonImages();
+    void testTriggerModeButtonImages();
+    void testInflationDeflationTimingImages();
+    void testInflationRatioImages();
+    void testCounterpulsationPressureImages();
+    void testSetButtonImages();
+    void testFreezeWindowImages();
+    void testPressureZeroingImages();
+    void testHelp_ButtonImages();
+    void testBottomNavigationBar_Help_ButtonImages();
+    void testSwitch_ButtonImages();
+    void CounterpulsationPumpImages();
+    void Replenish_Again_HeImages();
 private:
 
     Ui::BottomNavigationBar *ui;

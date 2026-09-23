@@ -50,36 +50,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Close_Button">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>0</y>
-     <width>60</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>60</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>60</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="Title_Label">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>48</y>
+     <y>25</y>
      <width>310</width>
      <height>45</height>
     </rect>

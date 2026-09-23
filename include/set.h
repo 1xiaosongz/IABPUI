@@ -48,7 +48,7 @@ protected:
     void mousePressEvent(QMouseEvent *event) override {
         if (event->button() == Qt::LeftButton) {
             // 计算点击位置占整个轨道的比例
-            double val = static_cast<double>(event->x()) / width();
+            double val = static_cast<double>(event->position().x()) / width();
             int targetValue = minimum() + val * (maximum() - minimum());
             setValue(targetValue);
             event->accept();

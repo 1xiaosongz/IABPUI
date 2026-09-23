@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OperatorInputOverlay</class>
+ <widget class="QWidget" name="OperatorInputOverlay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>OperatorInputOverlay1</string>
+  </property>
+  <widget class="QStackedWidget" name="OverlayStackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="ScreenSafety_Page">
+    <widget class="QLabel" name="Unlock_Label">
+     <property name="geometry">
+      <rect>
+       <x>865</x>
+       <y>636</y>
+       <width>200</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>触摸这里解锁</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="LockHint_Button">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>390</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lock_Screen_Label">
+     <property name="geometry">
+      <rect>
+       <x>865</x>
+       <y>399</y>
+       <width>200</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>屏幕已锁定</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lock_Label">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>390</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="ShutdownFinalizing_Page">
+    <widget class="QLabel" name="Blank_Label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>1920</width>
+       <height>1080</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1920</width>
+       <height>1080</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

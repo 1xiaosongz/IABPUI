@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>patient_information</class>
+ <widget class="QWidget" name="patient_information">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>574</width>
+    <height>655</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>574</width>
+    <height>655</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>patient_information</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -228,7 +228,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Help_Button_Label">
+  <widget class="QLabel" name="BottomNavigationBar_Help_Button_Label">
    <property name="geometry">
     <rect>
      <x>1662</x>
@@ -278,7 +278,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Blank_1_Button_Label">
+  <widget class="QLabel" name="Replenish_Again_He_Label">
    <property name="geometry">
     <rect>
      <x>1748</x>
@@ -378,7 +378,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Help_Button">
+  <widget class="QPushButton" name="BottomNavigationBar_Help_Button">
    <property name="geometry">
     <rect>
      <x>1680</x>
@@ -403,7 +403,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Blank_1_Button">
+  <widget class="QPushButton" name="Replenish_Again_Hen">
    <property name="geometry">
     <rect>
      <x>1764</x>
@@ -562,78 +562,25 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="BalloonVolume_Label">
+  <widget class="QPushButton" name="Counterpulsation_Pressure_Button">
    <property name="geometry">
     <rect>
      <x>1091</x>
      <y>10</y>
-     <width>283</width>
+     <width>284</width>
      <height>86</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>283</width>
+     <width>284</width>
      <height>86</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>283</width>
+     <width>284</width>
      <height>86</height>
-    </size>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="BalloonVolume_Number_label">
-   <property name="geometry">
-    <rect>
-     <x>1117</x>
-     <y>20</y>
-     <width>48</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>48</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>48</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="BalloonVolume_Button">
-   <property name="geometry">
-    <rect>
-     <x>1092</x>
-     <y>10</y>
-     <width>274</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>274</width>
-     <height>80</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>274</width>
-     <height>80</height>
     </size>
    </property>
    <property name="text">
@@ -737,7 +684,7 @@
     </size>
    </property>
    <property name="text">
-    <string>ECG触发模式</string>
+    <string>触发模式</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -790,29 +737,29 @@
     <string>充气比率</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="Anti_embolismPressureSetting">
    <property name="geometry">
     <rect>
      <x>1126</x>
      <y>92</y>
-     <width>72</width>
+     <width>90</width>
      <height>27</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>72</width>
+     <width>90</width>
      <height>27</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>72</width>
+     <width>90</width>
      <height>27</height>
     </size>
    </property>
    <property name="text">
-    <string>球囊容量</string>
+    <string>反搏压设置</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_7">
@@ -970,49 +917,24 @@
     <rect>
      <x>1841</x>
      <y>92</y>
-     <width>72</width>
+     <width>75</width>
      <height>27</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>72</width>
+     <width>75</width>
      <height>27</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>72</width>
+     <width>75</width>
      <height>27</height>
     </size>
    </property>
    <property name="text">
-    <string>电源开关</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="BalloonPercentage">
-   <property name="geometry">
-    <rect>
-     <x>1240</x>
-     <y>20</y>
-     <width>71</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>71</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>71</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="text">
-    <string/>
+    <string>开关/重启</string>
    </property>
   </widget>
   <zorder>Label</zorder>
@@ -1023,28 +945,26 @@
   <zorder>Set_Button_Label</zorder>
   <zorder>FreezeWindow_Label</zorder>
   <zorder>PressureZeroing_Label</zorder>
-  <zorder>Help_Button_Label</zorder>
+  <zorder>BottomNavigationBar_Help_Button_Label</zorder>
   <zorder>Switch_Button_Label</zorder>
-  <zorder>Blank_1_Button_Label</zorder>
+  <zorder>Replenish_Again_He_Label</zorder>
   <zorder>Set_Button</zorder>
   <zorder>FreezeWindow_Button</zorder>
   <zorder>PressureZeroing_Button</zorder>
-  <zorder>Help_Button</zorder>
-  <zorder>Blank_1_Button</zorder>
+  <zorder>BottomNavigationBar_Help_Button</zorder>
+  <zorder>Replenish_Again_Hen</zorder>
   <zorder>Switch_Button</zorder>
   <zorder>Inflation_Deflation_Timing_Label</zorder>
   <zorder>Inflatable_Numbers_label</zorder>
   <zorder>Deflating_Number_label</zorder>
   <zorder>Inflation_Deflation_Timing_Button</zorder>
-  <zorder>BalloonVolume_Label</zorder>
-  <zorder>BalloonVolume_Number_label</zorder>
   <zorder>Bottom_BalloonVolume_Label</zorder>
   <zorder>label</zorder>
   <zorder>label_2</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>label_5</zorder>
-  <zorder>label_6</zorder>
+  <zorder>Anti_embolismPressureSetting</zorder>
   <zorder>label_7</zorder>
   <zorder>label_8</zorder>
   <zorder>label_9</zorder>
@@ -1052,8 +972,7 @@
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
   <zorder>label_13</zorder>
-  <zorder>BalloonPercentage</zorder>
-  <zorder>BalloonVolume_Button</zorder>
+  <zorder>Counterpulsation_Pressure_Button</zorder>
  </widget>
  <resources>
   <include location="../resource/BottomNavigationBar/BottomNavigationBar.qrc"/>
